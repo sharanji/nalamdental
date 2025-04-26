@@ -33,7 +33,7 @@ $route['redexim.html'] = 'welcome/redexim';
 $route['sports.html'] = 'welcome/sports';
 $route['stadium.html'] = 'welcome/stadium';
 $route['tennis.html'] = 'welcome/tennis';
-
+$route['branches.html'] = 'welcome/branches';
 
 
 
