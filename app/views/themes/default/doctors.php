@@ -76,7 +76,8 @@
                                     <a href="tel:+91 74189148484">+91 8925825228</a><br>
 
                                     <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Nalam Dental Dental Care @ Meera Hospital</a>
+                                    <a href="javascript:void(0)">Nalam Dental Dental Care <br>
+                                    at Meera Multi Speciality Hospital</a>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +137,7 @@
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
                                 <div class="position-relative">
-                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="">   
+                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/IMG_3317.png" alt="">   
                                 </div>
                                 <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.U. Tharani </a>
                                 <p class="w-90 mx-auto lh-28"> BDS <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
