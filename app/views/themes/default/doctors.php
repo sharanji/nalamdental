@@ -69,24 +69,6 @@
                                 <div class="position-relative">
                                 <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="">   
                                 </div>
-                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.N.Nisanth </a>
-                                <p class="w-90 mx-auto lh-28"> B.D.S, D.H.M <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
-                                <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
-                                <span class="text-dark-gray fw-700 me-2"><i class="fas fa-phone-alt"></i></span>
-                                    <a href="tel:+91 8248093704">+91 8248093704</a><br>
-
-                                    <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Kaveripattinam</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end team member item --> 
-                        <!-- start team member item -->
-                        <div class="col team-style-06 mb-30px">
-                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
-                                <div class="position-relative">
-                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="">   
-                                </div>
                                 <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">P.K.Hari haran   </a>
                                 <p class="w-90 mx-auto lh-28"> BDS<span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
                                 <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
@@ -100,7 +82,7 @@
                         </div>
                         <!-- end team member item --> 
                             <!-- start team member item -->
-                        <div class="col team-style-06 mb-30px">
+                            <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
                                 <div class="position-relative">
                                 <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="">   
@@ -116,12 +98,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end team member item --> 
-                            <!-- start team member item -->
-                       
-                        <!-- end team member item --> 
-                            <!-- start team member item -->
-                        <!-- <div class="col team-style-06 mb-30px">
+                        <!-- start team member item -->
+                        <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
                                 <div class="position-relative">
                                 <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="">   
@@ -136,7 +114,7 @@
                                     <a href="javascript:void(0)">Kaveripattinam</a>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- end team member item --> 
                             <!-- start team member item -->
                         <div class="col team-style-06 mb-30px">
