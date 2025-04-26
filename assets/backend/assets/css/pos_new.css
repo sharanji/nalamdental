@@ -1,0 +1,400 @@
+/** Order Item tbl start **/
+
+th.order-header-class {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+td.order-item-list {
+    font-size: 14px;
+    /*  color: #16bb13; */
+    /*   font-weight:bold; */
+    border: 1px solid #a9a9a9;
+}
+
+thead tr.order-tab-header {
+    position: sticky;
+    top: -1px;
+    background: #fff;
+}
+
+
+/** Order Item tbl end **/
+
+
+/*New start */
+
+.datefield label {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.pos-footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background: #e3e3e3;
+    left: 0;
+    /* display: none; */
+}
+
+.datefield label {
+    width: 100%;
+}
+
+.datefield {
+    display: flex;
+}
+
+span.scrollmenu {
+    background: #f03c43;
+    height: 73px;
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+span.tab-header a {
+    background: #ddd;
+    padding: 7px 14px;
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+span.tab-header a:hover {
+    background: #fff;
+    transition: 1s;
+}
+
+.pos-items {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    box-shadow: 1px 2px 13px #c5c4c4;
+    float: left;
+    width: 100%;
+}
+
+
+/*New end */
+
+span.total_label {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    top: 0px;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.total-section {
+    display: flex;
+    width: 100%;
+}
+
+span.total_amount {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: 0px;
+    text-align: right!important;
+    float: right;
+    width: 50%;
+}
+
+.btn-text {
+    font-size: 16px;
+}
+
+
+/* 
+.payment-type {
+    width: 65px;
+    font-size: 14px;
+    text-align: right;
+    float: right;
+    margin: -7px 0px 0px 0px;
+}
+*/
+
+.payment-type-label {
+    font-size: 14px;
+}
+
+.payment-type-label {
+    font-size: 14px;
+    padding: 0px 7px 0px 0px;
+}
+
+img.pro-image-pos {
+    min-height: 80px;
+    max-height: 80px;
+    width: 100%;
+}
+
+.pricelist-left {
+    overflow-y: scroll;
+    float: left;
+    width: 100%;
+}
+
+.leftsection::-webkit-scrollbar {
+    display: none;
+}
+
+.pricelist-left::-webkit-scrollbar {
+    display: none;
+}
+
+.table-overlay::-webkit-scrollbar {
+    display: none;
+}
+
+.pricelist-left {
+    overflow-y: scroll;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/* .leftsection {
+    background: #fff;
+    max-height: 68vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+} */
+.pricelist-left-new
+{
+	background: #fff;
+    max-height: 68vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.table-overlay {
+    background: #fff;
+    max-height: 68vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.qty-num {
+    width: 100px;
+}
+
+
+/* scrolle */
+
+div.scrollmenu {
+    /* background-color: #e5e5e5; */
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 5px 5px;
+    /*  margin-bottom: 5px; */
+}
+
+.scrollmenu a {
+    /* background: #e5e5e5; */
+    border-radius: 3px;
+}
+
+div.scrollmenu a:hover {
+    /* background-color: #28c500; */
+    cursor: pointer;
+    transition: 0.5s;
+    color: #000!important;
+}
+
+a.proceedto-pay {
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    color: #000;
+    background: #00a651;
+    padding: 10px;
+    color: #fff;
+    float: right;
+    border-radius: 5px;
+    position: relative;
+    right: 0;
+}
+
+
+/* scrolle */
+
+@media only screen and (max-width: 725px) {
+    .pos-footer {
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    img.pro-image-pos {
+        min-height: 100px!important;
+        max-height: 100px!important;
+        width: 100%!important;
+    }
+    .pos-items p {
+        min-height: 40px!important;
+        max-height: 40px!important;
+    }
+}
+
+.qty-inc-dec {
+    display: flex;
+    flex-wrap: nowrap;
+    border: none!important;
+}
+
+
+/* .qty-inc-dec > span {
+    width:100px;
+    margin:0px;
+    text-align:center;        
+} */
+
+.enter-numb {
+    width: 55px;
+    height: 26px;
+    text-align: center;
+    border-radius: 0px !important;
+}
+
+table#line_items tr td {
+    border: none;
+}
+
+table#line_items tr {
+    border-bottom: 1px solid #ebeaea;
+}
+
+span.inc-qty input {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+span.dec-qty input {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+div.scrollmenu a.main-cat-active,
+div.scrollmenu a.sub-cat-active {
+    /* background-color: #28c500; */
+    cursor: pointer;
+    transition: 0.5s;
+    color: #000!important;
+    /* background: #d7ff38; */
+}
+
+span.no-item {
+    margin: 9px 6px 8px 125px;
+}
+
+input#bill_date {
+    background: transparent;
+    border: none;
+}
+
+ul.list-unstyled-pos {
+    background: whitesmoke;
+    border: 1px solid #c1c1c1;
+}
+
+ul.list-unstyled-pos li {
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 9px 0px 6px 11px;
+}
+
+ul.list-unstyled-pos li:hover {
+    background-color: #00a651!important;
+    color: white;
+    padding: 9px 0px 6px 11px;
+}
+
+ul.list-unstyled-pos {
+    background: whitesmoke;
+    border: 1px solid #c1c1c1;
+    position: absolute;
+    bottom: 100%;
+    z-index: 99999;
+    margin: 0;
+    min-height: 0;
+    overflow: auto;
+    max-height: 200px;
+    width: 95%;
+}
+
+ul.list-unstyled-pos {
+    background: whitesmoke;
+    border: 1px solid #c1c1c1;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 289px;
+    z-index: 9999;
+}
+
+.list-unstyled-pos {
+    padding-left: 0;
+    list-style: none;
+}
+
+a.disabled-btn {
+    pointer-events: none;
+    background: #cfcfcf !important;
+}
+
+span.inclusive-tax {
+  /*position: absolute;
+    top: 58px; */
+    color: #444343dd;
+  /*left: 25%;*/
+}
+
+.payment-types {
+    position: relative;
+    left: -35px;
+    top: 5px;
+}
+
+.payment-types-label {
+    position: relative;
+    left: 17px;
+}
+
+.list-unstyled-new {
+    width: 91%!important;
+    min-height: 100px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+div#myDiv {
+    text-align: center;
+    padding: 0px 70px 0px 0px;
+}
+
+a.print_button_disabled {
+    background: #e1e1e1 !important;
+    pointer-events: none;
+}
+
+.tbl-occupied-sub-tbl {
+    background: linear-gradient(45deg, #ed7f98, #f9f7a6);
+    border: 1px dashed #43a3e4e8 !important;
+}
+
+input#searchItem,select#discount,select#discount_type {
+    height: 40px;
+}

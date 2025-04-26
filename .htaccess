@@ -1,0 +1,20 @@
+#WITH OUT SSL HTACCESS
+RewriteEngine on
+
+php_value max_input_vars 6000
+php_value suhosin.post.max_vars 6000
+php_value suhosin.request.max_vars 6000
+
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+
+#WITH SSL HTACCESS
+#RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+#RewriteCond $1 !^(index\.php|resources|robots\.txt|public)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?/$1 [QSA,L]

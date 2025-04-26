@@ -1,0 +1,20 @@
+1.Oracle Apex - eNOTE Application - Order Deliver and Delivery Lines.
+2.Oracle Apex - eNOTE Application - Discussion points working.
+3.HMS - Issue Fixing
+4.HMS - hms updation to client
+
+set sequence only for ORder delivery creation 
+
+SELECT value INTO lv_default_value from org_default_values  where value_name = 'TRANSACTION_NUMBER_LENGTH';
+
+lv_delivery_seq := om_order_delivery_number_seq.nextval;
+
+lv_delivery_seq := 'DN-'||LPAD(lv_delivery_seq,lv_default_value,0);
+
+TRANSACTION_NUMBER_LENGTH
+
+Set default length to generate transaction number
+
+10
+
+Yes

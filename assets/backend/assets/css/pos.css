@@ -1,0 +1,948 @@
+.content {
+    background: #F8F8F8!important;
+}
+
+
+.overover {
+    overflow-x: auto !important;
+    flex-wrap: inherit;
+    overflow-y: hidden;
+}
+
+
+/*pos-order*/
+
+.card-body.pos-ordered {
+    background: #3d60da;
+    border-radius: 5px;
+}
+
+.overlay_btn{
+color:#FFFFFF;
+
+border-radius: 3px;
+border: 1px solid #2CBA1F;
+background: #2CBA1F;
+}
+
+.manual_text{
+    color: #424242 !important;
+
+font-size: 30px !important;
+font-style: normal !important;
+font-weight: 600 !important;
+line-height: normal !important;
+text-align: left !important;
+    
+
+}
+
+.btn_bordrers{
+    border-radius: 3px;
+    border-color: 1px solid var(--Base-Stroke, black);
+color:black;
+}
+/* Add this CSS to your stylesheet */
+.specific-btn:hover {
+    background-color:#FF5057;; /* Change to the desired hover color */
+    color:white;
+  }
+  
+/*  
+.btn_style{
+
+padding: 10px 25px;
+justify-content: center;
+line-height: 45px;
+align-items: center;
+gap: 10px;
+} */
+.cards_manual{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    text-align:left;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    max-width: 50%;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, .125);
+    border-radius: 0.1875rem;
+    max-width:50%
+}
+
+@media only screen and (max-width: 576px) {
+    .cards_manual{
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        text-align:left;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        max-width: 100%;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0px solid rgba(0, 0, 0, .125);
+        border-radius: 0.1875rem;
+     
+    }
+}
+.card-body.pos-ordered p {
+    position: relative;
+    top: -25px;
+    left: 26px;
+    font-size: 20px;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.custom-div{
+    margin-bottom:100px;
+}
+
+
+.overlay_new {
+    z-index: 998;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999; 
+    display: none;
+}
+.mytable th,
+.mytable td {
+    border: none;
+    color:black;
+}
+
+.mytables th,
+.mytables td {
+    border: none;
+  padding:0px;
+  color:black;
+}
+
+
+
+
+.order_number{
+    color: #424242;
+text-align: center;
+/* leading-trim: both;
+text-edge: cap;
+font-family: Kumbh Sans; */
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.new_textt{
+    color: #424242;
+text-align: center;
+
+/* font-family: Kumbh Sans; */
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.confirm-card_new {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+    position: absolute;
+    top: 30%;
+    right: 14%;
+    z-index: 99999;
+    border-radius: 10px;
+}
+
+
+
+.confirm-card_new2 {
+    /* padding: 20px; */
+    /* top: 280px; */
+    /* right: -109%; */
+    /* z-index: 99999; */
+    width: 241px;
+    height: 100px;
+    padding: 20px;
+    /* position: relative; */
+    position: absolute;
+    top: 217px;
+    right: 2%;
+    z-index: 99999;
+    border-radius: 10px;
+}
+.pos-card-count {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #0029b9;
+    width: 30%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.pos-card-count span {
+    top: 17px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.pos-card-count h1 {
+    font-weight: 500;
+    position: relative;
+    top: 4px!important;
+    float: left;
+    text-align: center!important;
+    width: 100%;
+    font-size: 36px!important;
+    color: #fff;
+}
+
+span.order-short-title {
+    position: absolute;
+    bottom: 19px;
+    color: #fff;
+    left: 15px;
+    font-size: 13px!important;
+}
+.amount_accpet{
+    color: #0054A6;
+text-align: center;
+/* leading-trim: both;
+text-edge: cap;
+font-family: Inter; */
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.accept_pay{
+    color: #424242;
+text-align: center;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+/*pos-card-order end*/
+
+
+/*pos-card-cooking start*/
+
+.card-body.pos-Cooking {
+    background: #FF961A;
+    border-radius: 5px;
+}
+
+.accept_order_card{
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: -340px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+
+}
+
+.text_new_1{
+    color: #424242;
+text-align: center;
+/* leading-trim: both;
+text-edge: cap;
+font-family: Kumbh Sans; */
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.cance_text{
+    color: #424242;
+text-align: center;
+/* leading-trim: both;
+text-edge: cap;
+font-family: Kumbh Sans; */
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+.table-container {
+    max-height: 83px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scroll if content exceeds the max height */
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+}
+
+.card-body.pos-Cooking p {
+    position: relative;
+    top: -25px;
+    left: 26px;
+    font-size: 20px;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.pos-card-count-cook {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FFA010;
+    width: 30%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.pos-card-count-cook span {
+    top: 17px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.pos-card-count-cook h1 {
+    font-weight: 500;
+    position: relative;
+    top: 4px!important;
+    float: left;
+    text-align: center!important;
+    width: 100%;
+    font-size: 36px!important;
+    color: #fff;
+}
+
+span.order-short-title-cook {
+    position: absolute;
+    bottom: 19px;
+    color: #fff;
+    left: 15px;
+    font-size: 13px!important;
+}
+
+
+/*pos-card-cook-end*/
+
+
+/*pos-card-ready*/
+
+.card-body.pos-reading {
+    background: #1BCC0C;
+    border-radius: 5px;
+}
+
+.card-body.pos-reading p {
+    position: relative;
+    top: -25px;
+    left: 26px;
+    font-size: 20px;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.pos-card-count-ready {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #0EB200;
+    width: 30%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.pos-card-count-ready span {
+    top: 17px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.pos-card-count-ready h1 {
+    font-weight: 500;
+    position: relative;
+    top: 4px!important;
+    float: left;
+    text-align: center!important;
+    width: 100%;
+    font-size: 36px!important;
+    color: #fff;
+}
+
+span.order-short-title-ready {
+    position: absolute;
+    bottom: 19px;
+    color: #fff;
+    left: 15px;
+    font-size: 13px!important;
+}
+
+
+/*post-card-ready end*/
+
+
+/*post-card-cancel start*/
+
+.card-body.pos-cancelling {
+    background: #FF5050;
+    border-radius: 5px;
+}
+
+.card-body.pos-cancelling p {
+    position: relative;
+    top: -25px;
+    left: 26px;
+    font-size: 20px;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.pos-card-count-cancel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #F42D2D;
+    width: 30%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.pos-card-count-cancel span {
+    top: 17px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.pos-card-count-cancel h1 {
+    font-weight: 500;
+    position: relative;
+    top: 4px!important;
+    float: left;
+    text-align: center!important;
+    width: 100%;
+    font-size: 36px!important;
+    color: #fff;
+}
+
+span.order-short-title-cancel {
+    position: absolute;
+    bottom: 19px;
+    color: #fff;
+    left: 15px;
+    font-size: 13px!important;
+}
+
+
+/*post-card-cancel end*/
+
+
+/*post-card-delivery start*/
+
+.card-body.pos-delivery {
+    background: #C219FD;
+    border-radius: 5px;
+}
+
+.card-body.pos-delivery p {
+    position: relative;
+    top: -25px;
+    left: 26px;
+    font-size: 20px;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.pos-card-count-deli {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #9A00CF;
+    width: 30%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.pos-card-count-deli span {
+    top: 17px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.pos-card-count-deli h1 {
+    font-weight: 500;
+    position: relative;
+    top: 4px!important;
+    float: left;
+    text-align: center!important;
+    width: 100%;
+    font-size: 36px!important;
+    color: #fff;
+}
+
+span.order-short-title-deli {
+    position: absolute;
+    bottom: 19px;
+    color: #fff;
+    left: 15px;
+    font-size: 13px!important;
+}
+
+
+/* Hasain CSS Starts*/
+
+
+/* Dashboard Design Start */
+
+.summary {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+}
+
+a.see-all {
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.dashboard-title {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.dashboard-title h4 {
+    color: #424242;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+span.category-type {
+    color: #727272;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+span.dashboard-checkbox {
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.category-level-one {
+    border-radius: 12px;
+    border-right: 0.8px solid rgba(0, 0, 0, 0.10);
+    border-bottom: 0.8px solid rgba(0, 0, 0, 0.10);
+    border-left: 0.8px solid rgba(0, 0, 0, 0.10);
+    background: linear-gradient(135deg, #FFF 0%, #FCFCFC 100%);
+    margin-bottom: 20px;
+}
+
+.category-level-one img.category-image {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    min-height: 153px;
+    max-height: 153px;
+}
+
+.category-level-one h5 {
+    color: rgba(0, 0, 0, 0.70);
+    text-align: center;
+    /* font-family: Poppins; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0;
+}
+
+.category-level-one p {
+    color: #0054A6;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+img.food-type-icon {
+    position: absolute;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    right: 20px;
+}
+
+.dashboard-food-list {
+    float: left;
+    width: 100%;
+    overflow-y: auto;
+    min-height: 300px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+
+/* Dashboard Design Ends */
+
+
+/* Header Order Items Design Starts */
+
+i.fa.fa-times.cloase-navi {
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.currentOrders-header {
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.currentOrders-header h2 {
+    float: left;
+    width: 100%;
+    color: #1C40C2;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.currentOrders-header {
+    display: flex;
+    float: left;
+    width: 100%;
+}
+.b-color{
+    color:blACK;
+}
+
+.tex{
+    color: #424242;
+
+/* font-family: Kumbh Sans; */
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.pay_method{
+    color: #424242;
+
+/* font-family: Kumbh Sans; */
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+.text_num{
+    color: #424242;
+text-align: right;
+
+/* font-family: Inter; */
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.tex_total{color: #424242;
+
+    /* font-family: Kumbh Sans; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;}
+
+.tex_num{
+    color: #424242;
+text-align: right;
+
+/* font-family: Inter; */
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+.address-container {
+    /* max-height: 150px; */
+    overflow-y: scroll;
+    /* overflow-x: auto; */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border:none;
+}
+
+
+
+
+.order-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+    .order-item {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+.address-container {
+    max-height: 240px;
+    overflow-y: scroll;
+    /* overflow-x: auto; */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border:none;    border:none;
+}
+
+  }
+  
+
+
+.currentOrders-section h3 {
+    color: #898989;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    float: left;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 10px;
+}
+
+.item-detail {
+    float: left;
+    width: 100%;
+    position: relative;
+    display: flex;
+    color: #424242;
+    font-size: 12px;
+    font-weight: 400;
+    
+    border-left: 2px solid #2CBA1F;
+    padding-inline: 5px;
+}
+
+.item-detail h3 {
+    text-align: left;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.item-detail span {
+    float: right;
+    text-align: right;
+    width: 100%;
+    font-size: 14px;
+}
+
+.item-desc-detail {
+    float: left;
+    width: 100%;
+    position: relative;
+    display: flex;
+    color: #424242;
+    font-size: 12px;
+    font-weight: 400;
+    /* border-left: 2px solid #2CBA1F; */
+    /* padding-inline: 5px; */
+}
+
+.item-desc-detail textarea {
+    height: 23px;
+    width: 200%;
+}
+
+.item-desc-detail h3 svg {
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+}
+
+.increase-decrease-qty {
+    float: left;
+    width: 37%;
+    position: relative;
+    display: flex;
+    color: #424242;
+    font-size: 12px;
+    font-weight: 400;
+    padding-inline: 5px;
+    position: relative;
+    right: -10px;
+    top: 2px
+}
+
+
+/* .increase-decrease-qty a.plus-qty,
+a.minus-qty,
+.item-qty {
+    width: 35%;
+} */
+
+.increase-decrease-qty p.item-qty span {
+    width: 45%;
+}
+
+a.plus-qty span {
+    background: red;
+    padding: 5px 9px;
+    /* height: 20px; */
+    /* width: 20px!important; */
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+a.minus-qty span {
+    background: red;
+    padding: 5px 10px;
+    /* height: 20px; */
+    /* width: 20px!important; */
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+span {cursor:pointer; }
+
+.minus, .plus{
+    width:20px;
+    height:20px;
+    color:white;
+  
+    border-radius:4px;
+    padding:1px 3px;
+background-color:red;
+border-radius:30px; 
+ 
+display: inline-block;
+vertical-align: middle;
+text-align: center;
+}
+input.newclass{
+    height:34px;
+width: 26%;
+color:black;
+background-color: transparent;
+text-align: center;
+font-size: 18px;
+ 
+    border-radius:4px;
+
+vertical-align: middle;
+border:none;
+}
+    
+/* Sidebar Footer Start */
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.sidebar-button-detail {
+    float: left;
+    width: 100%;
+    position: relative;
+    display: flex;
+    color: #424242;
+    font-size: 12px;
+    font-weight: 400;
+    border-left: 2px solid #2CBA1F;
+    padding-inline: 5px;
+}
+
+.sidebar-button-detail button {
+    text-align: left;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.sidebar-button-detail span {
+    float: right;
+    text-align: right;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/* Sidebar footer  */
+
+
+/* Hasain CSS Ends*/

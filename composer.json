@@ -1,0 +1,7 @@
+{
+    "require": {
+        "bacon/bacon-qr-code": "^2.0",
+        "setasign/fpdf": "^1.8",
+        "wisembly/elephant.io": "^3.3"
+    }
+}
