@@ -159,7 +159,7 @@
                                 </div>
                                 <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. Deepak ravichandran (consultant) </a>
                                 <p class="w-90 mx-auto lh-28">Periodontist and implantologist
-                                Professor @ Eamachandra University <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
+                                Professor @ ramachandra University <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
                               
                             </div>
                         </div>
