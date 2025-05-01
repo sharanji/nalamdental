@@ -22,7 +22,7 @@
                                     <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
                                     <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
 
-                                    <li class="nav-item"><a href="appointment.html" class="nav-link">Appointment</a></li>
+                                    <!-- <li class="nav-item"><a href="appointment.html" class="nav-link">Appointment</a></li> -->
                                     <li class="nav-item"><a href="treatments.html" class="nav-link">Treatments</a></li>
                                     <li class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></li>
                                     <li class="nav-item"><a href="branches.html" class="nav-link">Our Branches</a></li>
