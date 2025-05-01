@@ -25,6 +25,7 @@
                                     <li class="nav-item"><a href="appointment.html" class="nav-link">Appointment</a></li>
                                     <li class="nav-item"><a href="treatments.html" class="nav-link">Treatments</a></li>
                                     <li class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></li>
+                                    <li class="nav-item"><a href="branches.html" class="nav-link">Our Branches</a></li>
                                     <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
                                 </ul>
                             </div>
