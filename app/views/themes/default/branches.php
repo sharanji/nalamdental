@@ -7,8 +7,8 @@
                 <div class="container">
                     <div class="row small-screen">
                         <div class="col-xl-5 col-lg-6 col-md-7 position-relative page-title-extra-large align-self-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <h2 class="fw-500 text-dark-gray mb-15px d-block"><span class="w-40px h-2px bg-base-color d-inline-block align-middle me-15px"></span>Specialist doctor team</h2>
-                            <h1 class="text-dark-gray fw-800 ls-minus-3px sm-ls-minus-1px d-block mb-0">Doctor's team</h1>
+                            <h2 class="fw-500 text-dark-gray mb-15px d-block"><span class="w-40px h-2px bg-base-color d-inline-block align-middle me-15px"></span>Exclusive Branches</h2>
+                            <h1 class="text-dark-gray fw-800 ls-minus-3px sm-ls-minus-1px d-block mb-0">Our Branches</h1>
                         </div>
                         <div class="col-xl-7 col-lg-6 col-md-5 position-relative d-none d-md-block">
                             <div class="w-85px h-85px border-radius-100 d-flex align-items-center justify-content-center position-absolute left-100px lg-left-minus-20px md-left-minus-30px top-100px lg-top-140px md-top-100px mt-4 translate-middle-y">
