@@ -108,6 +108,12 @@ class Welcome extends CI_Controller
 		$page_data['page_name']  = "doctors"; #View Page
 		$this->load->view($this->template, $page_data);
 	}
+	public function branches()
+	{
+		$page_data['page_title'] = SITE_NAME.' | branches'; #Page Title
+		$page_data['page_name']  = "branches"; #View Page
+		$this->load->view($this->template, $page_data);
+	}
 	public function treatments()
 	{
 		$page_data['page_title'] = SITE_NAME.' | treatments'; #Page Title
