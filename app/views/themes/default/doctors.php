@@ -92,7 +92,7 @@
                                     <a href="tel:+91 74189148484">+91 7418914848</a><br>
 
                                     <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Santhur</a>
+                                    <a href="javascript:void(0)">Santhur Branch</a>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
                                     <a href="tel:+91 9952614240">+91 9952614240</a><br>
 
                                     <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Shoolagiri</a>
+                                    <a href="javascript:void(0)">Shoolagiri Branch</a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                                     <a href="tel:+91 8248093704">+91 8248093704</a><br>
 
                                     <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Kaveripattinam</a>
+                                    <a href="javascript:void(0)">Kaveripattinam Branch</a>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                                     <a href="tel:+91 8807601839">+91 8807601839</a><br>
 
                                     <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Hosur</a>
+                                    <a href="javascript:void(0)">Hosur Branch</a>
                                 </div>
                             </div>
                         </div>
