@@ -105,7 +105,7 @@
                                 
                                 <div class="d-flex justify-content-start align-items-center">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <span>kaveripattinam</span>
+                                <a href="" traget="_blank">kaveripattinam</a>
                                 </div>
                             </div>
                             </div>
@@ -161,7 +161,7 @@
                                 <div class="gallery-box overflow-hidden">
                                     <a href="<?php echo base_url();?>assets/frontend/img/pic-1.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                         <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-1.png" alt="Project Sample 1" />
+                                            <!-- <img src="<?php echo base_url();?>assets/frontend/img/pic-1.png" alt="Project Sample 1" /> -->
                                             <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                 <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                             </div>
@@ -175,7 +175,7 @@
                                 <div class="gallery-box overflow-hidden">
                                     <a href="<?php echo base_url();?>assets/frontend/img/pic-3.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                         <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-3.png" alt="" />
+                                            <!-- <img src="<?php echo base_url();?>assets/frontend/img/pic-3.png" alt="" /> -->
                                             <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                 <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                             </div>
@@ -189,7 +189,7 @@
                                 <div class="gallery-box overflow-hidden">
                                     <a href="<?php echo base_url();?>assets/frontend/img/pic-4.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                         <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-4.png" alt="" />
+                                            <!-- <img src="<?php echo base_url();?>assets/frontend/img/pic-4.png" alt="" /> -->
                                             <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                 <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                             </div>
@@ -204,7 +204,7 @@
                                 <div class="gallery-box overflow-hidden">
                                     <a href="<?php echo base_url();?>assets/frontend/img/pic-2.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                         <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-2.png" alt="Project Sample 1" />
+                                            <!-- <img src="<?php echo base_url();?>assets/frontend/img/pic-2.png" alt="Project Sample 1" /> -->
                                             <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                 <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                             </div>
@@ -218,7 +218,7 @@
                                 <div class="gallery-box overflow-hidden">
                                     <a href="<?php echo base_url();?>assets/frontend/img/pic-72.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                         <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-72.png" alt="" />
+                                            <!-- <img src="<?php echo base_url();?>assets/frontend/img/pic-72.png" alt="" /> -->
                                             <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                 <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                             </div>
@@ -232,7 +232,7 @@
                                 <div class="gallery-box overflow-hidden">
                                     <a href="<?php echo base_url();?>assets/frontend/img/pic-71.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                         <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-71.png" alt="" />
+                                            <!-- <img src="<?php echo base_url();?>assets/frontend/img/pic-71.png" alt="" /> -->
                                             <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                 <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                             </div>
@@ -244,7 +244,7 @@
                                 <div class="gallery-box overflow-hidden">
                                     <a href="<?php echo base_url();?>assets/frontend/img/pic-73.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                         <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-73.png" alt="" />
+                                            <!-- <img src="<?php echo base_url();?>assets/frontend/img/pic-73.png" alt="" /> -->
                                             <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                 <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                             </div>
