@@ -45,7 +45,7 @@
                         <!-- start team member item -->
                         <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
                             <div class="text-center">
-                                <img src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" class="rounded-circle" alt="Branch" width="100" height="100">
+                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
                             </div>
                             <div class="card-body text-center">
                             <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Santhur Branch  </a>
@@ -67,7 +67,7 @@
                             </div>
                             <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
                             <div class="text-center">
-                                <img src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" class="rounded-circle" alt="Branch" width="100" height="100">
+                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
                             </div>
                             <div class="card-body text-center">
                             <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Shoolagiri Branch  </a>
@@ -89,7 +89,7 @@
                             </div>
                             <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
                             <div class="text-center">
-                                <img src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" class="rounded-circle" alt="Branch" width="100" height="100">
+                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
                             </div>
                             <div class="card-body text-center">
                             <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px"> kaveripattinam Branch  </a>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
                             <div class="text-center">
-                                <img src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" class="rounded-circle" alt="Branch" width="100" height="100">
+                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
                             </div>
                             <div class="card-body text-center">
                             <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Hosur Branch  </a>
@@ -148,7 +148,7 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center mb-5 text-center text-lg-start">
                     <div class="col-xxl-12 col-lg-12 md-mb-20px">
-                        <h2 class="text-dark-gray text-center fw-600 ls-minus-2px mb-0"><span class="w-20px h-4px d-inline-block bg-base-color me-10px"></span>Our Branches</h2>
+                        <h2 class="text-dark-gray text-center fw-600 ls-minus-2px mb-0"><span class="w-20px h-4px d-inline-block bg-base-color me-10px"></span>Our Gallery</h2>
                     </div>
                  
                 </div> 
@@ -159,7 +159,7 @@
                             <!-- start gallery item -->
                             <li class="grid-item transition-inner-all">
                                 <div class="gallery-box overflow-hidden">
-                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-1.png" data-group="lightbox-group-gallery-item-3" title="our branched">
+                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-1.png" data-group="lightbox-group-gallery-item-3" title="our branches">
                                         <div class="position-relative gallery-image bg-base-color">
                                             <img src="<?php echo base_url();?>assets/frontend/img/pic-1.png" alt="Project Sample 1" />
                                             <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
