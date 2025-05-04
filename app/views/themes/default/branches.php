@@ -61,7 +61,7 @@
                                 
                                 <div class="d-flex justify-content-start align-items-center">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <span>Santhur</span>
+                                <a href="https://maps.app.goo.gl/86DVWQriaA9YkfmE6" target="_blank">Santhur</a>
                                 </div>
                             </div>
                             </div>
@@ -83,7 +83,7 @@
                                 
                                 <div class="d-flex justify-content-start align-items-center">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <span>Shoolagiri</span>
+                                <a href="https://maps.app.goo.gl/JzCzypu42sn79dxU8" target="_blank">Shoolagiri</a>
                                 </div>
                             </div>
                             </div>
@@ -105,7 +105,7 @@
                                 
                                 <div class="d-flex justify-content-start align-items-center">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <span>kaveripattinam</span>
+                                <a href="https://maps.app.goo.gl/Mi5HTbcXr4FhT5Ms6" target="_blank">Kaveripattinam</a>
                                 </div>
                             </div>
                             </div>
@@ -127,7 +127,7 @@
                                 
                                 <div class="d-flex justify-content-start align-items-center">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <span>>Hosur</span>
+                                <a href="https://maps.app.goo.gl/4Eyu8kF6jDriwcUQA" target="_blank">Hosur</a>
                                 </div>
                             </div>
                             </div>
