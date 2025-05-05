@@ -111,11 +111,12 @@
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral Cancer Examination</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral Cancer Surgical Treatment</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cleft Lip & Palate Surgery</li>
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Zygomatic implant</li>
                                 </ul>
                             </div>
                             <div class="col">
                                 <ul class="p-0 m-0 list-style-02">
-                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implant Surgery</li>
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Ball and socket Implant</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Extractions</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Fillings</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Teeth Replacement - Crowns, Bridges & Implants, Partial & Complete Dentur</li>
@@ -152,7 +153,7 @@
                         <h3 class="fw-600 text-dark-gray ls-minus-1px">Explore Our Specialized Treatments</h3>
                     </div>
                 </div>
-                <div class="row">
+                <div class="col">
                     <div class="col-md-12 position-relative">
                         <div class="outside-box-right-20 sm-outside-box-left-0 sm-outside-box-right-0" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                             <div class="swiper magic-cursor" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "autoplay": { "delay": 4000, "disableOnInteraction": false },  "pagination": { "el": ".slider-four-slide-pagination", "clickable": true, "dynamicBullets": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
