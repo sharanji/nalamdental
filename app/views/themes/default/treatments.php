@@ -162,7 +162,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="https://nalamdentalcare.in/assets/frontend/img/treatment/facial_trauma-VEED.gif" style="height: 220px;width: 100;">
+                                            <img src="https://nalamdentalcare.in/assets/frontend/img/treatment/facial_trauma-VEED.gif" style="height: 240px;width: 100;">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
