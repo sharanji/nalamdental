@@ -162,7 +162,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                                <video src="<?php echo base_url();?>assets/frontend/img/treatment/21.png" alt="">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/treatment/facial_trauma-VEED.gif" alt="">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -308,7 +308,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/19.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/root_canal.png" alt="">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
