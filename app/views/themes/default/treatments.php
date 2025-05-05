@@ -339,7 +339,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/flap1.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/flap.png" alt="">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
