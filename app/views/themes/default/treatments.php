@@ -233,7 +233,7 @@
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
-                                                    <a href="javascript:void(0)" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">Fillings</a>
+                                                    <a href="javascript:void(0)" class="d-inline-block fs-19 primary-font fw-600 text-dark-gray mb-5px">Extractions</a>
                                                     <p> Pain-free removal of damaged teeth and restorative fillings.</p>
                                                 </div> 
                                                
@@ -243,7 +243,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/extraction.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/fillings.png" alt="">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">

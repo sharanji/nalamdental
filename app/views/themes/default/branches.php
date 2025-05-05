@@ -48,6 +48,28 @@
                                 <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
                             </div>
                             <div class="card-body text-center">
+                            <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Meera Multi Speciality Hospital</a>
+
+                                <p class="text-muted small mb-3">1359A, TNHB. Phase – 10, Rayakotta Rd, Rayakottah Housing Board, Hosur, Tamil Nadu 635109</p>
+                                
+                                <hr>
+
+                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                <span>+91 8925825228</span>
+                                </div>
+                                
+                                <div class="d-flex justify-content-start align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i>
+                                <a href="https://maps.app.goo.gl/86DVWQriaA9YkfmE6" target="_blank">Santhur</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
+                            <div class="text-center">
+                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
+                            </div>
+                            <div class="card-body text-center">
                             <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Santhur Branch  </a>
 
                                 <p class="text-muted small mb-3">No : 1/244 - A, Santhur, x Road, Pochampalli - Santhur Road, Thogarapalli, Tamil Nadu 635206</p>
@@ -56,7 +78,7 @@
 
                                 <div class="d-flex justify-content-start align-items-center mb-2">
                                 <i class="bi bi-telephone-fill me-2"></i>
-                                <span>+91 7418914848</span>
+                                <span>+91 74189 14848</span>
                                 </div>
                                 
                                 <div class="d-flex justify-content-start align-items-center">
@@ -64,8 +86,8 @@
                                 <a href="https://maps.app.goo.gl/86DVWQriaA9YkfmE6" target="_blank">Santhur</a>
                                 </div>
                             </div>
-                            </div>
-                            <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
+                        </div>
+                        <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
                             <div class="text-center">
                                 <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
                             </div>
@@ -100,7 +122,7 @@
 
                                 <div class="d-flex justify-content-start align-items-center mb-2">
                                 <i class="bi bi-telephone-fill me-2"></i>
-                                <span>+91 99526 14240</span>
+                                <span>+91 82480 93704</span>
                                 </div>
                                 
                                 <div class="d-flex justify-content-start align-items-center">
