@@ -61,7 +61,7 @@
                                 
                                 <div class="d-flex justify-content-start align-items-center">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <a href="https://maps.app.goo.gl/86DVWQriaA9YkfmE6" target="_blank">Santhur</a>
+                                <a href="https://g.co/kgs/eWNvvFS" target="_blank">Hosur</a>
                                 </div>
                             </div>
                         </div>
