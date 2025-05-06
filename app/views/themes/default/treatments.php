@@ -112,6 +112,8 @@
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral Cancer Surgical Treatment</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cleft Lip & Palate Surgery</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Zygomatic implant</li>
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Smile designing
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col">
@@ -119,7 +121,8 @@
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Ball and socket Implant</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Extractions</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Fillings</li>
-                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Teeth Replacement - Crowns, Bridges & Implants, Partial & Complete Dentur</li>
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Teeth Replacement - Crowns, Bridges & Implants, Partial & Complete Denture</li>
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Rhinoplasty surgery</li>
                                 </ul>
                             </div>
                             <div class="col">
@@ -128,6 +131,7 @@
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthodontic Treatments</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Scaling and Flap Surgery</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Veneers & Bleaching</li>
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthognathic surgery</li>
                                 </ul>
                             </div>
                         </div>

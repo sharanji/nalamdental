@@ -42,26 +42,69 @@
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-sm-2 justify-content-center" data-anime='{"el": "childs", "translateY": [15, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'> 
-                        <!-- start team member item -->
                         <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
                             <div class="text-center">
                                 <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
                             </div>
                             <div class="card-body text-center">
-                            <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Meera Multi Speciality Hospital</a>
+                                <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Hosur Branch  </a>
 
-                                <p class="text-muted small mb-3">1359A, TNHB. Phase – 10, Rayakotta Rd, Rayakottah Housing Board, Hosur, Tamil Nadu 635109</p>
+                                    <p class="text-muted small mb-3">Nalam Dental Care, No, 80/3-A1,First Floor, Denkanikotta Rd, opposite to Government Hospital, Hosur, Tamil Nadu 635109</p>
+                                    
+                                    <hr>
+
+                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                <span>+91 88076 01839</span>
+                                </div>
+                                
+                                <div class="d-flex justify-content-start align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i>
+                                <a href="https://maps.app.goo.gl/4Eyu8kF6jDriwcUQA" target="_blank">Hosur</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
+                            <div class="text-center">
+                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
+                            </div>
+                            <div class="card-body text-center">
+                            <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px"> kaveripattinam Branch  </a>
+
+                                <p class="text-muted small mb-3">Nalam Dental Care , Subashchandrabose street SLN complex, opposite to busstand, Kaveripattinam, Tamil Nadu 635112</p>
                                 
                                 <hr>
 
                                 <div class="d-flex justify-content-start align-items-center mb-2">
                                 <i class="bi bi-telephone-fill me-2"></i>
-                                <span>+91 8925825228</span>
+                                <span>+91 82480 93704</span>
                                 </div>
                                 
                                 <div class="d-flex justify-content-start align-items-center">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <a href="https://g.co/kgs/eWNvvFS" target="_blank">Hosur</a>
+                                <a href="https://maps.app.goo.gl/Mi5HTbcXr4FhT5Ms6" target="_blank">Kaveripattinam</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
+                            <div class="text-center">
+                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
+                            </div>
+                            <div class="card-body text-center">
+                            <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Shoolagiri Branch  </a>
+
+                                <p class="text-muted small mb-3">Nalam dental Care, Shoolagiri Main Road, Rajaji Nagar, Shoolagiri, Tamil Nadu 635117</p>
+                                
+                                <hr>
+
+                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                <span>+91 99526 14240</span>
+                                </div>
+                                
+                                <div class="d-flex justify-content-start align-items-center">
+                                <i class="bi bi-geo-alt-fill me-2"></i>
+                                <a href="https://maps.app.goo.gl/JzCzypu42sn79dxU8" target="_blank">Shoolagiri</a>
                                 </div>
                             </div>
                         </div>
@@ -87,72 +130,29 @@
                                 </div>
                             </div>
                         </div>
+                            <!-- start team member item -->
                         <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
                             <div class="text-center">
                                 <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
                             </div>
                             <div class="card-body text-center">
-                            <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Shoolagiri Branch  </a>
+                            <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Meera Multi Speciality Hospital</a>
 
-                                <p class="text-muted small mb-3">Nalam dental Care, Shoolagiri Main Road, Rajaji Nagar, Shoolagiri, Tamil Nadu 635117</p>
+                                <p class="text-muted small mb-3">1359A, TNHB. Phase – 10, Rayakotta Rd, Rayakottah Housing Board, Hosur, Tamil Nadu 635109</p>
                                 
                                 <hr>
 
                                 <div class="d-flex justify-content-start align-items-center mb-2">
                                 <i class="bi bi-telephone-fill me-2"></i>
-                                <span>+91 99526 14240</span>
+                                <span>+91 8925825228</span>
                                 </div>
                                 
                                 <div class="d-flex justify-content-start align-items-center">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <a href="https://maps.app.goo.gl/JzCzypu42sn79dxU8" target="_blank">Shoolagiri</a>
+                                <a href="https://g.co/kgs/eWNvvFS" target="_blank">Hosur</a>
                                 </div>
                             </div>
-                            </div>
-                            <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
-                            <div class="text-center">
-                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
-                            </div>
-                            <div class="card-body text-center">
-                            <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px"> kaveripattinam Branch  </a>
-
-                                <p class="text-muted small mb-3">Nalam Dental Care , Subashchandrabose street SLN complex, opposite to busstand, Kaveripattinam, Tamil Nadu 635112</p>
-                                
-                                <hr>
-
-                                <div class="d-flex justify-content-start align-items-center mb-2">
-                                <i class="bi bi-telephone-fill me-2"></i>
-                                <span>+91 82480 93704</span>
-                                </div>
-                                
-                                <div class="d-flex justify-content-start align-items-center">
-                                <i class="bi bi-geo-alt-fill me-2"></i>
-                                <a href="https://maps.app.goo.gl/Mi5HTbcXr4FhT5Ms6" target="_blank">Kaveripattinam</a>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="card shadow-sm rounded p-3 m-3" style="max-width: 320px;">
-                            <div class="text-center">
-                                <img src="<?php echo base_url();?>assets/frontend/img/branch_logo.png" class="rounded-circle" alt="Branch" width="100" height="100">
-                            </div>
-                            <div class="card-body text-center">
-                            <a href="javascript:void(0)" class="text-dark-gray fs-20 fw-700 mb-5px">Hosur Branch  </a>
-
-                                <p class="text-muted small mb-3">Nalam Dental Care, No, 80/3-A1,First Floor, Denkanikotta Rd, opposite to Government Hospital, Hosur, Tamil Nadu 635109</p>
-                                
-                                <hr>
-
-                                <div class="d-flex justify-content-start align-items-center mb-2">
-                                <i class="bi bi-telephone-fill me-2"></i>
-                                <span>+91 88076 01839</span>
-                                </div>
-                                
-                                <div class="d-flex justify-content-start align-items-center">
-                                <i class="bi bi-geo-alt-fill me-2"></i>
-                                <a href="https://maps.app.goo.gl/4Eyu8kF6jDriwcUQA" target="_blank">Hosur</a>
-                                </div>
-                            </div>
-                            </div>
+                        </div>
                         <!-- end team member item --> 
                      
                         
