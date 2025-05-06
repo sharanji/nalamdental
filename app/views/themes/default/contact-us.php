@@ -103,7 +103,7 @@
                                 <div class="feature-box-content">
                                     <span class="d-block text-dark-gray fw-600 fs-18 ls-minus-05px mb-5px">Meera Multi Speciality Hospital,Hosur.</span>
                                     <p class="w-60 md-w-100"><span class="text-dark-gray fw-700"></span> <a href="tel:04344 224335">04344 224335 </a>
-                                    <p class="w-60 md-w-100"><span class="text-dark-gray fw-700"></span> <a href="tel:04344  224235">04344 224235 </a>
+                                    <p class="w-60 md-w-100"><span class="text-dark-gray fw-700"></span> <a href="tel:8925825228">+91 8925825228 </a>
 
                                 </div>
                             </div>

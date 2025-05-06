@@ -144,7 +144,7 @@
 
                                 <div class="d-flex justify-content-start align-items-center mb-2">
                                 <i class="bi bi-telephone-fill me-2"></i>
-                                <span>+91 8925825228</span>
+                                <span>+91 8925825228 , 04344 224335</span>
                                 </div>
                                 
                                 <div class="d-flex justify-content-start align-items-center">

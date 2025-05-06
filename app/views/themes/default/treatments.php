@@ -123,6 +123,7 @@
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Fillings</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Teeth Replacement - Crowns, Bridges & Implants, Partial & Complete Denture</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Rhinoplasty surgery</li>
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>All on 4 implants</li>
                                 </ul>
                             </div>
                             <div class="col">
@@ -131,7 +132,7 @@
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthodontic Treatments</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Scaling and Flap Surgery</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Veneers & Bleaching</li>
-                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthognathic surgery</li>
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>All on 6 implants</li>
                                 </ul>
                             </div>
                         </div>
