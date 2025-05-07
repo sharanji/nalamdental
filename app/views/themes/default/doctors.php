@@ -149,7 +149,17 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end team member item --> 
+                          <!-- start team member item -->
+                        <div class="col team-style-06 mb-30px">
+                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
+                                <div class="position-relative">
+                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="">   
+                                </div>
+                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. Waseem (consultant)</a>
+                                <p class="w-90 mx-auto lh-28"> MDS Pedodontics <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
+                                
+                            </div>
+                        </div>
                               <!-- start team member item -->
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
@@ -172,18 +182,6 @@
                                 <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.J .Jayaindhraeswaran (consultant) </a>
                                 <p class="w-90 mx-auto lh-28">MDS , fellowship in cleft and 
                                 craniofacial  surgery <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
-                                
-                            </div>
-                        </div>
-                        <!-- end team member item --> 
-                           <!-- start team member item -->
-                        <div class="col team-style-06 mb-30px">
-                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
-                                <div class="position-relative">
-                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="">   
-                                </div>
-                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. Waseem (consultant)</a>
-                                <p class="w-90 mx-auto lh-28"> MDS Pedodontics <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
                                 
                             </div>
                         </div>
