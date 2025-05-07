@@ -155,7 +155,7 @@
                                 <div class="position-relative">
                                 <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="">   
                                 </div>
-                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. Waseem (consultant)</a>
+                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. Waseem <br>(consultant)</a>
                                 <p class="w-90 mx-auto lh-28"> MDS Pedodontics <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
                                 
                             </div>
