@@ -242,7 +242,7 @@
 						if (file_exists('uploads/admin_image/'.$this->user_id.'.png'))
 						{
 							?>
-							<img src="<?php echo base_url()."uploads/admin_image/".$this->user_id.'.png';?>" class="rounded-circle mr-2" height="34" alt=""> 
+							<img src="<?php echo base_url()."uploads/admin_image/".$this->user_id.'.png';?>" class="rounded-circle mr-2" height="34" alt="users"> 
 							<?php
 						}
 					?>

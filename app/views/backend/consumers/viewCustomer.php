@@ -169,7 +169,7 @@
 								if(file_exists("uploads/profile_image/".$id.'.png') )
 								{
 									?>
-									<img class="img-responsive" alt="" style="" src="<?php echo base_url(); ?>uploads/products/<?php echo $id.'.png';?>">
+									<img class="img-responsive" alt="best dental hospial hosur" style="" src="<?php echo base_url(); ?>uploads/products/<?php echo $id.'.png';?>">
 									<?php 
 								}
 								else

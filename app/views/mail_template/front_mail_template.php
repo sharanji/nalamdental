@@ -264,31 +264,31 @@
 											
 												<li style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;float:left;padding:2px">
 												  <a href="<?php echo FACEBOOK;?>" title="Facebook" target="_blank" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;color:#3869d4">
-													<img src="<?php echo base_url();?>assets/social_icons/facebook.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none" border="0" alt="">
+													<img src="<?php echo base_url();?>assets/social_icons/facebook.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none" border="0" alt="best dental hospial hosur">
 												  </a>
 												</li>
 											
 												<li style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;float:left;padding:2px">
 												  <a href="<?php echo TWITTER;?>" title="Twitter" target="_blank" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;color:#3869d4">
-													<img src="<?php echo base_url();?>assets/social_icons/twitter.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none" border="0" alt="">
+													<img src="<?php echo base_url();?>assets/social_icons/twitter.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none" border="0" alt="best dental hospial hosur">
 												  </a>
 												</li>
 											
 												<li style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;float:left;padding:2px">
 												  <a href="<?php echo LINKEDIN;?>" title="Linkedin" target="_blank" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;color:#3869d4">
-													<img src="<?php echo base_url();?>assets/social_icons/linkedin.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none;width:22px;height:15px;" border="0" alt="">
+													<img src="<?php echo base_url();?>assets/social_icons/linkedin.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none;width:22px;height:15px;" border="0" alt="best dental hospial hosur">
 												  </a>
 												</li>
 												
 												<li style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;float:left;padding:2px">
 												  <a href="<?php echo GOOGLE_PLUS;?>" title="Google Plus" target="_blank" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;color:#3869d4">
-													<img src="<?php echo base_url();?>assets/social_icons/google_plus.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none" border="0" alt="">
+													<img src="<?php echo base_url();?>assets/social_icons/google_plus.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none" border="0" alt="best dental hospial hosur">
 												  </a>
 												</li>
 												
 												<li style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;float:left;padding:2px">
 												  <a href="<?php echo INSTAGRAM;?>" title="Instagram" target="_blank" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;color:#3869d4">
-													<img src="<?php echo base_url();?>assets/social_icons/instagram.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none;width:22px;height:15px;" border="0" alt="" >
+													<img src="<?php echo base_url();?>assets/social_icons/instagram.png" style="font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;box-sizing:border-box;border:none;width:22px;height:15px;" border="0" alt="best dental hospial hosur" >
 												  </a>
 												</li>
 											

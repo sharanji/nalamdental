@@ -561,13 +561,13 @@ $(document).ready(function()
 															if (file_exists('uploads/branches/'.$id.'.png'))
 															{
 																?>
-																<img class="pro-page-pic" src="<?php echo base_url()."uploads/branches/".$id.'.png';?>" class="rounded-circle mt-2" style="height: 280px;width: 100%;" alt=""> 
+																<img class="pro-page-pic" src="<?php echo base_url()."uploads/branches/".$id.'.png';?>" class="rounded-circle mt-2" style="height: 280px;width: 100%;" alt="best dental hospial hosur"> 
 																<?php
 															}
 															else
 															{
 																?>
-																<img class="pro-page-pic" src="<?php echo base_url()."uploads/no-image.png";?>" class="rounded-circle mt-2" height="75" width="75" alt=""> 
+																<img class="pro-page-pic" src="<?php echo base_url()."uploads/no-image.png";?>" class="rounded-circle mt-2" height="75" width="75" alt="best dental hospial hosur"> 
 																<?php
 															}
 														}

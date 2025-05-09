@@ -10,7 +10,7 @@
  
  ------------------------------------------------------- */
 
-(function ($) {
+(function($) {
 
     "use strict";
     /* ===================================
@@ -20,7 +20,7 @@
     var menuBreakPoint = 991;
     var sliderBreakPoint = 991; // It will effect when you have used attribute "data-thumb-slider-md-direction" OR "data-slider-md-direction"
     var animeBreakPoint = 1199;
-    var headerTransition = 300;  // Header transition effect time
+    var headerTransition = 300; // Header transition effect time
 
     /* ===================================
      Touch device
@@ -36,10 +36,10 @@
      ====================================== */
 
     var lastScroll = 0,
-            simpleDropdown = 0,
-            linkDropdown = 0,
-            isotopeObjs = [],
-            swiperObjs = [];
+        simpleDropdown = 0,
+        linkDropdown = 0,
+        isotopeObjs = [],
+        swiperObjs = [];
     var windowScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     /* ===================================
@@ -47,8 +47,8 @@
      ====================================== */
 
     var isMobile = false,
-            isiPhoneiPad = false,
-            isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        isiPhoneiPad = false,
+        isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         isMobile = true;
@@ -62,7 +62,7 @@
      jQuery appear
      ====================================== */
 
-    $('.vertical-counter, .counter, .progress-bar, .pie-chart-style-01, .attractive-hover, .splitting-animation, .section-dark, footer, [data-anime], [data-fancy-text]').each(function () {
+    $('.vertical-counter, .counter, .progress-bar, .pie-chart-style-01, .attractive-hover, .splitting-animation, .section-dark, footer, [data-anime], [data-fancy-text]').each(function() {
         $(this).appear().trigger('resize');
     });
 
@@ -97,7 +97,7 @@
         if (typeof $.fn.mCustomScrollbar === 'function') {
             if ($('.navbar-collapse-clone').length) {
                 var scrollOptions = $('.navbar-collapse-clone').attr('data-scroll-options') || '{ "theme": "light" }';
-                if (typeof (scrollOptions) !== 'undefined' && scrollOptions !== null) {
+                if (typeof(scrollOptions) !== 'undefined' && scrollOptions !== null) {
                     scrollOptions = $.parseJSON(scrollOptions);
                     $('.navbar-collapse-clone').mCustomScrollbar(scrollOptions);
                 }
@@ -109,7 +109,7 @@
     }
 
     // Navbar collapse - classic menu
-    $('.navbar-collapse.collapse').on('show.bs.collapse', function (e) {
+    $('.navbar-collapse.collapse').on('show.bs.collapse', function(e) {
         if (!$('body').hasClass('navbar-collapse-show')) {
             $('body').addClass('navbar-collapse-show');
             $('html').addClass('overflow-hidden');
@@ -124,17 +124,17 @@
             // Set submenu height after opened toggle menu
             if (getWindowWidth() <= menuBreakPoint) {
                 var windowHeight = getWindowHeight(),
-                        headerHeight = getHeaderHeight();
+                    headerHeight = getHeaderHeight();
                 $('header .navbar-collapse').css('max-height', windowHeight - headerHeight);
             }
         } else {
             if ($('.navbar-modern-inner').length) {
-                setTimeout(function () {
+                setTimeout(function() {
                     $('.navbar-show-modern-bg').css('background', '');
                 }, 600);
             }
             if ($('.navbar-full-screen-menu-inner').length) {
-                setTimeout(function () {
+                setTimeout(function() {
                     $('.navbar-full-screen-menu-inner').css('background', '');
                 }, 600);
             }
@@ -146,7 +146,7 @@
         } else {
             $('.navbar-collapse-clone').css('max-height', (windowHeight - headerHeight));
         }
-    }).on('hide.bs.collapse', function (e) {
+    }).on('hide.bs.collapse', function(e) {
         if ($('body').hasClass('navbar-collapse-show')) {
             $('body').removeClass('navbar-collapse-show');
             $('html').removeClass('overflow-hidden');
@@ -154,14 +154,14 @@
     });
 
     // Sub menu collapse event
-    $('.sub-menu.collapse').on('show.bs.collapse', function (e) {
+    $('.sub-menu.collapse').on('show.bs.collapse', function(e) {
         var activeMenuId = $(e.target).attr('id');
         $('[data-bs-target="#' + activeMenuId + '"]').addClass('show');
-        $(this).parents('.menu-item').siblings().each(function () {
+        $(this).parents('.menu-item').siblings().each(function() {
             $('.sub-menu.show', this).collapse('hide');
         });
         stickyKitRecalc();
-    }).on('hide.bs.collapse', function (e) {
+    }).on('hide.bs.collapse', function(e) {
         var activeMenuId = $(e.target).attr('id');
         $('[data-bs-target="#' + activeMenuId + '"]').removeClass('show');
         $(e.target).find('.sub-menu.show').collapse('hide');
@@ -169,24 +169,24 @@
     });
 
     // Search popup open
-    $(document).on('click', '.search-form-icon', function (e) {
+    $(document).on('click', '.search-form-icon', function(e) {
         e.preventDefault();
         $('body').addClass('show-search-popup');
     });
 
     // Search popup close
-    $(document).on('click', '.search-close', function (e) {
+    $(document).on('click', '.search-close', function(e) {
         e.preventDefault();
         $('body').removeClass('show-search-popup');
     });
 
     // Search validation
-    $(document).on('click', '.search-button', function () {
+    $(document).on('click', '.search-button', function() {
         var error = true;
         var formObj = $(this).parents('form');
-        formObj.find('input[type=text]').each(function (index) {
+        formObj.find('input[type=text]').each(function(index) {
             var _this = $(this),
-                    searchVal = _this.val();
+                searchVal = _this.val();
             if (searchVal === null || searchVal === '') {
                 formObj.find('input:eq(' + index + ')').addClass('search-error');
                 error = false;
@@ -198,28 +198,28 @@
     });
 
     // Header push menu open
-    $(document).on('click', '.header-push-button .push-button', function () {
+    $(document).on('click', '.header-push-button .push-button', function() {
         $('html, body').toggleClass('show-menu');
     });
 
     // Header push menu close
-    $(document).on('click', '.close-menu', function () {
+    $(document).on('click', '.close-menu', function() {
         $('html, body').removeClass('show-menu');
         // Close left menu
         $('.sub-menu.show').collapse('hide');
     });
 
     // Close all left menu submenu
-    $(document).on('click', '#navbar-menu .navbar-toggler', function () {
+    $(document).on('click', '#navbar-menu .navbar-toggler', function() {
         // Close left menu
         $('.sub-menu.show').collapse('hide');
     });
 
     // Close on outside area
-    $(document).on('click', 'body', function (e) {
+    $(document).on('click', 'body', function(e) {
         // Close all menu
         if (!($(e.target).closest('.navbar-nav').length || $(e.target).closest('.navbar-full-screen-menu-inner').length)) {
-            setTimeout(function () {
+            setTimeout(function() {
                 $('.navbar-collapse.collapse').collapse('hide');
             }, 100);
         }
@@ -246,7 +246,7 @@
                 $('.header-cart').children('.dropdown-menu').removeClass('show');
             }
             // Close all dropdown
-            $('.navbar-nav .dropdown').each(function () {
+            $('.navbar-nav .dropdown').each(function() {
                 var _this = $(this);
                 _this.trigger('mouseleave');
                 _this.removeClass('show');
@@ -270,7 +270,7 @@
     });
 
     // Close on escape key
-    $(document).on('keydown', function (e) {
+    $(document).on('keydown', function(e) {
         if (e.keyCode === 27) {
             // Close all menu
             $('.navbar-collapse.collapse').collapse('hide');
@@ -286,9 +286,9 @@
     });
 
     // Header submenu on hover
-    $('.nav-item.submenu').on('mouseenter touchstart', function (e) {
+    $('.nav-item.submenu').on('mouseenter touchstart', function(e) {
         var _this = $(this),
-                colorAttr = $('header nav').attr('data-header-hover');
+            colorAttr = $('header nav').attr('data-header-hover');
         if (getWindowWidth() > menuBreakPoint) {
             if ($(e.target).siblings('.dropdown-menu').length) {
                 e.preventDefault();
@@ -299,13 +299,13 @@
                 $('header nav').addClass('submenu-dark').removeClass('submenu-light');
             }
         }
-    }).on('mouseleave', function (e) {
+    }).on('mouseleave', function(e) {
         var _this = $(this);
         $('header nav').removeClass('submenu-light').removeClass('submenu-dark');
     });
 
     // Open menu on hover
-    $('.dropdown').on('mouseenter touchstart', function (e) {
+    $('.dropdown').on('mouseenter touchstart', function(e) {
         var _this = $(this);
         _this.siblings('.dropdown').removeClass('open');
         _this.parents('.navbar-nav').siblings('.navbar-nav').find('.dropdown').removeClass('open');
@@ -328,7 +328,7 @@
                 $('header nav').removeClass('submenu-light').removeClass('submenu-dark');
             }
         }
-    }).on('mouseleave', function (e) {
+    }).on('mouseleave', function(e) {
         var _this = $(this);
         _this.removeClass('menu-left');
         _this.removeClass('open');
@@ -343,9 +343,9 @@
     } else {
         pgurl = pgurl.replace('#', '');
     }
-    $('.navbar-nav li a, .menu-item-list a').each(function () {
+    $('.navbar-nav li a, .menu-item-list a').each(function() {
         var _this = $(this),
-                aHref = _this.attr('href');
+            aHref = _this.attr('href');
         if (aHref === pgurl || aHref === pgurl + '.html') {
             _this.parent().addClass('active');
             _this.parents('li.dropdown').addClass('active');
@@ -366,7 +366,7 @@
             $('.inner-link').smoothScroll({
                 speed: 800,
                 offset: -59,
-                beforeScroll: function () {
+                beforeScroll: function() {
                     if ($('body').hasClass('left-menu-onepage')) {
                         $('.left-modern-header').collapse('hide');
                     }
@@ -389,7 +389,7 @@
                 $('.inner-link').smoothScroll({
                     speed: 800,
                     offset: offset,
-                    beforeScroll: function () {
+                    beforeScroll: function() {
                         if ($('body').hasClass('left-menu-onepage')) {
                             $('.left-modern-header').collapse('hide');
                         }
@@ -408,14 +408,14 @@
             $('.section-link').smoothScroll({
                 speed: 900,
                 offset: 1,
-                beforeScroll: function () {
+                beforeScroll: function() {
                     $('.navbar-collapse.collapse').collapse('hide');
                 }
             });
         }
     }
 
-    $('.modern-side-menu .menu-item').on('click', function () {
+    $('.modern-side-menu .menu-item').on('click', function() {
         $('.modern-side-menu .menu-item').removeClass('active');
         $(this).addClass('active');
     });
@@ -463,24 +463,24 @@
             simpleDropdown = element;
             linkDropdown = element.find('a.nav-link');
             var menuSpacing = 30,
-                    menuLeftPosition = element.offset().left,
-                    menuWidth = element.children('.dropdown-menu').outerWidth(),
-                    menuDropdownCSS = (windowWidth - menuSpacing) - (menuLeftPosition + menuWidth);
+                menuLeftPosition = element.offset().left,
+                menuWidth = element.children('.dropdown-menu').outerWidth(),
+                menuDropdownCSS = (windowWidth - menuSpacing) - (menuLeftPosition + menuWidth);
             if (menuDropdownCSS < 0) {
                 element.children('.dropdown-menu').css('left', menuDropdownCSS);
             }
         }
         if (element.parent().hasClass('dropdown-menu') && element.parents('.simple-dropdown')) {
             var dropdownWidth = 0,
-                    maxValueInArray = 0,
-                    lastValue = 0,
-                    multiDepth = 0;
+                maxValueInArray = 0,
+                lastValue = 0,
+                multiDepth = 0;
             dropdownWidth = element.outerWidth() - linkDropdown.outerWidth();
-            element.children('.dropdown-menu').each(function () {
+            element.children('.dropdown-menu').each(function() {
                 var arr = [];
                 if (element.find('li').hasClass('dropdown')) {
                     dropdownWidth = dropdownWidth + element.outerWidth();
-                    element.find('li.dropdown').each(function () {
+                    element.find('li.dropdown').each(function() {
                         var dropdownMenu = element.closest('.dropdown-menu');
                         arr.push(dropdownMenu.outerWidth());
                     });
@@ -496,10 +496,10 @@
             if (dropdownWidth > menuRightPosition) {
                 if (element.find('.dropdown-menu').length > 0) {
                     var menuTopPosition = element.position().top,
-                            submenuObj = element.find('.dropdown-menu'),
-                            submenuHeight = submenuObj.outerHeight(),
-                            totalHeight = menuTopPosition + submenuHeight + getHeaderHeight(),
-                            windowHeight = getWindowHeight();
+                        submenuObj = element.find('.dropdown-menu'),
+                        submenuHeight = submenuObj.outerHeight(),
+                        totalHeight = menuTopPosition + submenuHeight + getHeaderHeight(),
+                        windowHeight = getWindowHeight();
                     if (totalHeight > windowHeight) {
                         submenuObj.css('top', '-' + (totalHeight - windowHeight) + 'px');
                     }
@@ -512,35 +512,34 @@
     // Recalculate sticky kit
     function stickyKitRecalc() {
         if ($('.left-sidebar-wrapper').length) {
-            setTimeout(function () {
+            setTimeout(function() {
                 $('.left-sidebar-wrapper').trigger('sticky_kit:recalc');
             }, 500);
         }
     }
-    
-    // Without link
-    $('.nav-item  .nav-link').on('click',function(e) {
-    var submenuLenth = $(this).closest('.dropdown').find('.dropdown').length;
 
-    if ( $( window ).width() < 992 && $(this).closest('.dropdown').length > 0 ) {
-        var HasClass = $(this).closest('.nav-item').find( '.dropdown-menu' ).hasClass ('show');
-        if ($(this).closest('.nav-item').find( '.dropdown-menu' ).hasClass ('show')) {
-            $(this).closest('.nav-item').find( '.dropdown-menu' ).removeClass('show')
-            $(this).closest('.nav-item').find( '.dropdown-toggle' ).removeClass('show')
-        }
-        else{
-            $( '.navbar-nav' ).find( '.dropdown-menu' ).removeClass('show');
-            $( '.navbar-nav' ).find( '.dropdown-toggle' ).removeClass('show');
-             $(this).closest('.nav-item').find( '.dropdown-menu' ).addClass('show')
-             $(this).closest('.nav-item').find( '.dropdown-toggle' ).addClass('show')
-        }
+    // Without link
+    $('.nav-item  .nav-link').on('click', function(e) {
+        var submenuLenth = $(this).closest('.dropdown').find('.dropdown').length;
+
+        if ($(window).width() < 992 && $(this).closest('.dropdown').length > 0) {
+            var HasClass = $(this).closest('.nav-item').find('.dropdown-menu').hasClass('show');
+            if ($(this).closest('.nav-item').find('.dropdown-menu').hasClass('show')) {
+                $(this).closest('.nav-item').find('.dropdown-menu').removeClass('show')
+                $(this).closest('.nav-item').find('.dropdown-toggle').removeClass('show')
+            } else {
+                $('.navbar-nav').find('.dropdown-menu').removeClass('show');
+                $('.navbar-nav').find('.dropdown-toggle').removeClass('show');
+                $(this).closest('.nav-item').find('.dropdown-menu').addClass('show')
+                $(this).closest('.nav-item').find('.dropdown-toggle').addClass('show')
+            }
         }
     });
 
-    $(window).resize( function () {
-        if ( $( window ).width() > 991 ) {
-            $( '.navbar-nav' ).find( '.dropdown-menu' ).removeClass('show');
-            $( '.navbar-nav' ).find( '.dropdown-toggle' ).removeClass('show');
+    $(window).resize(function() {
+        if ($(window).width() > 991) {
+            $('.navbar-nav').find('.dropdown-menu').removeClass('show');
+            $('.navbar-nav').find('.dropdown-toggle').removeClass('show');
         }
     });
 
@@ -549,7 +548,7 @@
      ====================================== */
 
     if (typeof $.fn.mCustomScrollbar === 'function') {
-        $('[data-scroll-options]').each(function () {
+        $('[data-scroll-options]').each(function() {
             var _this = $(this);
             var scrollOptions = _this.data('scroll-options') || '{"theme": "dark"}';
 
@@ -567,9 +566,9 @@
 
     // Portfolio isotope filter
     if (typeof imagesLoaded === 'function') {
-        $('.portfolio-wrapper, .shop-wrapper').each(function () {
+        $('.portfolio-wrapper, .shop-wrapper').each(function() {
             var _this = $(this);
-            _this.imagesLoaded(function () {
+            _this.imagesLoaded(function() {
                 _this.removeClass('grid-loading');
                 if (typeof $.fn.isotope === 'function') {
                     var _thisIsotop = _this.isotope({
@@ -588,32 +587,32 @@
                 if (typeof $.fn.isotope === 'function') {
                     var currentPortfolioActive = $('.portfolio-filter > li.active > a').attr('data-filter');
                     if (currentPortfolioActive != '' && currentPortfolioActive != undefined) {
-                        _this.isotope({filter: currentPortfolioActive});
+                        _this.isotope({ filter: currentPortfolioActive });
                     }
                 }
             });
 
-            _this.on('arrangeComplete', function () {
+            _this.on('arrangeComplete', function() {
                 reInitSkrollr();
             });
 
-            $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
-                _this.isotope({transitionDuration: 0});
+            $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function(e) {
+                _this.isotope({ transitionDuration: 0 });
             });
         });
     }
 
-    $(document).on('click', '.portfolio-filter > li > a', function () {
+    $(document).on('click', '.portfolio-filter > li > a', function() {
         var _this = $(this),
-                parentSectionObj = _this.parents('section');
+            parentSectionObj = _this.parents('section');
         parentSectionObj.find('.portfolio-filter > li').removeClass('active');
         _this.parent().addClass('active');
         var selector = _this.attr('data-filter'),
-                portfolioFilter = parentSectionObj.find('.portfolio-wrapper');
+            portfolioFilter = parentSectionObj.find('.portfolio-wrapper');
 
         portfolioFilter.find('.grid-item[data-anime]').addClass('appear');
         if (typeof portfolioFilter.isotope === 'function') {
-            portfolioFilter.isotope({filter: selector});
+            portfolioFilter.isotope({ filter: selector });
         }
 
         if (parentSectionObj.length && $(parentSectionObj).hasClass('overlap-height')) {
@@ -629,29 +628,28 @@
             if (isotopeObjs[i].data('isotope')) {
                 isotopeObjs[i].isotope('layout');
             }
-        }
-        ;
+        };
     }
 
     // Horizontal portfolio 
     const ThreeDLetterMenuEffect = () => {
-        $(".threeD-letter-menu .menu-item").each(function () {
+        $(".threeD-letter-menu .menu-item").each(function() {
             let _self = this,
-                    MenuLink = _self.querySelector(".menu-item-text"),
-                    MenuText = MenuLink.querySelector("span"),
-                    imgHeight = _self.querySelector(".hover-reveal").clientHeight,
-                    imgWidth = _self.querySelector(".hover-reveal").clientWidth,
-                    windowHeight = window.innerHeight,
-                    windowWidth = window.innerWidth;
+                MenuLink = _self.querySelector(".menu-item-text"),
+                MenuText = MenuLink.querySelector("span"),
+                imgHeight = _self.querySelector(".hover-reveal").clientHeight,
+                imgWidth = _self.querySelector(".hover-reveal").clientWidth,
+                windowHeight = window.innerHeight,
+                windowWidth = window.innerWidth;
 
             MenuLink.innerHTML = `<span>${MenuText.innerHTML}</span><span class="clone">${MenuText.innerHTML}</span>`
 
-            MenuLink.querySelectorAll("span").forEach(function (item) {
+            MenuLink.querySelectorAll("span").forEach(function(item) {
                 item.setAttribute("data-splitting", true);
                 Splitting();
             });
 
-            _self.addEventListener("mouseenter", function () {
+            _self.addEventListener("mouseenter", function() {
                 anime({
                     targets: _self.querySelector(".hover-reveal"),
                     opacity: [0, 1],
@@ -672,7 +670,7 @@
                 })
             })
 
-            _self.addEventListener("mouseleave", function () {
+            _self.addEventListener("mouseleave", function() {
                 anime({
                     targets: _self.querySelector(".hover-reveal"),
                     opacity: 0,
@@ -694,9 +692,9 @@
             })
 
             if (typeof TweenLite !== "undefined") {
-                document.addEventListener("mousemove", function (e) {
+                document.addEventListener("mousemove", function(e) {
                     let posX = e.clientX + 20,
-                            posY = e.clientY + 20;
+                        posY = e.clientY + 20;
 
                     TweenLite.to(_self.querySelector(".hover-reveal"), .6, {
                         x: posX + imgWidth > windowWidth ? e.clientX - imgWidth : posX,
@@ -710,9 +708,9 @@
 
     // Minimal portfolio 
     const sticky_container = document.querySelector(".sticky-image-distortion-wrapper");
-    if (typeof (sticky_container) != 'undefined' && sticky_container != null) {
+    if (typeof(sticky_container) != 'undefined' && sticky_container != null) {
         let winsize;
-        const calcWinsize = () => winsize = {width: window.innerWidth, height: window.innerHeight};
+        const calcWinsize = () => winsize = { width: window.innerWidth, height: window.innerHeight };
         calcWinsize();
         window.addEventListener('resize', calcWinsize);
 
@@ -722,10 +720,10 @@
                     menu: document.querySelector('.sticky-image-distortion-wrapper nav.menu')
                 };
                 this.DOM.menuLinks = [...this.DOM.menu.querySelectorAll('.menu__link')];
-                this.mousePos = {x: winsize.width / 2, y: winsize.height / 2};
+                this.mousePos = { x: winsize.width / 2, y: winsize.height / 2 };
                 this.lastMousePos = {
-                    translation: {x: winsize.width / 2, y: winsize.height / 2},
-                    displacement: {x: 0, y: 0}
+                    translation: { x: winsize.width / 2, y: winsize.height / 2 },
+                    displacement: { x: 0, y: 0 }
                 };
                 this.dmScale = 0;
                 this.current = -1;
@@ -756,7 +754,7 @@
                         item.classList.add("active");
                         if (typeof TweenMax !== 'undefined' && typeof TweenMax !== null) {
                             if (item !== active_item) {
-                                TweenMax.fromTo(displaceMentEl, 1.2, {attr: {scale: 50}}, {attr: {scale: 0.3}});
+                                TweenMax.fromTo(displaceMentEl, 1.2, { attr: { scale: 50 } }, { attr: { scale: 0.3 } });
                             }
                         }
                         document.body.style.setProperty('--body-bgcolor', bgColor)
@@ -782,9 +780,9 @@
 
     // Blog isotope filter 
     if (typeof imagesLoaded === 'function') {
-        $('.blog-wrapper').each(function () {
+        $('.blog-wrapper').each(function() {
             var _this = $(this);
-            _this.imagesLoaded(function () {
+            _this.imagesLoaded(function() {
                 _this.removeClass('grid-loading');
                 if (typeof $.fn.isotope === 'function') {
                     _this.isotope({
@@ -800,28 +798,28 @@
                 isotopeObjs.push(_this);
                 var currentBlogActive = $('.blog-filter > li.active > a').attr('data-filter');
                 if (currentBlogActive != '' && currentBlogActive != undefined) {
-                    _this.isotope({filter: currentBlogActive});
+                    _this.isotope({ filter: currentBlogActive });
                 }
             });
         });
     }
 
-    $(document).on('click', '.blog-filter > li > a', function () {
+    $(document).on('click', '.blog-filter > li > a', function() {
         var _this = $(this),
-                parentSectionObj = _this.parents('section');
+            parentSectionObj = _this.parents('section');
         parentSectionObj.find('.blog-filter > li').removeClass('active');
         _this.parent().addClass('active');
         var selector = _this.attr('data-filter'),
-                blogFilter = parentSectionObj.find('.blog-wrapper');
+            blogFilter = parentSectionObj.find('.blog-wrapper');
         blogFilter.find('.grid-item[data-anime]').addClass('appear');
-        blogFilter.isotope({filter: selector});
+        blogFilter.isotope({ filter: selector });
         return false;
     });
 
     // blog hover box
-    $('.box-hover').on('mouseenter', function (e) {
+    $('.box-hover').on('mouseenter', function(e) {
         $(this).find('.hover-text').slideDown(400);
-    }).on('mouseleave', function (e) {
+    }).on('mouseleave', function(e) {
         $(this).find('.hover-text').slideUp(400);
     });
 
@@ -831,9 +829,9 @@
 
     // Image gallery isotope filter 
     if (typeof imagesLoaded === 'function') {
-        $('.gallery-wrapper').each(function () {
+        $('.gallery-wrapper').each(function() {
             var _this = $(this);
-            _this.imagesLoaded(function () {
+            _this.imagesLoaded(function() {
                 _this.removeClass('grid-loading');
                 if (typeof $.fn.isotope === 'function') {
                     _this.isotope({
@@ -854,19 +852,19 @@
     // Group gallery light box
     if (typeof $.fn.magnificPopup === 'function') {
         var lightboxgallerygroups = {};
-        $('.portfolio-box [data-group], .gallery-box [data-group]').each(function () {
+        $('.portfolio-box [data-group], .gallery-box [data-group]').each(function() {
             var id = $(this).attr('data-group');
             if (!lightboxgallerygroups[id]) {
                 lightboxgallerygroups[id] = [];
             }
             lightboxgallerygroups[id].push(this);
         });
-        $.each(lightboxgallerygroups, function () {
+        $.each(lightboxgallerygroups, function() {
             $(this).magnificPopup({
                 type: 'image',
                 closeOnContentClick: true,
                 closeBtnInside: false,
-                gallery: {enabled: true}
+                gallery: { enabled: true }
             });
         });
     }
@@ -876,12 +874,12 @@
      ====================================== */
     if (typeof imagesLoaded === 'function') {
         if ($('.justified-gallery').length) {
-            $('.justified-gallery').each(function () {
+            $('.justified-gallery').each(function() {
                 var _this = $(this),
-                        justifiedOptions = _this.attr('data-justified-options') || '{ "rowHeight": 400, "maxRowHeight": false, "captions": true, "margins": 10, "waitThumbnailsLoad": true }';
+                    justifiedOptions = _this.attr('data-justified-options') || '{ "rowHeight": 400, "maxRowHeight": false, "captions": true, "margins": 10, "waitThumbnailsLoad": true }';
                 if (typeof $.fn.justifiedGallery !== 'undefined') {
-                    if (typeof (justifiedOptions) !== 'undefined' && justifiedOptions !== null) {
-                        _this.imagesLoaded(function () {
+                    if (typeof(justifiedOptions) !== 'undefined' && justifiedOptions !== null) {
+                        _this.imagesLoaded(function() {
                             justifiedOptions = $.parseJSON(justifiedOptions);
                             _this.justifiedGallery(justifiedOptions);
                         });
@@ -895,15 +893,15 @@
      Accordion
      ====================================== */
 
-    $('.accordion').each(function () {
+    $('.accordion').each(function() {
         var _this = $(this),
-                activeIconClass = _this.attr('data-active-icon') || '',
-                inactiveIconClass = _this.attr('data-inactive-icon') || '';
-        $('.collapse', this).on('show.bs.collapse', function () {
+            activeIconClass = _this.attr('data-active-icon') || '',
+            inactiveIconClass = _this.attr('data-inactive-icon') || '';
+        $('.collapse', this).on('show.bs.collapse', function() {
             var id = $(this).attr('id');
             $('a[data-bs-target="#' + id + '"]').closest('.accordion-header').parent('.accordion-item').addClass('active-accordion');
             $('a[data-bs-target="#' + id + '"] i').addClass(activeIconClass).removeClass(inactiveIconClass);
-        }).on('hide.bs.collapse', function () {
+        }).on('hide.bs.collapse', function() {
             var id = $(this).attr('id');
             $('a[data-bs-target="#' + id + '"]').closest('.accordion-header').parent('.accordion-item').removeClass('active-accordion');
             $('a[data-bs-target="#' + id + '"] i').addClass(inactiveIconClass).removeClass(activeIconClass);
@@ -911,7 +909,7 @@
     });
 
     // Accordion on checkout page
-    $('.checkout-accordion label input').on('click', function (e) {
+    $('.checkout-accordion label input').on('click', function(e) {
         var collapseId = $(this).parent().find('a').attr('href');
         if ($(this).prop("checked")) {
             $(collapseId).collapse('show');
@@ -925,14 +923,15 @@
      ====================================== */
 
     if ($('.progress-bar').length) {
-        $(document).on('appear', '.progress-bar', function (e) {
+        $(document).on('appear', '.progress-bar', function(e) {
             if (!$(this).hasClass('appear')) {
                 $(this).addClass('appear');
-                var total = $(this).attr('aria-valuenow'), delay = 300;
-                $(this).animate({'width': total + '%'}, {
+                var total = $(this).attr('aria-valuenow'),
+                    delay = 300;
+                $(this).animate({ 'width': total + '%' }, {
                     duration: delay,
                     easing: "swing",
-                    progress: function (animation, progress, msRemaining) {
+                    progress: function(animation, progress, msRemaining) {
                         var counter = parseInt(total * progress);
                         $(this).find('span').html(counter + '%');
                     }
@@ -941,8 +940,8 @@
         });
     }
 
-    $('[data-tab="review-tab"]').on('shown.bs.tab', function (e) {
-        $('.progress-bar').each(function () {
+    $('[data-tab="review-tab"]').on('shown.bs.tab', function(e) {
+        $('.progress-bar').each(function() {
             $(this).appear().trigger('resize');
         });
     });
@@ -955,14 +954,14 @@
     if ($('.pie-chart-style-01').length) {
         if (typeof $.fn.easyPieChart === 'function') {
             var color1, color2;
-            $(document.body).on('appear', '.pie-chart-style-01', function (e) {
+            $(document.body).on('appear', '.pie-chart-style-01', function(e) {
                 $('.pie-chart-style-01').easyPieChart({
                     trackColor: '#232323',
                     scaleColor: "",
                     lineCap: 'round',
                     lineWidth: 10,
                     size: 180,
-                    barColor: function () {
+                    barColor: function() {
                         color1 = $(this.el).attr('data-start-color') || $(this.el).attr('data-bar-color') || "#000";
                         color2 = $(this.el).attr('data-end-color') || $(this.el).attr('data-bar-color') || "#000";
                         var ctx = this.renderer.getCtx();
@@ -976,7 +975,7 @@
                         duration: 2000,
                         enabled: true
                     },
-                    onStep: function (from, to, percent) {
+                    onStep: function(from, to, percent) {
                         $(this.el).find('.percent').text(Math.round(percent) + '%');
                     }
                 });
@@ -989,11 +988,12 @@
      ====================================== */
 
     if (!isMobile) {
-        $(document).on('mousemove', '.mousetip-wrapper', function (e) {
+        $(document).on('mousemove', '.mousetip-wrapper', function(e) {
             var mouseX = e.pageX - $(this).offset().left + 20;
             var mouseY = e.pageY - $(this).offset().top + 20;
             $(this).find('.caption').show().css({
-                top: mouseY, left: mouseX
+                top: mouseY,
+                left: mouseX
             });
         });
     }
@@ -1003,11 +1003,11 @@
      ====================================== */
 
     // Vertical counter
-    $('.vertical-counter').each(function () {
+    $('.vertical-counter').each(function() {
         var _this = $(this),
-                counterValue = _this.attr('data-to'),
-                individualValue = counterValue.toString().split(''),
-                valueLength = counterValue.length;
+            counterValue = _this.attr('data-to'),
+            individualValue = counterValue.toString().split(''),
+            valueLength = counterValue.length;
 
         // Adding the div.vertical-counter-number in div.counter multiple(valueLength) times
         for (var i = 0; i < valueLength; i++) {
@@ -1015,7 +1015,7 @@
         }
 
         // Adding the individual data-to in each div.vertical-counter-number
-        _this.find('.vertical-counter-number').each(function (index) {
+        _this.find('.vertical-counter-number').each(function(index) {
             $(this).attr('data-to', individualValue[index]);
         });
     });
@@ -1024,9 +1024,9 @@
     if ($('.vertical-counter').length) {
 
         function calculateHeight() {
-            $('.vertical-counter').each(function () {
+            $('.vertical-counter').each(function() {
                 var _this = $(this),
-                        divHeight = _this.find('.vertical-counter-number').find('li').height();
+                    divHeight = _this.find('.vertical-counter-number').find('li').height();
 
                 $(this).height(divHeight);
             });
@@ -1034,18 +1034,18 @@
 
         calculateHeight();
 
-        $(window).resize(function () {
+        $(window).resize(function() {
             calculateHeight();
         })
 
-        $(document).on('appear', '.vertical-counter', function (e) {
+        $(document).on('appear', '.vertical-counter', function(e) {
             if (!$(this).hasClass('appear')) {
                 $(this).addClass('appear');
 
                 if ($(window).scrollTop() + getWindowHeight() >= $('.vertical-counter').offset().top) {
-                    $(this).find('.vertical-counter-number').each(function () {
+                    $(this).find('.vertical-counter-number').each(function() {
                         var _this = $(this),
-                                value = _this.attr('data-to');
+                            value = _this.attr('data-to');
                         if (value <= 9) {
                             anime({
                                 targets: this.querySelector('ul'),
@@ -1058,31 +1058,31 @@
                 }
             }
         });
-        $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function(e) {
             let activeTabPane = $(`${$(this).attr('href')}`);
 
-            activeTabPane.find('.vertical-counter').each(function () {
+            activeTabPane.find('.vertical-counter').each(function() {
                 var _this = $(this),
-                        value = _this.attr('data-to'),
-                        divHeight = _this.find('li').height();
+                    value = _this.attr('data-to'),
+                    divHeight = _this.find('li').height();
                 _this.height(divHeight);
 
                 if (value <= 9) {
-                    _this.find('ul').css({'transform': 'translateY(-' + value * 10 + '%)'});
+                    _this.find('ul').css({ 'transform': 'translateY(-' + value * 10 + '%)' });
                 }
             });
         });
     }
 
-    $('[data-tab="counter"]').on('shown.bs.tab', function (e) {
-        $('.vertical-counter').each(function () {
+    $('[data-tab="counter"]').on('shown.bs.tab', function(e) {
+        $('.vertical-counter').each(function() {
             $(this).appear().trigger('resize');
         });
     });
 
     // Counter number reset on jQuery appear
     if (typeof $.fn.countTo === 'function' && $('.counter').length) {
-        $(document).on('appear', '.counter', function (e) {
+        $(document).on('appear', '.counter', function(e) {
             var _this = $(this);
             if (!_this.hasClass('appear')) {
                 var options = _this.data('countToOptions') || {};
@@ -1094,7 +1094,7 @@
 
     // Counter
     function animateCounters() {
-        $('.counter').each(function (options) {
+        $('.counter').each(function(options) {
             var _this = $(this);
             options = $.extend({}, options || {}, _this.data('countToOptions') || {});
             if (typeof $.fn.countTo === 'function') {
@@ -1108,23 +1108,23 @@
      ====================================== */
 
     function slideboxstyle() {
-        $('.sliding-box').each(function (index, value) {
+        $('.sliding-box').each(function(index, value) {
             var valueObj = $(value),
-                    totalWidth = valueObj.outerWidth(),
-                    slidingLength = valueObj.find('.sliding-box-item').length,
-                    devideRightPadding = parseInt(valueObj.css('padding-right')) / slidingLength,
-                    devideLeftPadding = parseInt(valueObj.css('padding-left')) / slidingLength,
-                    usageWidth = (slidingLength * 30) + 30 + devideRightPadding + devideLeftPadding,
-                    useWidth = totalWidth - usageWidth,
-                    devideLength = slidingLength + 1,
-                    devideWidth = (useWidth / devideLength),
-                    activeWidth = devideWidth * 2;
+                totalWidth = valueObj.outerWidth(),
+                slidingLength = valueObj.find('.sliding-box-item').length,
+                devideRightPadding = parseInt(valueObj.css('padding-right')) / slidingLength,
+                devideLeftPadding = parseInt(valueObj.css('padding-left')) / slidingLength,
+                usageWidth = (slidingLength * 30) + 30 + devideRightPadding + devideLeftPadding,
+                useWidth = totalWidth - usageWidth,
+                devideLength = slidingLength + 1,
+                devideWidth = (useWidth / devideLength),
+                activeWidth = devideWidth * 2;
 
             valueObj.find('.sliding-box-item, .sliding-box-img, .sliding-box-item .sliding-box-content').css('width', devideWidth);
             valueObj.find('.sliding-box-item .sliding-box-content').css('left', devideWidth);
             valueObj.find('.sliding-box-item.active').css('width', activeWidth);
 
-            $(document).on('mouseenter', '.sliding-box .sliding-box-item', function () {
+            $(document).on('mouseenter', '.sliding-box .sliding-box-item', function() {
                 $(this).siblings().removeClass('active');
                 $(this).addClass('active');
                 valueObj.find('.sliding-box-item, .sliding-box-img, .sliding-box-item .sliding-box-content').css('width', devideWidth);
@@ -1140,13 +1140,13 @@
 
     // Team style 01
     function setSpaceInTeamStyle() {
-        $('.team-style-01').each(function () {
+        $('.team-style-01').each(function() {
             let _this = $(this),
-                    figure = _this.find('figure'),
-                    figcaption = _this.find('figcaption');
+                figure = _this.find('figure'),
+                figcaption = _this.find('figcaption');
 
-            setTimeout(function () {
-                figure.css({'padding-bottom': figcaption.outerHeight()});
+            setTimeout(function() {
+                figure.css({ 'padding-bottom': figcaption.outerHeight() });
             }, 200);
         });
     }
@@ -1157,13 +1157,13 @@
 
     // Interactive banner style 02
     function setSpaceInInteractiveBannerStyle() {
-        $('.interactive-banner-style-02').each(function () {
+        $('.interactive-banner-style-02').each(function() {
             let _this = $(this),
-                    figure = _this.find('figure'),
-                    figcaption = _this.find('figcaption');
+                figure = _this.find('figure'),
+                figcaption = _this.find('figcaption');
 
-            setTimeout(function () {
-                figure.css({'padding-bottom': figcaption.outerHeight()});
+            setTimeout(function() {
+                figure.css({ 'padding-bottom': figcaption.outerHeight() });
             }, 500);
         });
     }
@@ -1173,7 +1173,7 @@
      ====================================== */
 
     // Video player in background
-    $(document).on('click', '.html-video-play', function () {
+    $(document).on('click', '.html-video-play', function() {
         var $videoBg = $(this).parents('section').find('.video-bg');
         if ($(this).is('[playing]') === false) {
             $videoBg.trigger('play');
@@ -1197,11 +1197,11 @@
      ====================================== */
 
     if ($.fn.countdown !== undefined && $.fn.countdown !== null) {
-        $('.countdown').each(function () {
+        $('.countdown').each(function() {
             var _this = $(this);
-            _this.countdown(_this.attr("data-enddate")).on('update.countdown', function (event) {
+            _this.countdown(_this.attr("data-enddate")).on('update.countdown', function(event) {
                 _this.html(event.strftime('' + '<div class="counter-container"><div class="countdown-box first"><div class="number">%-D</div><span>Days</span></div>' + '<div class="countdown-box"><div class="number">%H</div><span>Hours</span></div>' + '<div class="countdown-box"><div class="number">%M</div><span>Minutes</span></div>' + '<div class="countdown-box last"><div class="number">%S</div><span>Seconds</span></div></div>'));
-            }).on('finish.countdown', function (event) {
+            }).on('finish.countdown', function(event) {
                 _this.html(event.strftime('' + '<div class="counter-container"><div class="countdown-box first" data-number="00"><div class="number">00</div><span>Days</span></div>' + '<div class="countdown-box"><div class="number">00</div><span>Hours</span></div>' + '<div class="countdown-box"><div class="number">00</div><span>Minutes</span></div>' + '<div class="countdown-box last"><div class="number">00</div><span>Seconds</span></div></div>'));
             });
         });
@@ -1235,7 +1235,7 @@
 
         if (options.el === "lines") {
             function lineSplitting() {
-                const lines = Splitting({target: target, by: 'lines'});
+                const lines = Splitting({ target: target, by: 'lines' });
                 const line = lines[0].lines.map(item => item.map(i => i.innerHTML).join(" "));
                 target.innerHTML = line.map(item => `<span class="d-inline-flex">${item}</span>`).join(' ');
             }
@@ -1246,7 +1246,7 @@
 
         if (options.el === "words") {
             function lineSplitting() {
-                const words = Splitting({target: target, by: 'words'});
+                const words = Splitting({ target: target, by: 'words' });
                 const word = words[0].words.join(" ");
             }
             lineSplitting();
@@ -1265,8 +1265,8 @@
         anime_animation.add({
             targets: child,
             ...options,
-            delay: anime.stagger(staggerValue, {start: delay}),
-            complete: function () {
+            delay: anime.stagger(staggerValue, { start: delay }),
+            complete: function() {
                 if (options.el) {
                     target.classList.add('anime-child');
                     target.classList.add('anime-complete');
@@ -1301,7 +1301,7 @@
     }
 
     const $dataAnimeElements = $('[data-anime]:not(.swiper [data-anime])');
-    $dataAnimeElements.each(function () {
+    $dataAnimeElements.each(function() {
         const $self = $(this);
         const animeOptions = $self.data('anime');
 
@@ -1309,7 +1309,7 @@
             try {
                 const effect = animeOptions.effect && animeOptions.effect.toLowerCase();
 
-                $self.on('appear', function () {
+                $self.on('appear', function() {
                     if (!$self.hasClass('appear')) {
                         $self.addClass('appear');
 
@@ -1336,8 +1336,8 @@
     // Anime text revealer js
     const slideAnimation = (target, options) => {
         let duration = options.speed ? options.speed : 100,
-                direction = options.direction ? options.direction : "lr",
-                delay = options.delay ? options.delay : 0;
+            direction = options.direction ? options.direction : "lr",
+            delay = options.delay ? options.delay : 0;
 
         target.style.position = 'relative';
 
@@ -1372,7 +1372,7 @@
             duration: duration + 500,
             easing: 'easeInOutCubic',
             delay: delay,
-            complete: function () {
+            complete: function() {
                 if (direction === 'lr') {
                     tmp.style.WebkitTransformOrigin = tmp.style.transformOrigin = '100% 50%';
                 } else if (direction === 'tb') {
@@ -1389,7 +1389,7 @@
                     easing: 'easeInOutCubic',
                     scaleX: (direction === 'lr' || direction === 'rl') ? [1, 0] : [1, 1],
                     scaleY: (direction === 'tb' || direction === 'bt') ? [1, 0] : [1, 1],
-                    complete: function () {
+                    complete: function() {
                         target.removeChild(tmp);
                         if (typeof callback === 'function') {
                             callback();
@@ -1400,7 +1400,7 @@
         }).add({
             targets: target.querySelector('*'),
             easing: 'easeOutQuint',
-            delay: direction === 'lr' ? anime.stagger(duration, {start: 1000}) : anime.stagger(-duration, {start: 1000}),
+            delay: direction === 'lr' ? anime.stagger(duration, { start: 1000 }) : anime.stagger(-duration, { start: 1000 }),
             opacity: [0, 1]
         }, "-=900");
     }
@@ -1412,12 +1412,12 @@
     // Curved text effect
     const curvedTextAnimation = (target, options) => {
         let duration = options.duration ? (options.duration <= 2000 ? 2000 : options.duration) : 2000,
-                content = options.string,
-                curveText = anime.timeline();
+            content = options.string,
+            curveText = anime.timeline();
 
         const lineEq = (y2, y1, x2, x1, currentVal) => {
             var m = (y2 - y1) / (x2 - x1),
-                    b = y1 - m * x1;
+                b = y1 - m * x1;
             return m * currentVal + b;
         }
 
@@ -1426,20 +1426,20 @@
             duration: 800,
             easing: 'easeOutElastic',
             opacity: 1,
-            translateY: function (el, index) {
+            translateY: function(el, index) {
                 var p = el.parentNode,
-                        lastElOffW = p.lastElementChild.offsetWidth,
-                        firstElOffL = p.firstElementChild.offsetLeft,
-                        w = p.offsetWidth - lastElOffW - firstElOffL - (p.offsetWidth - lastElOffW - p.lastElementChild.offsetLeft),
-                        tyVal = lineEq(0, 100, firstElOffL + w / 2, firstElOffL, el.offsetLeft);
+                    lastElOffW = p.lastElementChild.offsetWidth,
+                    firstElOffL = p.firstElementChild.offsetLeft,
+                    w = p.offsetWidth - lastElOffW - firstElOffL - (p.offsetWidth - lastElOffW - p.lastElementChild.offsetLeft),
+                    tyVal = lineEq(0, 100, firstElOffL + w / 2, firstElOffL, el.offsetLeft);
                 return [Math.abs(tyVal) + '%', '0%'];
             },
-            rotateZ: function (el, index) {
+            rotateZ: function(el, index) {
                 var p = el.parentNode,
-                        lastElOffW = p.lastElementChild.offsetWidth,
-                        firstElOffL = p.firstElementChild.offsetLeft,
-                        w = p.offsetWidth - lastElOffW - p.firstElementChild.offsetLeft - (p.offsetWidth - lastElOffW - p.lastElementChild.offsetLeft),
-                        rz = lineEq(90, -90, firstElOffL + w, firstElOffL, el.offsetLeft);
+                    lastElOffW = p.lastElementChild.offsetWidth,
+                    firstElOffL = p.firstElementChild.offsetLeft,
+                    w = p.offsetWidth - lastElOffW - p.firstElementChild.offsetLeft - (p.offsetWidth - lastElOffW - p.lastElementChild.offsetLeft),
+                    rz = lineEq(90, -90, firstElOffL + w, firstElOffL, el.offsetLeft);
                 return [rz, 0];
             }
         }).add({
@@ -1447,20 +1447,20 @@
             duration: 1000,
             easing: 'easeInExpo',
             opacity: content.length > 1 ? 0 : 1,
-            translateY: function (el, index) {
+            translateY: function(el, index) {
                 var p = el.parentNode,
-                        lastElOffW = p.lastElementChild.offsetWidth,
-                        firstElOffL = p.firstElementChild.offsetLeft,
-                        w = p.offsetWidth - lastElOffW - firstElOffL - (p.offsetWidth - lastElOffW - p.lastElementChild.offsetLeft),
-                        tyVal = lineEq(0, 100, firstElOffL + w / 2, firstElOffL, el.offsetLeft);
+                    lastElOffW = p.lastElementChild.offsetWidth,
+                    firstElOffL = p.firstElementChild.offsetLeft,
+                    w = p.offsetWidth - lastElOffW - firstElOffL - (p.offsetWidth - lastElOffW - p.lastElementChild.offsetLeft),
+                    tyVal = lineEq(0, 100, firstElOffL + w / 2, firstElOffL, el.offsetLeft);
                 return content.length > 1 ? [-Math.abs(tyVal) + '%'] : [Math.abs(tyVal) + '%', '0%'];
             },
-            rotateZ: function (el, index) {
+            rotateZ: function(el, index) {
                 var p = el.parentNode,
-                        lastElOffW = p.lastElementChild.offsetWidth,
-                        firstElOffL = p.firstElementChild.offsetLeft,
-                        w = p.offsetWidth - lastElOffW - p.firstElementChild.offsetLeft - (p.offsetWidth - lastElOffW - p.lastElementChild.offsetLeft),
-                        rz = lineEq(-90, 90, firstElOffL + w, firstElOffL, el.offsetLeft);
+                    lastElOffW = p.lastElementChild.offsetWidth,
+                    firstElOffL = p.firstElementChild.offsetLeft,
+                    w = p.offsetWidth - lastElOffW - p.firstElementChild.offsetLeft - (p.offsetWidth - lastElOffW - p.lastElementChild.offsetLeft),
+                    rz = lineEq(-90, 90, firstElOffL + w, firstElOffL, el.offsetLeft);
                 return content.length > 1 ? [rz] : [rz, 0];
             }
         }, duration - 1500);
@@ -1469,7 +1469,7 @@
     // Slide text effect
     const slideTextAnimation = (target, options) => {
         let current_anime_text = target.querySelectorAll('.anime-text')[0],
-                speed = options.speed ? options.speed : 100;
+            speed = options.speed ? options.speed : 100;
 
         current_anime_text.style.position = 'relative';
 
@@ -1494,7 +1494,7 @@
             scaleX: [0, 1],
             duration: speed + 500,
             easing: 'easeInOutCubic',
-            complete: function () {
+            complete: function() {
                 if (options.direction === 'left') {
                     tmp.style.WebkitTransformOrigin = tmp.style.transformOrigin = '0% 50%';
                 } else {
@@ -1506,7 +1506,7 @@
                     duration: speed + 500,
                     easing: 'easeInOutCubic',
                     scaleX: [1, 0],
-                    complete: function () {
+                    complete: function() {
                         current_anime_text.removeChild(tmp);
                         if (typeof callback === 'function') {
                             callback();
@@ -1517,7 +1517,7 @@
         }).add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
             easing: 'easeOutQuint',
-            delay: options.direction === 'left' ? anime.stagger(speed, {start: 1000}) : anime.stagger(-speed, {start: 1000}),
+            delay: options.direction === 'left' ? anime.stagger(speed, { start: 1000 }) : anime.stagger(-speed, { start: 1000 }),
             opacity: [0, 1],
             translateX: options.direction === 'left' ? [100, 0] : [-100, 0]
         }, "-=600");
@@ -1526,10 +1526,10 @@
     // Wave text effect
     const waveTextAnimation = (target, options) => {
         let duration = options.duration ? options.duration : 3000,
-                direction = options.direction,
-                content = options.string,
-                speed = options.speed,
-                waveText = anime.timeline();
+            direction = options.direction,
+            content = options.string,
+            speed = options.speed,
+            waveText = anime.timeline();
 
         waveText.add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
@@ -1540,17 +1540,17 @@
             targets: target.querySelectorAll('.anime-text .word .char'),
             opacity: content.length > 1 ? [1, 0] : [1, 1],
             translateY: content.length > 1 ? (direction === 'down' ? [0, 20] : [0, -20]) : [0, 0],
-            delay: anime.stagger(speed ? speed : 50, {start: duration - 1500})
+            delay: anime.stagger(speed ? speed : 50, { start: duration - 1500 })
         });
     }
 
     // Smooth wave text effect
     const smoothWaveTextAnimation = (target, options) => {
         let duration = options.duration ? options.duration : 3000,
-                direction = options.direction,
-                content = options.string,
-                speed = options.speed,
-                smoothWaveText = anime.timeline();
+            direction = options.direction,
+            content = options.string,
+            speed = options.speed,
+            smoothWaveText = anime.timeline();
 
         smoothWaveText.add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
@@ -1558,23 +1558,23 @@
             translateY: direction === 'down' ? [-50, 0] : [50, 0],
             duration: 500,
             easing: 'easeOutQuad',
-            delay: anime.stagger(speed ? speed : 40, {direction: 'reverse'}),
+            delay: anime.stagger(speed ? speed : 40, { direction: 'reverse' }),
         }).add({
             targets: target.querySelectorAll('.anime-text .word .char'),
             opacity: content.length > 1 ? [1, 0] : [1, 1],
             translateY: content.length > 1 ? (direction === 'down' ? 50 : -50) : 0,
             duration: 500,
             easing: 'easeOutQuad',
-            delay: anime.stagger(speed ? speed : 40, {start: duration - 1000, direction: 'reverse'})
+            delay: anime.stagger(speed ? speed : 40, { start: duration - 1000, direction: 'reverse' })
         });
     }
 
     // Rotate text effect
     const rotateTextAnimation = (target, options) => {
         let duration = options.duration ? options.duration : 3000,
-                content = options.string,
-                speed = options.speed,
-                rotateText = anime.timeline();
+            content = options.string,
+            speed = options.speed,
+            rotateText = anime.timeline();
 
         rotateText.add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
@@ -1588,7 +1588,7 @@
             opacity: content.length > 1 ? 0 : 1,
             rotateX: content.length > 1 ? [0, 70] : [0, 0],
             duration: 150,
-            delay: anime.stagger(speed ? speed : 50, {start: duration - 1500}),
+            delay: anime.stagger(speed ? speed : 50, { start: duration - 1500 }),
             easing: "linear"
         });
     }
@@ -1596,10 +1596,10 @@
     // Jump text effect
     const jumpTextAnimation = (target, options) => {
         let duration = options.duration ? options.duration : 3000,
-                content = options.string,
-                speed = options.speed,
-                delay = options.delay,
-                movingLetter9 = anime.timeline();
+            content = options.string,
+            speed = options.speed,
+            delay = options.delay,
+            movingLetter9 = anime.timeline();
 
         movingLetter9.add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
@@ -1607,7 +1607,7 @@
             duration: 1500,
             elasticity: 600,
             transformOrigin: '50% 100%',
-            delay: anime.stagger(speed ? speed : 45, {start: delay})
+            delay: anime.stagger(speed ? speed : 45, { start: delay })
         }).add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
             opacity: content.length > 1 ? 0 : 1,
@@ -1621,9 +1621,9 @@
     // Zoom text effect
     const zoomTextAnimation = (target, options) => {
         let duration = options.duration ? options.duration : 3000,
-                content = options.string,
-                speed = options.speed,
-                movingLetter2 = anime.timeline();
+            content = options.string,
+            speed = options.speed,
+            movingLetter2 = anime.timeline();
 
         movingLetter2.add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
@@ -1645,10 +1645,10 @@
     // Rubber band text effect
     const rubberbandTextAnimation = (target, options) => {
         let duration = options.duration ? options.duration : 3000,
-                content = options.string,
-                speed = options.speed,
-                direction = options.direction,
-                rubberband = anime.timeline();
+            content = options.string,
+            speed = options.speed,
+            direction = options.direction,
+            rubberband = anime.timeline();
 
         rubberband.add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
@@ -1657,23 +1657,23 @@
             opacity: [0, 1],
             easing: "easeOutExpo",
             duration: 1200,
-            delay: anime.stagger(speed ? speed : 75, {direction: direction === "right" ? 'reverse' : 'normal'})
+            delay: anime.stagger(speed ? speed : 75, { direction: direction === "right" ? 'reverse' : 'normal' })
         }).add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
             translateX: content.length > 1 ? (direction === "left" ? -40 : 40) : 0,
             opacity: content.length > 1 ? 0 : 1,
             easing: "easeInExpo",
             duration: 500,
-            delay: anime.stagger(speed ? speed : 75, {start: duration - 2500, direction: direction === "right" ? 'reverse' : 'normal'})
+            delay: anime.stagger(speed ? speed : 75, { start: duration - 2500, direction: direction === "right" ? 'reverse' : 'normal' })
         });
     }
 
     // Fade text effect
     const fadeTextAnimation = (target, options) => {
         let duration = options.duration ? options.duration : 3000,
-                content = options.string,
-                speed = options.speed,
-                fade = anime.timeline();
+            content = options.string,
+            speed = options.speed,
+            fade = anime.timeline();
 
         fade.add({
             targets: target.querySelectorAll('.anime-text > .word > .char'),
@@ -1687,17 +1687,17 @@
             translateY: content.length > 1 ? [0, -100] : [0, 0],
             opacity: content.length > 1 ? [1, 0] : [1, 1],
             easing: "easeInExpo",
-            delay: anime.stagger(speed ? speed : 40, {start: duration - 3000})
+            delay: anime.stagger(speed ? speed : 40, { start: duration - 3000 })
         });
     }
 
     // Fancy text 
     function FancyTextDefault(item, ftOptions) {
         let text_effect = ftOptions.effect,
-                duration = ftOptions.duration ? ftOptions.duration : 3000,
-                content = ftOptions.string,
-                speed = ftOptions.speed,
-                delay = ftOptions.delay;
+            duration = ftOptions.duration ? ftOptions.duration : 3000,
+            content = ftOptions.string,
+            speed = ftOptions.speed,
+            delay = ftOptions.delay;
 
         if (content) {
             item.innerHTML = `<span class="anime-text">${content[0]}</span>`;
@@ -1749,14 +1749,14 @@
                     anime({
                         targets: item.querySelectorAll('.anime-text > .word > .char'),
                         ...ftOptions,
-                        delay: anime.stagger(speed ? speed : 0, {start: delay ? delay : 0})
+                        delay: anime.stagger(speed ? speed : 0, { start: delay ? delay : 0 })
                     })
                 }
             }
 
             if (content.length > 1) {
                 let counter = 1;
-                setInterval(function () {
+                setInterval(function() {
                     let new_el = document.createElement('span');
                     new_el.classList.add('anime-text');
                     new_el.innerHTML = content[counter];
@@ -1814,7 +1814,7 @@
                         anime({
                             targets: item.querySelectorAll('.anime-text > .word > .char'),
                             ...ftOptions,
-                            delay: anime.stagger(speed ? speed : 0, {start: delay ? delay : 0})
+                            delay: anime.stagger(speed ? speed : 0, { start: delay ? delay : 0 })
                         });
                     }
                 }, duration);
@@ -1822,14 +1822,14 @@
         }
     }
 
-    $('[data-fancy-text]').each(function () {
+    $('[data-fancy-text]').each(function() {
         const _this = $(this);
         const ftOptions = _this.data('fancy-text');
         if (ftOptions) {
             if (_this.hasClass('swiper-parallax-fancy-text')) {
                 FancyTextDefault(this, ftOptions);
             } else {
-                _this.on('appear', function () {
+                _this.on('appear', function() {
                     if (!_this.hasClass('appear')) {
                         _this.addClass('appear');
                         FancyTextDefault(this, ftOptions);
@@ -1843,21 +1843,21 @@
      Instagram feed
      ====================================== */
     var instagramWrapperItems = document.querySelectorAll('.instafeed-wrapper');
-    instagramWrapperItems.forEach(function (instagramWrapperItem) {
+    instagramWrapperItems.forEach(function(instagramWrapperItem) {
         var token = 'IGQWRPSWZAleS1CRk5UR2dqcWhkam5lTFZAQQUxmQU9MLTgzVi11WjYzY0NVSS10UlVSR195aWxMZAnh5cC1OZAUdFUlFLRnV0M0hFR19pcnhXOU1MZAi1UQTYzZAHl2NmVGVzA1ZAE5pZAllHMGdDaFZA5bFBzUzUxeWF2NVkZD',
-                _this = $(instagramWrapperItem),
-                token = _this.attr('data-token') || token,
-                total = _this.attr('data-total') || '6', // how much photos do you want to get
-                slider = _this.attr('data-slider-options'),
-                _html = _this.html(),
-                outputHTML = '';
-        if (typeof (slider) !== 'undefined' && slider !== null) {
+            _this = $(instagramWrapperItem),
+            token = _this.attr('data-token') || token,
+            total = _this.attr('data-total') || '6', // how much photos do you want to get
+            slider = _this.attr('data-slider-options'),
+            _html = _this.html(),
+            outputHTML = '';
+        if (typeof(slider) !== 'undefined' && slider !== null) {
             _this.html('');
         }
         $.ajax({
             url: 'https://graph.instagram.com/me/media?fields=id,media_type,media_url,timestamp,permalink&access_token=' + token,
             type: 'GET',
-            success: function (response) {
+            success: function(response) {
                 outputHTML += _this.find('.grid-item').length ? '<li class="grid-sizer"></li>' : '';
                 for (var x in response.data) {
                     if (x < parseInt(total)) {
@@ -1875,24 +1875,24 @@
                             output = output.replace('data-src', 'src');
                             output = output.replace('{{link}}', link);
                             output = output.replace('{{image}}', image);
-                            
+
                             output = output.replace('{{likes}}', likes);
                             output = output.replace('{{comments}}', comments);
-                            output = output.replace( '{{image-class}}', 'image' );
+                            output = output.replace('{{image-class}}', 'image');
                             outputHTML += output;
 
-                        }else if( response.data[x]['media_type'] == 'VIDEO' ){
+                        } else if (response.data[x]['media_type'] == 'VIDEO') {
                             var link = response.data[x]['permalink'] || '',
                                 video = response.data[x]['media_url'] || '';
 
-                            output = output.replace( '{{video}}', video );
-                            output = output.replace( '{{video-class}}', 'video' );
+                            output = output.replace('{{video}}', video);
+                            output = output.replace('{{video-class}}', 'video');
                             outputHTML += output;
                         }
                     }
                 }
                 _this.html(outputHTML);
-                if (typeof (slider) !== 'undefined' && slider !== null) {
+                if (typeof(slider) !== 'undefined' && slider !== null) {
                     // Apply swiper
                     var sliderOptions = $.parseJSON(slider);
                     var swiperObj = instagramWrapperItem.parentElement;
@@ -1901,7 +1901,7 @@
                     }
                 } else {
                     // Apply isotope
-                    _this.imagesLoaded(function () {
+                    _this.imagesLoaded(function() {
                         _this.removeClass('grid-loading');
                         if (typeof $.fn.isotope === 'function') {
                             _this.isotope({
@@ -1918,7 +1918,7 @@
                     });
                 }
             },
-            error: function (data) {
+            error: function(data) {
                 var output = '<div class="col-12"><span class=text-center>No Images Found</span></div>';
                 _this.append(output);
             }
@@ -1931,10 +1931,10 @@
     if (typeof $.fn.magnificPopup === 'function') {
         if ($('#subscribe-popup').length > 0) {
             let delaySecond = 1.5,
-                    expireDays = 30,
-                    cookieName = 'crafto-promo-popup';
+                expireDays = 30,
+                cookieName = 'crafto-promo-popup';
             if (getCookie(cookieName) != 'shown') {
-                setTimeout(function () {
+                setTimeout(function() {
                     $.magnificPopup.open({
                         showCloseBtn: false,
                         items: {
@@ -1943,7 +1943,7 @@
                         type: 'inline',
                         mainClass: 'my-mfp-zoom-in',
                         callbacks: {
-                            close: function () {
+                            close: function() {
                                 if ($('#newsletter-off').is(':checked')) {
                                     setCookie(cookieName, 'shown', expireDays);
                                 }
@@ -1967,7 +1967,7 @@
         });
 
         // Modal popup close
-        $(document).on('click', '.popup-modal-dismiss', function (e) {
+        $(document).on('click', '.popup-modal-dismiss', function(e) {
             e.preventDefault();
             $.magnificPopup.close();
         });
@@ -2021,7 +2021,7 @@
             fixedContentPos: true,
             focus: '#name',
             callbacks: {
-                beforeOpen: function () {
+                beforeOpen: function() {
                     if ($(window).width() < 700) {
                         this.st.focus = false;
                     } else {
@@ -2050,7 +2050,7 @@
             closeBtnInside: false,
             overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
             callbacks: {
-                open: function () {
+                open: function() {
                     $('.navbar .collapse').removeClass('show');
                     $('.navbar a.dropdown-toggle').addClass('collapsed');
                 }
@@ -2150,11 +2150,11 @@
     // });
 
     // Contact form validation on blur
-    $(document).on('blur', '.required', function () {
+    $(document).on('blur', '.required', function() {
         var emailFormat = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/,
-                telFormat = /[0-9 -()+]+$/,
-                urlformat = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/,
-                fieldVal = $(this).val();
+            telFormat = /[0-9 -()+]+$/,
+            urlformat = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/,
+            fieldVal = $(this).val();
         if (fieldVal == '' || fieldVal == undefined) {
             $(this).addClass('is-invalid');
         } else if ($(this).attr('type') == 'email' && !emailFormat.test(fieldVal)) {
@@ -2163,14 +2163,14 @@
             $(this).addClass('is-invalid');
         } else if ($(this).attr('type') == 'tel' && !telFormat.test(fieldVal)) {
             $(this).addClass('is-invalid');
-        } 
+        }
         // else {
         //     $(this).removeClass('is-invalid').addClass('is-valid');
         // }
     });
 
     // Validate terms and conditions in form
-    $(document).on('click', '.terms-condition', function () {
+    $(document).on('click', '.terms-condition', function() {
         var termsObj = $(this);
         if (!termsObj.is(':checked')) {
             termsObj.addClass('is-invalid');
@@ -2185,8 +2185,8 @@
 
     // Reinit skroller after revolution slider loaded
     if ($('.rev_slider').length) {
-        $('.rev_slider').each(function () {
-            $(this).one('revolution.slide.onloaded', function () {
+        $('.rev_slider').each(function() {
+            $(this).one('revolution.slide.onloaded', function() {
                 reInitSkrollr();
             });
         });
@@ -2196,11 +2196,11 @@
      Window on load
      ====================================== */
 
-    $(window).on('load', function () {
+    $(window).on('load', function() {
 
         // Bootstrap tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
 
@@ -2210,7 +2210,7 @@
         }
 
         // Non retina image code 
-        $("img:not([data-at2x])").each(function () {
+        $("img:not([data-at2x])").each(function() {
             $(this).attr('data-no-retina', '');
         });
 
@@ -2229,7 +2229,7 @@
         setBottomOverLayerPosition();
 
         // Set full screen height & top space
-        setTimeout(function () {
+        setTimeout(function() {
             fullScreenHeight();
             setTopSpaceHeight();
         }, headerTransition); // Header transition effect time
@@ -2239,9 +2239,9 @@
      Page loader
      ====================================== */
 
-    $(window).on("load", function () {
+    $(window).on("load", function() {
         $('.page-loader').show();
-        setTimeout(function () {
+        setTimeout(function() {
             $('.page-loader').hide();
         }, 1000);
     });
@@ -2250,7 +2250,7 @@
      Window resize
      ====================================== */
 
-    $(window).resize(function () {
+    $(window).resize(function() {
         slideboxstyle();
         setParallax();
         initScrollNavigate();
@@ -2265,7 +2265,7 @@
 
         // Reset isotope
         if (!isMobile) {
-            setTimeout(function () {
+            setTimeout(function() {
                 resetIsotopeLayoutLoop(isotopeObjs, true);
             }, 300);
         }
@@ -2285,7 +2285,7 @@
      Window orientation change
      ====================================== */
 
-    $(window).on('orientationchange', function (e) {
+    $(window).on('orientationchange', function(e) {
 
         // Top overlap section position
         setOverLayerPosition();
@@ -2294,7 +2294,7 @@
         setBottomOverLayerPosition();
 
         // Set full screen height & top space
-        setTimeout(function () {
+        setTimeout(function() {
             fullScreenHeight();
             setTopSpaceHeight();
         }, headerTransition); // Header transition effect time
@@ -2331,7 +2331,7 @@
 
         // One page navigation
         var menuLinks = $('.navbar-nav li a');
-        menuLinks.each(function () {
+        menuLinks.each(function() {
             var _this = $(this);
             var hasPos = _this.attr('href').indexOf('#');
             if (hasPos > -1) {
@@ -2351,7 +2351,7 @@
 
         // Sticky nav Start
         var navHeight = 0,
-                miniHeaderHeight = 0;
+            miniHeaderHeight = 0;
         if ($('header nav.navbar').length) {
             navHeight = $('header nav.navbar').outerHeight();
         }
@@ -2363,30 +2363,30 @@
             if (scrollPos >= headerHeight) {
                 $('header').addClass('sticky');
                 if (!$('.header-top-bar').is(':hidden')) {
-                    $('.header-top-bar').css({'top': '-' + (miniHeaderHeight) + 'px'});
-                    $('.header-top-bar + .navbar').css({'top': '0px'});
+                    $('.header-top-bar').css({ 'top': '-' + (miniHeaderHeight) + 'px' });
+                    $('.header-top-bar + .navbar').css({ 'top': '0px' });
                 } else {
-                    $('.header-top-bar, .header-top-bar + .navbar').css({'top': ''});
+                    $('.header-top-bar, .header-top-bar + .navbar').css({ 'top': '' });
                 }
             } else if (scrollPos <= headerHeight) {
                 $('header').removeClass('sticky');
                 if (!$('.header-top-bar').is(':hidden')) {
-                    $('.header-top-bar').css({'top': '0px'});
-                    $('.header-top-bar + .navbar').css({'top': (miniHeaderHeight) + 'px'});
+                    $('.header-top-bar').css({ 'top': '0px' });
+                    $('.header-top-bar + .navbar').css({ 'top': (miniHeaderHeight) + 'px' });
                 } else {
-                    $('.header-top-bar, .header-top-bar + .navbar').css({'top': ''});
+                    $('.header-top-bar, .header-top-bar + .navbar').css({ 'top': '' });
                 }
             }
         }
 
         // Header sticky
         if (scrollPos > (headerHeight + 150)) {
-            setTimeout(function () {
+            setTimeout(function() {
                 $('header').addClass('sticky-active');
             }, headerTransition); // Header transition effect time
         }
         if (scrollPos < headerHeight) {
-            setTimeout(function () {
+            setTimeout(function() {
                 $('header').removeClass('sticky-active');
             }, headerTransition); // Header transition effect time
         }
@@ -2404,24 +2404,24 @@
         } else {
             $('.scroll-top-arrow').fadeOut('300');
         }
-        
-        if ( $( 'nav.header-reverse-back-scroll' ).length > 0 ) {
+
+        if ($('nav.header-reverse-back-scroll').length > 0) {
             var st = scrollPos;
-            if ( st > lastScroll ) {
+            if (st > lastScroll) {
                 st = st - 1;
-                $( 'header' ).removeClass( 'sticky-appear' );
+                $('header').removeClass('sticky-appear');
             } else {
                 $('header').addClass('sticky-appear');
             }
             lastScroll = st;
-            if ( lastScroll <= headerHeight ) {
-                $( 'header' ).removeClass( 'sticky-appear' );
+            if (lastScroll <= headerHeight) {
+                $('header').removeClass('sticky-appear');
             }
         }
 
         // Set full screen height & top space
         if (scrollPos <= 0) {
-            setTimeout(function () {
+            setTimeout(function() {
                 fullScreenHeight();
                 setTopSpaceHeight();
             }, headerTransition); // Header transition effect time
@@ -2442,7 +2442,7 @@
     // Check IE browser
     function isIE() {
         var ua = window.navigator.userAgent,
-                msie = ua.indexOf('MSIE ');
+            msie = ua.indexOf('MSIE ');
         if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
             return true;
         } else {
@@ -2464,10 +2464,10 @@
     // Full screen
     function fullScreenHeight() {
         var fullScreenObj = $('.full-screen'),
-                minHeight = getWindowHeight(),
-                headerHeight = getHeaderHeight();
+            minHeight = getWindowHeight(),
+            headerHeight = getHeaderHeight();
         if (!$('header').hasClass('sticky')) {
-            fullScreenObj.parents('section').imagesLoaded(function () {
+            fullScreenObj.parents('section').imagesLoaded(function() {
                 if ($('section:first.full-screen, section:first .full-screen').length && ($('.top-space-margin').length || $('.mobile-top-space').length) || $('.ipad-top-space-margin').length) {
                     if ($('.ipad-top-space-margin').length) {
                         if (getWindowWidth() <= menuBreakPoint) {
@@ -2528,10 +2528,10 @@
 
         // Swiper slider using params
         var swipers = document.querySelectorAll('[data-slider-options]:not(.instafeed-wrapper)');
-        swipers.forEach(function (swiperItem) {
+        swipers.forEach(function(swiperItem) {
             var _this = $(swiperItem),
-                    sliderOptions = _this.attr('data-slider-options');
-            if (typeof (sliderOptions) !== 'undefined' && sliderOptions !== null) {
+                sliderOptions = _this.attr('data-slider-options');
+            if (typeof(sliderOptions) !== 'undefined' && sliderOptions !== null) {
 
                 sliderOptions = $.parseJSON(sliderOptions);
 
@@ -2540,7 +2540,7 @@
                 if (changeOnClick != '' && changeOnClick != undefined && changeOnClick == '1') {
 
                     sliderOptions['on'] = {
-                        click: function () {
+                        click: function() {
                             if (this.activeIndex > this.clickedIndex) {
                                 this.slidePrev();
                             } else if (this.activeIndex < this.clickedIndex) {
@@ -2558,7 +2558,7 @@
 
                         var thumbDirection = (sliderOptions['thumbs']['swiper']['direction'] != '' && sliderOptions['thumbs']['swiper']['direction'] != undefined) ? sliderOptions['thumbs']['swiper']['direction'] : mdThumbDirection;
                         sliderOptions['thumbs']['swiper']['on'] = {
-                            init: function () {
+                            init: function() {
                                 if (getWindowWidth() <= sliderBreakPoint) {
                                     this.changeDirection(mdThumbDirection);
                                 } else {
@@ -2566,7 +2566,7 @@
                                 }
                                 this.update();
                             },
-                            resize: function () {
+                            resize: function() {
                                 if (getWindowWidth() <= sliderBreakPoint) {
                                     this.changeDirection(mdThumbDirection);
                                 } else {
@@ -2574,7 +2574,7 @@
                                 }
                                 this.update();
                             },
-                            click: function () {
+                            click: function() {
                                 /* Product thumbs automatic next / previous on click slide */
                                 if (this.activeIndex == this.clickedIndex) {
                                     this.slidePrev();
@@ -2589,7 +2589,7 @@
                 // If user have provided "data-number-pagination" attribute then below code will execute
                 var numberPagination = _this.attr('data-number-pagination');
                 if (numberPagination != '' && numberPagination != undefined && numberPagination == '1' && sliderOptions['pagination'] != '' && sliderOptions['pagination'] != undefined) {
-                    sliderOptions['pagination']['renderBullet'] = function (index, className) {
+                    sliderOptions['pagination']['renderBullet'] = function(index, className) {
                         return '<span class="' + className + '">' + pad(index + 1) + '</span>';
                     }
                 }
@@ -2598,27 +2598,27 @@
                 var dataThumbs = _this.attr('data-thumbs');
                 if (dataThumbs != '' && dataThumbs != undefined && sliderOptions['pagination'] != '' && sliderOptions['pagination'] != undefined) {
                     dataThumbs = $.parseJSON(dataThumbs);
-                    if (typeof (dataThumbs) !== 'undefined' && dataThumbs !== null) {
-                        sliderOptions['pagination']['renderBullet'] = function (index, className) {
+                    if (typeof(dataThumbs) !== 'undefined' && dataThumbs !== null) {
+                        sliderOptions['pagination']['renderBullet'] = function(index, className) {
                             return '<span class="' + className + '" style="background-image: url( ' + dataThumbs[index] + ' )"></span>';
                         }
                     }
                 }
 
                 sliderOptions['on'] = {
-                    init: function () {
+                    init: function() {
                         let slides = this.slides;
                         let activeIndex = this.activeIndex,
-                                current_slide = this.slides[activeIndex],
-                                anime_el = current_slide.querySelectorAll('[data-anime]'),
-                                fancy_el = current_slide.querySelectorAll('[data-fancy-text]');
+                            current_slide = this.slides[activeIndex],
+                            anime_el = current_slide.querySelectorAll('[data-anime]'),
+                            fancy_el = current_slide.querySelectorAll('[data-fancy-text]');
 
                         if (getWindowWidth() > animeBreakPoint) {
                             if (anime_el) {
                                 anime_el.forEach(element => {
                                     let options = element.getAttribute('data-anime');
 
-                                    if (typeof (options) !== 'undefined' && options !== null) {
+                                    if (typeof(options) !== 'undefined' && options !== null) {
                                         options = $.parseJSON(options);
 
                                         element.classList.add('appear');
@@ -2637,20 +2637,20 @@
                             }
                         }
                     },
-                    slideChange: function () {
+                    slideChange: function() {
                         // Get active slide
                         let slides = this.slides;
                         let activeIndex = this.activeIndex,
-                                current_slide = this.slides[activeIndex],
-                                anime_el = current_slide.querySelectorAll('[data-anime]'),
-                                fancy_el = current_slide.querySelectorAll('[data-fancy-text]');
+                            current_slide = this.slides[activeIndex],
+                            anime_el = current_slide.querySelectorAll('[data-anime]'),
+                            fancy_el = current_slide.querySelectorAll('[data-fancy-text]');
 
                         if (getWindowWidth() > animeBreakPoint) {
                             if (fancy_el) {
                                 fancy_el.forEach(element => {
                                     element.classList.add('appear');
                                     let fancy_options = element.getAttribute('data-fancy-text');
-                                    if (typeof (fancy_options) !== 'undefined' && fancy_options !== null) {
+                                    if (typeof(fancy_options) !== 'undefined' && fancy_options !== null) {
                                         fancy_options = $.parseJSON(fancy_options);
                                         let child = element;
 
@@ -2664,7 +2664,7 @@
                                 anime_el.forEach(element => {
                                     let options = element.getAttribute('data-anime');
 
-                                    if (typeof (options) !== 'undefined' && options !== null) {
+                                    if (typeof(options) !== 'undefined' && options !== null) {
                                         options = $.parseJSON(options);
 
                                         element.classList.add('appear');
@@ -2693,7 +2693,7 @@
                 var hasGalleryBox = _this.attr('data-gallery-box') || false;
                 if (isNumberPagination || isNumberNavigation || isNumberPaginationProgress || hasGalleryBox) {
                     sliderOptions['on'] = {
-                        init: function () {
+                        init: function() {
                             if (isNumberPagination || isNumberNavigation || isNumberPaginationProgress) {
                                 if (sliderOptions.hasOwnProperty('loop') && sliderOptions['loop']) {
                                     var slideLength = this.slides.length;
@@ -2717,20 +2717,20 @@
                                         type: 'image',
                                         closeOnContentClick: true,
                                         closeBtnInside: false,
-                                        gallery: {enabled: true}
+                                        gallery: { enabled: true }
                                     });
                                 }
                             }
                         },
-                        slideChange: function () {
+                        slideChange: function() {
                             if (isNumberPagination || isNumberNavigation || isNumberPaginationProgress) {
                                 if (sliderOptions.hasOwnProperty('loop') && sliderOptions['loop']) {
                                     var slideLength = this.slides.length;
                                 }
                                 var length = this.slides.length,
-                                        active = (this.realIndex) + 1,
-                                        next = active + 1,
-                                        prev = active - 1;
+                                    active = (this.realIndex) + 1,
+                                    next = active + 1,
+                                    prev = active - 1;
                                 if (active == 1) {
                                     prev = length;
                                 }
@@ -2738,15 +2738,15 @@
                                     next = 1;
                                 }
                                 if (isNumberPaginationProgress) {
-                                    _this.parent().find('.number-prev').each(function () {
+                                    _this.parent().find('.number-prev').each(function() {
                                         $(this).text(active < 10 ? '0' + active : active);
                                     });
                                     _this.parent().find('.swiper-pagination-progress')[0].style.setProperty('--swiper-progress', ((100 / length) * active).toFixed(2) + '%');
                                 } else {
-                                    _this.parent().find('.number-next').each(function () {
+                                    _this.parent().find('.number-next').each(function() {
                                         $(this).text(next < 10 ? '0' + next : next);
                                     });
-                                    _this.parent().find('.number-prev').each(function () {
+                                    _this.parent().find('.number-prev').each(function() {
                                         $(this).text(prev < 10 ? '0' + prev : prev);
                                     });
                                     if (showProgress)
@@ -2761,7 +2761,7 @@
                 var thumbClick = _this.attr('data-swiper-thumb-click') || false;
                 if (thumbClick && sliderOptions.hasOwnProperty('thumbs')) {
                     sliderOptions['thumbs']['swiper']['on'] = {
-                        click: function (swiper) {
+                        click: function(swiper) {
                             if (swiper.activeIndex >= swiper.clickedIndex) {
                                 swiper.slidePrev();
                             } else if (swiper.activeIndex < swiper.clickedIndex) {
@@ -2772,7 +2772,7 @@
                 }
 
                 if (typeof Swiper === 'function') {
-                    _this.imagesLoaded(function () {
+                    _this.imagesLoaded(function() {
                         var swiperObj = new Swiper(swiperItem, sliderOptions);
                         swiperObjs.push(swiperObj);
                     });
@@ -2788,17 +2788,17 @@
     function setParallax() {
         if (!isIE()) {
             if (typeof $.fn.parallax !== 'undefined' && typeof $.fn.parallax !== null) {
-                $('[data-parallax-background-ratio]').each(function () {
+                $('[data-parallax-background-ratio]').each(function() {
                     var ratio = $(this).attr('data-parallax-background-ratio') || 0.5;
                     $(this).parallax('50%', ratio);
                 });
-                $('[data-parallax-layout-ratio]').each(function () {
+                $('[data-parallax-layout-ratio]').each(function() {
                     var ratio = $(this).attr('data-parallax-layout-ratio') || 1;
                     $(this).parallaxImg(ratio);
                 });
             }
 
-            $('[data-parallax-liquid]').each(function () {
+            $('[data-parallax-liquid]').each(function() {
                 var scale = $(this).attr('data-parallax-scale') || 0;
                 var scaleFraction = parseFloat($(this).attr('data-parallax-scale-fraction'));
                 var reverse = $(this).attr('data-parallax-reverse') ? $(this).attr('data-parallax-reverse') : false;
@@ -2817,9 +2817,9 @@
     // Top overlap section position
     function setOverLayerPosition() {
         if (($('.overlap-section').length > 0 || $('.overlap-section-one-fourth').length > 0 || $('.overlap-section-three-fourth').length > 0)) {
-            $('.overlap-section, .overlap-section-one-fourth, .overlap-section-three-fourth').each(function () {
+            $('.overlap-section, .overlap-section-one-fourth, .overlap-section-three-fourth').each(function() {
                 let _this = $(this),
-                        overlayBreakpoint = 767;
+                    overlayBreakpoint = 767;
 
                 if (_this.hasClass('md-overlap-disable')) {
                     overlayBreakpoint = 991;
@@ -2828,15 +2828,15 @@
                 }
 
                 if (getWindowWidth() > overlayBreakpoint) {
-                    setTimeout(function () {
-                        _this.imagesLoaded(function () {
+                    setTimeout(function() {
+                        _this.imagesLoaded(function() {
                             var closestSectionObj = _this.closest('section');
                             if (_this.closest('footer').length) {
                                 closestSectionObj = _this.closest('footer');
                             }
                             var sectionPaddingTop = parseInt(closestSectionObj.css('padding-top')),
-                                    areaHeight = _this.find('*').outerHeight(),
-                                    overlayTop = areaHeight + sectionPaddingTop;
+                                areaHeight = _this.find('*').outerHeight(),
+                                overlayTop = areaHeight + sectionPaddingTop;
                             if (_this.hasClass('overlap-section-one-fourth')) {
                                 overlayTop = (areaHeight / 4) - overlayTop;
                             } else if (_this.hasClass('overlap-section-three-fourth')) {
@@ -2846,8 +2846,8 @@
                             }
                             _this.css('margin-top', overlayTop);
                             var parentSectionObj = closestSectionObj.prev('.overlap-height'),
-                                    overlapGap = parentSectionObj.find('.overlap-gap-section');
-                            parentSectionObj.imagesLoaded(function () {
+                                overlapGap = parentSectionObj.find('.overlap-gap-section');
+                            parentSectionObj.imagesLoaded(function() {
                                 if (overlapGap.length > 0) {
                                     var gapSectionHeight = overlapGap.outerHeight() + (Math.abs(overlayTop) - sectionPaddingTop);
                                     overlapGap.parents('.overlap-height').height(gapSectionHeight);
@@ -2856,7 +2856,7 @@
                         });
                     }, 500);
                 } else {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         $('.overlap-height').height('inherit');
                         $('.overlap-section, .overlap-section-one-fourth, .overlap-section-three-fourth').css('margin-top', 'inherit');
                     }, 500);
@@ -2868,13 +2868,13 @@
     // Bottom overlap section position
     function setBottomOverLayerPosition(delay) {
         if (($('.overlap-section-bottom').length > 0) && getWindowWidth() >= 768) {
-            $('.overlap-section-bottom').each(function () {
+            $('.overlap-section-bottom').each(function() {
                 var _this = $(this),
-                        timeOut = (_this.find('.instafeed-wrapper').length > 0) ? delay : 10;
-                setTimeout(function () {
-                    _this.imagesLoaded(function () {
+                    timeOut = (_this.find('.instafeed-wrapper').length > 0) ? delay : 10;
+                setTimeout(function() {
+                    _this.imagesLoaded(function() {
                         var areaHeight = _this.outerHeight(),
-                                overlayerMargin = ((areaHeight / 2) - areaHeight);
+                            overlayerMargin = ((areaHeight / 2) - areaHeight);
                         _this.parents('section').next('.overlap-gap-section-bottom').css('margin-top', overlayerMargin);
                         _this.parents('section').next('.overlap-gap-section-bottom').css('padding-top', areaHeight);
                     });
@@ -2910,17 +2910,17 @@
         }
 
         var mouse = {
-            x: 0,
-            y: 0
-        },
-                pos = {
-                    x: 0,
-                    y: 0
-                },
-                ratio = .65,
-                active = !1,
-                ball = document.getElementById('ball-cursor'),
-                ballloader = document.getElementById('ball-cursor-loader');
+                x: 0,
+                y: 0
+            },
+            pos = {
+                x: 0,
+                y: 0
+            },
+            ratio = .65,
+            active = !1,
+            ball = document.getElementById('ball-cursor'),
+            ballloader = document.getElementById('ball-cursor-loader');
 
         function mouseMove(e) {
             var a = window.pageYOffset || document.documentElement.scrollTop;
@@ -2948,7 +2948,7 @@
         }
 
         if (typeof TweenMax !== 'undefined' && typeof TweenMax !== null) {
-            $('.magic-cursor').mouseenter(function (e) {
+            $('.magic-cursor').mouseenter(function(e) {
                 TweenMax.to('#ball-cursor', 0.3, {
                     borderWidth: '2px',
                     scale: 1,
@@ -2965,7 +2965,7 @@
             });
         }
         if (typeof TweenMax !== 'undefined' && typeof TweenMax !== null) {
-            $('.magic-cursor').mouseleave(function (e) {
+            $('.magic-cursor').mouseleave(function(e) {
                 TweenMax.to('#ball-cursor', 0.3, {
                     borderWidth: '2px',
                     scale: 1,
@@ -2982,25 +2982,26 @@
         }
     }
 
-    $(document).on('mouseenter', '.swiper-button-next, .swiper-button-prev, .swiper-pagination, a:not(.force-magic-cursor)', function () {
-        $('.magic-cursor-wrapper').css({'opacity': 0});
-    }).on('mouseleave', '.swiper-button-next, .swiper-button-prev, .swiper-pagination, a:not(.force-magic-cursor)', function () {
-        $('.magic-cursor-wrapper').css({'opacity': 1});
+    $(document).on('mouseenter', '.swiper-button-next, .swiper-button-prev, .swiper-pagination, a:not(.force-magic-cursor)', function() {
+        $('.magic-cursor-wrapper').css({ 'opacity': 0 });
+    }).on('mouseleave', '.swiper-button-next, .swiper-button-prev, .swiper-pagination, a:not(.force-magic-cursor)', function() {
+        $('.magic-cursor-wrapper').css({ 'opacity': 1 });
     });
 
     /* ===================================
      Box shadow animation
      ====================================== */
 
-    $(window).scroll(function (event) {
-        $('[data-shadow-animation="true"]').each(function () {
+    $(window).scroll(function(event) {
+        $('[data-shadow-animation="true"]').each(function() {
             addBoxAnimationClass($(this))
         });
     });
     $('[data-shadow-animation="true"]').removeClass('shadow-in');
-    $('[data-shadow-animation="true"]').each(function () {
+    $('[data-shadow-animation="true"]').each(function() {
         addBoxAnimationClass($(this))
     });
+
     function addBoxAnimationClass(boxObj) {
         if (boxObj.length) {
             var w = boxObj.width();
@@ -3013,7 +3014,7 @@
             var visible = visibleX * visibleY / (w * h);
             if (visible >= 0.5) {
                 if (typeof boxObj.attr('data-animation-delay') !== 'undefined' && boxObj.attr('data-animation-delay') > 10) {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         boxObj.addClass('shadow-in');
                     }, boxObj.attr('data-animation-delay'));
                 } else {
@@ -3028,12 +3029,13 @@
      ====================================== */
 
     var skroller;
+
     function initSkrollr() {
         if (typeof skrollr !== 'undefined' && typeof skrollr !== null) {
             skroller = skrollr.init({
                 'forceHeight': false,
                 'smoothScrollingDuration': 1000,
-                'mobileCheck': function () {
+                'mobileCheck': function() {
                     return false;
                 }
             });
@@ -3043,7 +3045,7 @@
     function reInitSkrollr() {
         destroySkrollr();
         if ($(window).width() >= 1200) {
-            setTimeout(function () {
+            setTimeout(function() {
                 initSkrollr();
             }, 1000);
         }
@@ -3114,7 +3116,7 @@
     };
     var particleItems = $('[data-particle="true"]');
     if (typeof particlesJS === 'function' && particleItems.length) {
-        $.each(particleItems, function (index, particleItem) {
+        $.each(particleItems, function(index, particleItem) {
             var particleId = $(particleItem).attr('id');
             var particleItemOptions = $(particleItem).attr('data-particle-options');
             if (particleItemOptions != 'undefined' && typeof particleItemOptions !== typeof undefined) {
@@ -3130,7 +3132,7 @@
      SVG animated image mask
      ====================================== */
 
-    $('.animatedSvgPath').each(function () {
+    $('.animatedSvgPath').each(function() {
         var animePath = $(this);
         var paths = animePath.attr('pathdata:id').split(';');
         paths.splice(paths.length, 0, animePath.attr('d'));
@@ -3152,14 +3154,15 @@
 
     // Custom cursor issue
     forceHideCustomCursor();
-    $(window).resize(function () {
+    $(window).resize(function() {
         if (!customCursorInit && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
             handleCustomCursor();
         }
         forceHideCustomCursor();
     });
+
     function forceHideCustomCursor() {
-        setTimeout(function () {
+        setTimeout(function() {
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 $('.cursor-page-inner').hide();
             } else {
@@ -3178,7 +3181,7 @@
             let anchorHover = false;
 
             // Document - mouse move
-            window.onmousemove = function (event) {
+            window.onmousemove = function(event) {
                 if (!magneticFlag) {
                     cursorOuterEl.style.transform = 'translate(' + event.clientX + 'px, ' + event.clientY + 'px' + ')';
                 }
@@ -3191,26 +3194,26 @@
             }
 
             // Link - mouse enter
-            $('body').on('mouseenter', 'a', function () {
+            $('body').on('mouseenter', 'a', function() {
                 cursorInnerEl.classList.add('cursor-link-hover');
                 cursorOuterEl.classList.add('cursor-link-hover');
                 anchorHover = true;
             });
 
             // Disable custom cursor when mouse enter in the magic cursor element
-            $('body').on('mouseenter', '.magic-cursor', function () {
+            $('body').on('mouseenter', '.magic-cursor', function() {
                 cursorInnerEl.style.visibility = 'hidden';
                 cursorOuterEl.style.visibility = 'hidden';
             });
 
             // Enable custom cursor when mouse leave from the magic cursor element
-            $('body').on('mouseleave', '.magic-cursor', function () {
+            $('body').on('mouseleave', '.magic-cursor', function() {
                 cursorInnerEl.style.visibility = 'visible';
                 cursorOuterEl.style.visibility = 'visible';
             });
 
             // Link - mouse leave
-            $('body').on('mouseleave', 'a', function () {
+            $('body').on('mouseleave', 'a', function() {
                 if ($(this).is('a') && $(this).closest('.cursor-as-pointer').length) {
                     return;
                 }
@@ -3220,7 +3223,7 @@
             });
 
             // Cursor - mouse enter
-            $('body').on('mouseenter', '.rounded-box', function () {
+            $('body').on('mouseenter', '.rounded-box', function() {
                 const $elem = $(this);
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -3239,7 +3242,7 @@
             });
 
             // Cursor - mouse leave
-            $('body').on('mouseleave', '.rounded-box', function () {
+            $('body').on('mouseleave', '.rounded-box', function() {
                 if (anchorHover) {
                     cursorInnerEl.classList.add('cursor-link-hover');
                     cursorOuterEl.classList.add('cursor-link-hover');
@@ -3264,9 +3267,10 @@
 
     stackAnimation();
     var stackLastScroll = 0;
+
     function stackAnimation() {
         windowScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        $('.stack-box').each(function () {
+        $('.stack-box').each(function() {
             if ($(window).width() > 1199) {
                 var _this = $(this);
                 var stackItems = _this.find('.stack-item');
@@ -3287,22 +3291,22 @@
                             if (yMove > _this.outerHeight()) {
                                 yMove = _this.outerHeight();
                             }
-                            $(stackItems[i]).css({'height': 'calc(100vh - ' + yMove + 'px)'});
+                            $(stackItems[i]).css({ 'height': 'calc(100vh - ' + yMove + 'px)' });
                             $(stackItems[i]).addClass('active');
                         } else {
-                            $(stackItems[i]).css({'height': 'calc(100vh - 0px)'});
+                            $(stackItems[i]).css({ 'height': 'calc(100vh - 0px)' });
                             $(stackItems[i]).removeClass('active');
                         }
                     }
                 }
             } else {
-                $('.stack-box .stack-item').css({'height': 'inherit'});
+                $('.stack-box .stack-item').css({ 'height': 'inherit' });
             }
         });
 
         stackLastScroll = windowScrollTop;
     }
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         stackAnimation();
     });
 
@@ -3311,9 +3315,10 @@
      ====================================== */
 
     var atroposItems = document.querySelectorAll('[data-atropos]')
+
     function initAtropos() {
         if (atroposItems.length && $(window).width() > 1199) {
-            atroposItems.forEach(function (atroposItem) {
+            atroposItems.forEach(function(atroposItem) {
                 var myAtropos = Atropos({
                     el: atroposItem
                 });
@@ -3323,9 +3328,10 @@
     if (typeof Atropos !== 'undefined' && Atropos !== null) {
         initAtropos();
     }
+
     function destroyAtropos() {
         if (atroposItems.length && $(window).width() > 1199) {
-            atroposItems.forEach(function (atroposItem) {
+            atroposItems.forEach(function(atroposItem) {
                 if (atroposItem.__atropos__) {
                     atroposItem.__atropos__.destroy();
                 }
@@ -3337,20 +3343,21 @@
      Sticky vertical strip - add dark section class
      ====================================== */
 
-    var getElementsInArea = (function (docElm) {
+    var getElementsInArea = (function(docElm) {
         var viewportHeight = docElm.clientHeight;
-        return function (e, opts) {
-            var found = [], i;
+        return function(e, opts) {
+            var found = [],
+                i;
             if (e && e.type == 'resize') {
                 viewportHeight = docElm.clientHeight;
             }
-            for (i = opts.elements.length; i--; ) {
+            for (i = opts.elements.length; i--;) {
                 var elm = opts.elements[i],
-                        pos = elm.getBoundingClientRect(),
-                        topPerc = pos.top / viewportHeight * 100,
-                        bottomPerc = pos.bottom / viewportHeight * 100,
-                        middle = (topPerc + bottomPerc) / 2,
-                        inViewport = middle > opts.zone[1] && middle < (100 - opts.zone[1]);
+                    pos = elm.getBoundingClientRect(),
+                    topPerc = pos.top / viewportHeight * 100,
+                    bottomPerc = pos.bottom / viewportHeight * 100,
+                    middle = (topPerc + bottomPerc) / 2,
+                    inViewport = middle > opts.zone[1] && middle < (100 - opts.zone[1]);
 
                 elm.classList.toggle(opts.markedClass, inViewport);
 
@@ -3361,7 +3368,7 @@
         };
     })(document.documentElement);
 
-    $(window).on('scroll resize load', function (e) {
+    $(window).on('scroll resize load', function(e) {
         getElementsInArea(e, {
             elements: document.querySelectorAll('.section-dark'),
             markedClass: 'section-dark-highlight',
@@ -3374,9 +3381,9 @@
         }
     });
 
-    $(document).on('appear', 'footer', function (e) {
+    $(document).on('appear', 'footer', function(e) {
         $('.sticky-wrap').addClass('sticky-hidden');
-    }).on('disappear', 'footer', function (e) {
+    }).on('disappear', 'footer', function(e) {
         $('.sticky-wrap').removeClass('sticky-hidden');
     });
 
@@ -3384,11 +3391,11 @@
      Quantity input
      ====================================== */
 
-    $('.qty-plus').click(function () {
+    $('.qty-plus').click(function() {
         var th = $(this).closest('.quantity').find('.qty-text');
         th.val(+th.val() + 1);
     });
-    $('.qty-minus').click(function () {
+    $('.qty-minus').click(function() {
         var th = $(this).closest('.quantity').find('.qty-text');
         if (th.val() > 1)
             th.val(+th.val() - 1);
@@ -3405,7 +3412,7 @@
 
     let tl = anime.timeline({
         duration: delay,
-        complete: function () {
+        complete: function() {
             tl.restart();
         }
     });
@@ -3417,7 +3424,7 @@
         el.classList.add('el');
         el.style.transform = 'rotate(' + rotate + 'deg) translateY(' + translateY + '%)';
         tl.add({
-            begin: function () {
+            begin: function() {
                 anime({
                     targets: el,
                     rotate: [rotate + 'deg', rotate + 10 + 'deg'],
@@ -3449,19 +3456,19 @@
     function onScroll() {
         if (window.sections.length > 0) {
             const section = window.sections
-                    .map(section => {
-                        const el = section;
-                        const rect = el.getBoundingClientRect();
-                        return {el, rect};
-                    })
-                    .find(section => section.rect.bottom >= (window.innerHeight * 0.5));
+                .map(section => {
+                    const el = section;
+                    const rect = el.getBoundingClientRect();
+                    return { el, rect };
+                })
+                .find(section => section.rect.bottom >= (window.innerHeight * 0.5));
             if (section && section.el !== activeSection) {
                 activeSection = section.el;
                 const sectionBg = activeSection.getAttribute('data-background');
                 activeSection.closest(".page-content").querySelectorAll("[data-background]").forEach(item => item.classList.remove("active"))
                 activeSection.classList.add("active")
                 if (typeof gsap !== "undefined") {
-                    gsap.to(activeSection.closest(".page-content"), {backgroundColor: sectionBg})
+                    gsap.to(activeSection.closest(".page-content"), { backgroundColor: sectionBg })
                 }
             }
         }
@@ -3472,9 +3479,9 @@
      ====================================== */
     if (typeof $.cookie === 'function') {
         if ($('body').find('#cookies-model').length > 0) {
-            setTimeout(function () {
+            setTimeout(function() {
                 var cookieModel = $('#cookies-model'),
-                        cookieConsentclosed = $.cookie('cookieConsent');
+                    cookieConsentclosed = $.cookie('cookieConsent');
 
                 if (cookieConsentclosed == 'closed') {
                     cookieModel.remove();
@@ -3482,11 +3489,11 @@
                     cookieModel.show();
                 }
 
-                cookieModel.find('[data-accept-btn]').on('click', function (e) {
+                cookieModel.find('[data-accept-btn]').on('click', function(e) {
                     e.preventDefault();
                     var expiresDays = 1;
                     cookieModel.remove();
-                    $.cookie('cookieConsent', 'closed', {expires: expiresDays, path: '/'});
+                    $.cookie('cookieConsent', 'closed', { expires: expiresDays, path: '/' });
                 });
             }, 1000);
         }
@@ -3495,8 +3502,8 @@
     /* ===================================
      Back to top scroll
      ====================================== */
-    $(document).on('click', '.scroll-top', function () {
-        $('html, body').animate({scrollTop: 0}, 800);
+    $(document).on('click', '.scroll-top', function() {
+        $('html, body').animate({ scrollTop: 0 }, 800);
         return false;
     });
 
@@ -3522,7 +3529,7 @@
             $('.theme-demos').fadeIn(600);
         }
     }
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         scrollIndicator();
     });
 
@@ -3530,7 +3537,7 @@
      Trusted customers
      ====================================== */
 
-    $('.bg-more-trusted .btn').click(function (e) {
+    $('.bg-more-trusted .btn').click(function(e) {
         e.preventDefault();
         $(this).parent().parent().addClass('show-trusted-customers');
     });
@@ -3541,10 +3548,10 @@
      ====================================== */
 
     // var themeDemoHTML = '<div class="theme-demos"><div class="demo-button-wrapper"><div class="buy-theme"><a href="https://1.envato.market/R53mL2" target="_blank"><div class="theme-wrapper"><div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 22.284 25.436"><path d="M19.314,9.285c-.745-.414-2.882-.158-5.449.637-4.492,3.07-8.283,7.594-8.547,14.858-.048.174-.491-.024-.579-.077a10.346,10.346,0,0,1-.681-8.3c.189-.314-.428-.7-.539-.591a12.683,12.683,0,0,0-1.765,2.278,11.061,11.061,0,0,0,19.33,10.759c3.438-6.161.246-18.432-1.77-19.558Z" transform="translate(-0.32 -9.089)" fill="#fff"></path></svg></div></div></a></div><div class="all-demo"><a href="#"><div class="theme-wrapper"><div>52+ Pre-built sites</div></div></a></div></div><span class="close-popup fs-22 text-dark-gray w-40px h-40px d-flex justify-content-center align-items-center"><i class="fa-solid fa-xmark"></i></span></div>';
-    // var themeDemoData = '<section class="theme-demos-main d-flex justify-content-center"> <div class="demos-wrapper w-100"> <div class="w-100 demos-wrapper-inner"> <div class="w-100 text-center mb-15px"> <h3 class="fw-700 text-dark-gray ls-minus-1px ps-20 pe-20 mb-35px"> 52+ Pre-built websites</h3> </div> <div class="container-fluid"> <div class="row"> <div class="col-12"> <ul class="portfolio-wrapper grid grid-4col xxl-grid-4col xl-grid-3col lg-grid-2col md-grid-2col sm-grid-1col xs-grid-1col gutter-extra-large"> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-corporate.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-corporate.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-corporate.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Corporate</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-restaurant.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-restaurant.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-restaurant.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Restaurant</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-branding-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-branding-agency.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-branding-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Branding agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-elearning.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-elearning.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-elearning.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> eLearning</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-it-business.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-it-business.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-it-business.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> IT Business</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-data-analysis.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-data-analysis.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-data-analysis.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Data analysis</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-hotel-and-resort.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-hotel-and-resort.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-hotel-and-resort.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Hotel resort</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-scattered-portfolio.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-scattered-portfolio.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-scattered-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Scattered portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-beauty-salon.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-beauty-salon.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-beauty-salon.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Beauty salon</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-product-showcase.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-product.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-product-showcase.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Product showcase</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-medical.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-medical.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-medical.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Medical</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-marketing.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-marketing.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-marketing.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Marketing</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-gym-and-fitness.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-gym-and-fitness.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-gym-and-fitness.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Gym & fitness</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-design-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-design-agency.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-design-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Design agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-accounting.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-accounting.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-accounting.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Accounting</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-fashion-store.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-fashion-store.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-fashion-store.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Fashion store</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-interactive-portfolio.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-interactive-portfolio.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-interactive-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Interactive portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-yoga-and-meditation.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-yoga-and-meditation.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-yoga-and-meditation.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Yoga & meditation</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-travel-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-travel-agency.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-travel-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Travel agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-photography.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-photography.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-photography.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Photography</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-ebook.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-ebook.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-ebook.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> eBook</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-conference.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-conference.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-conference.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Conference</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-freelancer.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-freelancer.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-freelancer.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Freelancer</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-lawyer.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-lawyer.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-lawyer.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Lawyer</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-blogger.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-blogger.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-blogger.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Blogger</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-business.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-business.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-business.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Business</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-horizontal-portfolio.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-horizontal-portfolio.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-horizontal-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Horizontal portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-finance.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-finance.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-finance.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Finance</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-decor-store.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-decor-store.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-decor-store.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Decor store</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-wedding-invitation.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-wedding-invitation.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-wedding-invitation.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Wedding invitation</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-vertical-portfolio.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-vertical-portfolio.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-vertical-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Vertical portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-pizza-parlor.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-pizza-parlor.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-pizza-parlor.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Pizza parlor</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-music-onepage.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-music.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-music-onepage.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> music</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-magazine.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-magazine.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-magazine.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Magazine</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-charity.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-charity.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-charity.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Charity</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-hosting.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-hosting.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-hosting.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Hosting</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-jewellery-store.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-jewellery-store.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-jewellery-store.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Jewellery store</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-architecture.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-architecture.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-architecture.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Architecture</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-minimal-portfolio.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-minimal-portfolio.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-minimal-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Minimal portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-digital-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-digital-agency.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-digital-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Digital agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-consulting.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-consulting.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-consulting.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Consulting</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-application.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-application.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-application.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Application</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-real-estate.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-real-estate.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-real-estate.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Real estate</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-seo-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-seo-agency.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-seo-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Seo agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-green-energy.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-green-energy.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-green-energy.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Green energy</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-logistics.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-logistics.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-logistics.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Logistics</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-cryptocurrency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-cryptocurrency.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-cryptocurrency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600">Cryptocurrency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-elder-care.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-elder-care.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-elder-care.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600">Elder care</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-spa-salon.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-spa-salon.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-spa-salon.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Spa salon</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-barber.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-barber.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-barber.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Barber</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-web-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-web-agency.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-web-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Web agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-startup.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-startup.jpg" alt=""> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-startup.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Startup</a> </div> </div> </li> </ul> </div> </div> </div> <div class="w-100 text-center"> <a href="https://1.envato.market/R53mL2" target="_blank"class="btn btn-dark-gray btn-large btn-switch-text btn-rounded btn-box-shadow mt-50px text-transform-none"> <span> <span class="btn-double-text" data-text="Purchase Crafto"> Purchase Crafto</span> <span> <i class="feather icon-feather-shopping-cart"> </i> </span> </span> </a> </div> </div> </div> </section>';
+    // var themeDemoData = '<section class="theme-demos-main d-flex justify-content-center"> <div class="demos-wrapper w-100"> <div class="w-100 demos-wrapper-inner"> <div class="w-100 text-center mb-15px"> <h3 class="fw-700 text-dark-gray ls-minus-1px ps-20 pe-20 mb-35px"> 52+ Pre-built websites</h3> </div> <div class="container-fluid"> <div class="row"> <div class="col-12"> <ul class="portfolio-wrapper grid grid-4col xxl-grid-4col xl-grid-3col lg-grid-2col md-grid-2col sm-grid-1col xs-grid-1col gutter-extra-large"> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-corporate.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-corporate.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-corporate.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Corporate</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-restaurant.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-restaurant.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-restaurant.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Restaurant</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-branding-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-branding-agency.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-branding-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Branding agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-elearning.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-elearning.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-elearning.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> eLearning</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-it-business.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-it-business.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-it-business.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> IT Business</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-data-analysis.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-data-analysis.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-data-analysis.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Data analysis</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-hotel-and-resort.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-hotel-and-resort.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-hotel-and-resort.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Hotel resort</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-scattered-portfolio.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-scattered-portfolio.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-scattered-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Scattered portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-beauty-salon.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-beauty-salon.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-beauty-salon.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Beauty salon</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-product-showcase.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-product.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-product-showcase.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Product showcase</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-medical.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-medical.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-medical.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Medical</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-marketing.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-marketing.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-marketing.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Marketing</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-gym-and-fitness.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-gym-and-fitness.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-gym-and-fitness.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Gym & fitness</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-design-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-design-agency.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-design-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Design agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-accounting.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-accounting.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-accounting.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Accounting</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-fashion-store.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-fashion-store.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-fashion-store.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Fashion store</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-interactive-portfolio.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-interactive-portfolio.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-interactive-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Interactive portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-yoga-and-meditation.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-yoga-and-meditation.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-yoga-and-meditation.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Yoga & meditation</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-travel-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-travel-agency.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-travel-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Travel agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-photography.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-photography.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-photography.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Photography</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-ebook.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-ebook.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-ebook.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> eBook</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-conference.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-conference.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-conference.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Conference</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-freelancer.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-freelancer.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-freelancer.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Freelancer</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-lawyer.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-lawyer.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-lawyer.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Lawyer</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-blogger.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-blogger.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-blogger.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Blogger</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-business.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-business.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-business.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Business</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-horizontal-portfolio.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-horizontal-portfolio.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-horizontal-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Horizontal portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-finance.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-finance.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-finance.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Finance</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-decor-store.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-decor-store.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-decor-store.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Decor store</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-wedding-invitation.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-wedding-invitation.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-wedding-invitation.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Wedding invitation</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-vertical-portfolio.html"target="_blank"> <img class="border-radius-6px w-100" src="images/demo-vertical-portfolio.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-vertical-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Vertical portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-pizza-parlor.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-pizza-parlor.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-pizza-parlor.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Pizza parlor</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-music-onepage.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-music.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-music-onepage.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> music</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-magazine.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-magazine.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-magazine.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Magazine</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-charity.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-charity.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-charity.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Charity</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-hosting.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-hosting.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-hosting.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Hosting</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-jewellery-store.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-jewellery-store.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-jewellery-store.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Jewellery store</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-architecture.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-architecture.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-architecture.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Architecture</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-minimal-portfolio.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-minimal-portfolio.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-minimal-portfolio.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Minimal portfolio</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-digital-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-digital-agency.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-digital-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Digital agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-consulting.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-consulting.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-consulting.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Consulting</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-application.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-application.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-application.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Application</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-real-estate.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-real-estate.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-real-estate.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Real estate</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-seo-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-seo-agency.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-seo-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Seo agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-green-energy.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-green-energy.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-green-energy.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Green energy</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-logistics.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-logistics.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-logistics.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Logistics</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-cryptocurrency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-cryptocurrency.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-cryptocurrency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600">Cryptocurrency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-elder-care.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-elder-care.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-elder-care.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600">Elder care</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-spa-salon.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-spa-salon.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-spa-salon.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Spa salon</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-barber.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-barber.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-barber.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Barber</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-web-agency.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-web-agency.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-web-agency.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Web agency</a> </div> </div> </li> <li class="grid-item"> <div class="box-shadow-medium box-shadow-quadruple-large-hover p-10px bg-white border-radius-10px"> <div class="portfolio-image"> <a href="demo-startup.html" target="_blank"> <img class="border-radius-6px w-100" src="images/demo-startup.jpg" alt="best dental hospial hosur"> </a> </div> <div class="portfolio-caption text-center pt-15px pb-10px"> <a href="demo-startup.html" target="_blank"class="text-dark-gray text-dark-gray-hover fw-600"> Startup</a> </div> </div> </li> </ul> </div> </div> </div> <div class="w-100 text-center"> <a href="https://1.envato.market/R53mL2" target="_blank"class="btn btn-dark-gray btn-large btn-switch-text btn-rounded btn-box-shadow mt-50px text-transform-none"> <span> <span class="btn-double-text" data-text="Purchase Crafto"> Purchase Crafto</span> <span> <i class="feather icon-feather-shopping-cart"> </i> </span> </span> </a> </div> </div> </div> </section>';
     // $('body:not( .landing-page )').append(themeDemoHTML);
 
-    $(document).on('click', '.all-demo', function () {
+    $(document).on('click', '.all-demo', function() {
         var themeDemosObj = $(this).parents('.theme-demos');
         if (!themeDemosObj.hasClass('active')) {
             themeDemosObj.append(themeDemoData);
@@ -3556,30 +3563,30 @@
         }
     });
     var timer;
-    $(document).on('click', '.close-popup', function () {
+    $(document).on('click', '.close-popup', function() {
         var themeDemosObj = $(this).parents('.theme-demos');
         themeDemosObj.removeClass('active');
         $('body').removeClass('overflow-hidden');
         clearTimeout(timer);
-        timer = setTimeout(function () {
-            $('.theme-demos-main').animate({scrollTop: '0'}, 'slow');
+        timer = setTimeout(function() {
+            $('.theme-demos-main').animate({ scrollTop: '0' }, 'slow');
         }, 800);
 
     });
 
-    $(document).on('keydown', function (event) {
+    $(document).on('keydown', function(event) {
         if (event.key == "Escape") {
             var themeDemosObj = $('.theme-demos');
             themeDemosObj.removeClass('active');
             $('body').removeClass('overflow-hidden');
             clearTimeout(timer);
-            timer = setTimeout(function () {
-                $('.theme-demos-main').animate({scrollTop: '0'}, 'slow');
+            timer = setTimeout(function() {
+                $('.theme-demos-main').animate({ scrollTop: '0' }, 'slow');
             }, 800);
         }
     });
 
-    $(".all-demo a").click(function (event) {
+    $(".all-demo a").click(function(event) {
         event.preventDefault();
     });
 
@@ -3590,19 +3597,19 @@
  ====================================== */
 
 function initMap() {
-    $('.map').each(function (e) {
+    $('.map').each(function(e) {
         let _this = $(this),
-                mapOptions = _this.attr('data-map-options');
+            mapOptions = _this.attr('data-map-options');
 
         // Convert String into the Json
-        if (typeof (mapOptions) !== 'undefined' && mapOptions !== null) {
+        if (typeof(mapOptions) !== 'undefined' && mapOptions !== null) {
             mapOptions = $.parseJSON(mapOptions);
         }
 
         let lat = mapOptions.lat ? mapOptions.lat : 19.07,
-                lng = mapOptions.lng ? mapOptions.lng : 72.87,
-                marker = mapOptions.marker,
-                popup = mapOptions.popup;
+            lng = mapOptions.lng ? mapOptions.lng : 72.87,
+            marker = mapOptions.marker,
+            popup = mapOptions.popup;
 
         switch (mapOptions.style && mapOptions.style.toLowerCase()) {
             case 'retro':
@@ -3656,7 +3663,7 @@ function initMap() {
                 HTMLMarker.prototype = new google.maps.OverlayView();
 
                 //init html
-                HTMLMarker.prototype.onAdd = function () {
+                HTMLMarker.prototype.onAdd = function() {
                     div = document.createElement('DIV');
                     div.className = `arrow_box ${marker.class ? ' ' + marker.class : ''}`;
                     div.innerHTML = `<span style='background-color: ${marker.color}; border-color: ${marker.color}'></span><span style='background-color: ${marker.color}; border-color: ${marker.color}'></span>`;
@@ -3668,13 +3675,13 @@ function initMap() {
 
                     if (popup.defaultOpen === true) {
                         flag = true;
-                        infowindow.setOptions({pixelOffset: new google.maps.Size(10, -30)});
+                        infowindow.setOptions({ pixelOffset: new google.maps.Size(10, -30) });
                         infowindow.open(gmap);
                     }
 
-                    google.maps.event.addDomListener(div, "click", function (event) {
+                    google.maps.event.addDomListener(div, "click", function(event) {
                         if (popup) {
-                            infowindow.setOptions({pixelOffset: new google.maps.Size(10, -30)});
+                            infowindow.setOptions({ pixelOffset: new google.maps.Size(10, -30) });
                             if (flag === false) {
                                 infowindow.open(gmap);
                                 flag = true;
@@ -3686,7 +3693,7 @@ function initMap() {
                     });
                 }
 
-                HTMLMarker.prototype.draw = function () {
+                HTMLMarker.prototype.draw = function() {
                     let overlayProjection = this.getProjection();
                     let position = overlayProjection.fromLatLngToDivPixel(this.pos);
                     let panes = this.getPanes();
@@ -3700,8 +3707,8 @@ function initMap() {
             } else {
                 // Custom Image Marker
                 const image_marker = new google.maps.Marker({
-                    icon: {url: marker.src},
-                    position: {lat: lat, lng: lng},
+                    icon: { url: marker.src },
+                    position: { lat: lat, lng: lng },
                     map: gmap,
                     animation: google.maps.Animation.DROP,
                 });
@@ -3741,7 +3748,7 @@ function initMap() {
         } else {
             // Default Marker
             const marker = new google.maps.Marker({
-                position: {lat: lat, lng: lng},
+                position: { lat: lat, lng: lng },
                 map: gmap
             });
 
@@ -3755,7 +3762,7 @@ function initMap() {
                 flag = true;
             }
 
-            marker.addListener("click", function () {
+            marker.addListener("click", function() {
                 if (popup) {
                     if (flag === false) {
                         infowindow.open({

@@ -632,7 +632,7 @@
 								<div class="col-md-1"></div>
 								<div class="form-group col-md-3">
 									<br>
-									<img src="<?php echo base_url();?>uploads/logo.png" alt="..." width="150" height="75">
+									<img src="<?php echo base_url();?>uploads/logo.png" alt="nalam dental care hosur" width="150" height="75">
 								</div>
 							</div>
 							
@@ -677,7 +677,7 @@
 								<div class="col-md-1"></div>
 								<div class="form-group col-md-3">
 									<br>
-									<img src="<?php echo base_url();?>uploads/logo1.png" alt="..." width="150" height="75">
+									<img src="<?php echo base_url();?>uploads/logo1.png" alt="nalam dental care hosur" width="150" height="75">
 								</div>
 							</div>
 							

@@ -84,7 +84,7 @@
 											{
 												$photo_url = base_url().'uploads/country_icons/'.$edit_data[0]['country_id'].'.png';
 												?><br>
-												<img src="<?php echo $photo_url;?>" style="border-radius:4px; padding:5px; height:50px; width:50px;" alt="">
+												<img src="<?php echo $photo_url;?>" style="border-radius:4px; padding:5px; height:50px; width:50px;" alt="best dental hospial hosur">
 												<?php 
 											}
 										}
@@ -315,7 +315,7 @@
 																	$photo_url = base_url().'uploads/country_icons/'.$row['country_id'].'.png';
 																	$BranchName = ucfirst($row['country_name']);
 																	?>
-																	<img src="<?php echo $photo_url;?>" style="border-radius:4px; padding:5px; height:50px; width:50px;" alt="">
+																	<img src="<?php echo $photo_url;?>" style="border-radius:4px; padding:5px; height:50px; width:50px;" alt="best dental hospial hosur">
 																	<?php 
 																}
 																else

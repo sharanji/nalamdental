@@ -42,8 +42,8 @@
                             <div class="outside-box-right-5 sm-outside-box-right-0">
                                 <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-base-color fw-600 ls-minus-20px position-relative d-inline-block word-break-normal">together
                                     <div class="position-absolute left-minus-140px top-minus-140px z-index-9 xl-left-minus-110px top-minus-140px xl-top-minus-100px md-top-minus-90px z-index-9 xl-w-230px md-w-200px d-none d-md-block" data-anime='{ "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                        <img src="images/demo-web-agency-05.png" class="animation-rotation" alt="">
-                                        <div class="absolute-middle-center w-100 z-index-minus-1"><img src="images/demo-web-agency-04.png" alt=""></div> 
+                                        <img src="images/demo-web-agency-05.png" class="animation-rotation" alt="best dental hospial hosur">
+                                        <div class="absolute-middle-center w-100 z-index-minus-1"><img src="images/demo-web-agency-04.png" alt="best dental hospial hosur"></div> 
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
                 <div class="row align-items-center position-relative">
                     <div class="col-lg-5">
                         <div class="outside-box-left-20 md-outside-box-left-0" data-bottom-top="transform:scale(1.1, 1.1)" data-top-bottom="transform:scale(1, 1)">
-                            <img src="<?php echo base_url();?>assets/frontend/img/services/digital_marketing/seo/seo_1.png" alt=""/>
+                            <img src="<?php echo base_url();?>assets/frontend/img/services/digital_marketing/seo/seo_1.png" alt="best dental hospial hosur"/>
                         </div>
                     </div>
                     <div class="col-lg-6 offset-lg-1 z-index-9 md-mt-35px" data-anime='{ "el": "childs", "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -123,7 +123,7 @@
                     <div class="col-12 skrollr-parallax mx-auto p-8 position-relative" data-bottom-top="width: 100%" data-center-top="width: 100%;" data-parallax-background-ratio="0.5" style="background-image: url(<?php echo base_url();?>assets/frontend/img/services/digital_marketing/seo/seo_2.png)" data-anime='{ "el": "childs", "translateY": [15, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <div class="bg-white box-shadow-quadruple-large position-relative border-radius-4px w-400px xs-w-100 overflow-hidden z-index-1 float-end">
                             <div class="p-50px lg-p-30px last-paragraph-no-margin text-center">
-                                <img src="<?php echo base_url();?>assets/frontend/img/demo-web-agency-expertise-06.png" class="w-85px mb-30px" alt=""/> 
+                                <img src="<?php echo base_url();?>assets/frontend/img/demo-web-agency-expertise-06.png" class="w-85px mb-30px" alt="best dental hospial hosur"/> 
                                 <span class="fs-20 ls-minus-05px alt-font text-dark-gray fw-600 mb-10px d-block">Rank Up</span>
                                 <p class="w-95 lg-w-100">Optimize your website for better search engine rankings and increased traffic. Our tailored SEO strategies are designed to bring you to the top.</p>
                             </div>

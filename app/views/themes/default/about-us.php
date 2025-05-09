@@ -33,7 +33,7 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center"> 
                         <div class="col-lg-6 text-end md-mb-50px" data-anime='{ "effect": "slide", "color": "#18bcc7", "direction":"lr", "easing": "easeOutQuad", "delay":50}'> 
-                        <img src="<?php echo base_url();?>assets/frontend/img/about-3.png" alt="" class="border-radius-6px w-100">
+                        <img src="<?php echo base_url();?>assets/frontend/img/about-3.png" alt="best dental hospial hosur" class="border-radius-6px w-100">
 
                         </div>
                         <div class="col-lg-5 offset-lg-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'> 
@@ -59,7 +59,7 @@
 
                     </div>
                     <div class="col-md-3 text-center d-none d-md-inline-block">
-                        <img src="images/demo-beauty-salon-story-02.png" alt=""/>
+                        <img src="images/demo-beauty-salon-story-02.png" alt="best dental hospial hosur"/>
                     </div>
                 </div>
                 <div class="row align-items-center">
@@ -72,7 +72,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/1.png" data-group="lightbox-group-gallery-item-5" title="Lightbox gallery image title">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/1.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/1.png" alt="best dental hospial hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -84,7 +84,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/2.png" data-group="lightbox-group-gallery-item-5" title="Lightbox gallery image title">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/2.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/2.png" alt="best dental hospial hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -96,7 +96,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/3.png" data-group="lightbox-group-gallery-item-5" title="Lightbox gallery image title">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/3.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/3.png" alt="best dental hospial hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -108,7 +108,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/4.png" data-group="lightbox-group-gallery-item-5" title="Lightbox gallery image title">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/4.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/4.png" alt="best dental hospial hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -120,7 +120,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/5.png" data-group="lightbox-group-gallery-item-5" title="Lightbox gallery image title">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/5.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/5.png" alt="best dental hospial hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -134,7 +134,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/6.png" data-group="lightbox-group-gallery-item-5" title="Lightbox gallery image title">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/6.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/6.png" alt="best dental hospial hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -147,7 +147,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/7.png" data-group="lightbox-group-gallery-item-5" title="Lightbox gallery image title">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/7.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/7.png" alt="best dental hospial hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>

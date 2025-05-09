@@ -34,7 +34,7 @@
             <!-- end section -->
           
             <section class="bg-light-turquoise-blue border-radius-8px lg-no-border-radius overlap-height position-relative pb-0">
-                <div class="position-absolute top-10px lg-top-minus-80px left-minus-80px lg-left-15px opacity-1 w-350px z-index-1 d-none d-lg-inline-block"><img src="<?php echo base_url();?>assets/frontend/img/demo-medical-pattern.svg" alt="" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)"></div>
+                <div class="position-absolute top-10px lg-top-minus-80px left-minus-80px lg-left-15px opacity-1 w-350px z-index-1 d-none d-lg-inline-block"><img src="<?php echo base_url();?>assets/frontend/img/demo-medical-pattern.svg" alt="best dental hospial hosur" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)"></div>
                 <div class="container overlap-gap-section position-relative z-index-1"> 
                     <div class="row mb-4">
                         <div class="col text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -197,7 +197,7 @@
                                     <div class="gallery-box overflow-hidden">
                                         <a href="<?php echo base_url();?>assets/frontend/img/pic-3.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                             <div class="position-relative gallery-image bg-base-color">
-                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-3.png" alt="" />
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-3.png" alt="best dental hospial hosur" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                 </div>
@@ -211,7 +211,7 @@
                                     <div class="gallery-box overflow-hidden">
                                         <a href="<?php echo base_url();?>assets/frontend/img/pic-4.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                             <div class="position-relative gallery-image bg-base-color">
-                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-4.png" alt="" />
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-4.png" alt="best dental hospial hosur" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                 </div>
@@ -240,7 +240,7 @@
                                     <div class="gallery-box overflow-hidden">
                                         <a href="<?php echo base_url();?>assets/frontend/img/pic-72.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                             <div class="position-relative gallery-image bg-base-color">
-                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-72.png" alt="" />
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-72.png" alt="best dental hospial hosur" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                 </div>
@@ -254,7 +254,7 @@
                                     <div class="gallery-box overflow-hidden">
                                         <a href="<?php echo base_url();?>assets/frontend/img/pic-71.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                             <div class="position-relative gallery-image bg-base-color">
-                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-71.png" alt="" />
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-71.png" alt="best dental hospial hosur" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                 </div>
@@ -266,7 +266,7 @@
                                     <div class="gallery-box overflow-hidden">
                                         <a href="<?php echo base_url();?>assets/frontend/img/pic-73.png" data-group="lightbox-group-gallery-item-3" title="our branched">
                                             <div class="position-relative gallery-image bg-base-color">
-                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-73.png" alt="" />
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-73.png" alt="best dental hospial hosur" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                 </div>

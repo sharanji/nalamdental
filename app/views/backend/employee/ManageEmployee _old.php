@@ -1283,7 +1283,7 @@
 															if(file_exists("uploads/profile_image/".$id.'.png') )
 															{
 																?>
-																<img class="img-responsive mt-2" alt="" style="border-radius:4px;width:75px;height:75px;" src="<?php echo base_url(); ?>uploads/profile_image/<?php echo $id.'.png';?>">
+																<img class="img-responsive mt-2" alt="best dental hospial hosur" style="border-radius:4px;width:75px;height:75px;" src="<?php echo base_url(); ?>uploads/profile_image/<?php echo $id.'.png';?>">
 																<?php 
 															}
 														}
@@ -3811,7 +3811,7 @@
 																if(file_exists("uploads/profile_image/".$status.'.png') )
 																{
 																	?>
-																	<img class="img-responsive mt-2" alt="" style="border-radius:4px;width:75px;height:75px;" src="<?php echo base_url(); ?>uploads/profile_image/<?php echo $status.'.png';?>">
+																	<img class="img-responsive mt-2" alt="best dental hospial hosur" style="border-radius:4px;width:75px;height:75px;" src="<?php echo base_url(); ?>uploads/profile_image/<?php echo $status.'.png';?>">
 																	<?php 
 																}
 															}

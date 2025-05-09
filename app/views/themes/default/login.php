@@ -7,7 +7,7 @@
 				<div class="grocino-heading">
 					<h1 class="heading_text"> Sign In </h1> 
 					<div class="graph graph-sm">
-						<img src="<?php echo base_url();?>assets/frontend/img/about/graphic.png" alt="Graph" title="Graph">
+						<img src="<?php echo base_url();?>assets/frontend/img/about/graphic.png" alt="best dental doctor" title="Graph">
 					</div>
 				</div>
 				<form method="post" class="form-signin">

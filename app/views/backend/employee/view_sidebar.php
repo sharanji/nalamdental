@@ -9,7 +9,7 @@
 					if(file_exists("uploads/profile_image/".$id.'.png') )
 					{
 						?>
-						<img class="img-responsive" alt="" style="border:1px solid #ddd; border-radius:4px; padding:5px; width:100%; height:200px;" src="<?php echo base_url(); ?>uploads/profile_image/<?php echo $id.'.png';?>">
+						<img class="img-responsive" alt="best dental hospial hosur" style="border:1px solid #ddd; border-radius:4px; padding:5px; width:100%; height:200px;" src="<?php echo base_url(); ?>uploads/profile_image/<?php echo $id.'.png';?>">
 						<?php 
 					}
 					else

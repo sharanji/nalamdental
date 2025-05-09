@@ -58,7 +58,7 @@
 											<h4 class="card-title">Total Order Amount</h4> 
 										</div>
 										<div class="col-lg-3">  
-											<img class="card-img-top card-icons" src="<?php echo base_url();?>uploads/card_icons/check.png" alt=""> 
+											<img class="card-img-top card-icons" src="<?php echo base_url();?>uploads/card_icons/check.png" alt="best dental hospial hosur"> 
 										</div>
 									</div>
 
@@ -82,7 +82,7 @@
 											<h4 class="card-title">Total Cancelled Amount</h4> 
 										</div>
 										<div class="col-lg-3">  
-											<img class="card-img-top card-icons" src="<?php echo base_url();?>uploads/card_icons/minus.png" alt=""> 
+											<img class="card-img-top card-icons" src="<?php echo base_url();?>uploads/card_icons/minus.png" alt="best dental hospial hosur"> 
 										</div>
 									</div>
 									<div class="row">

@@ -125,7 +125,7 @@
         </div>
 
         <div class="position-absolute bottom-minus-15px right-100px lg-right-0px z-index-minus-1 opacity-1 w-300px lg-w-200px">
-            <img src="images/demo-medical-home-08.png" alt="">
+            <img src="images/demo-medical-home-08.png" alt="best dental hospial hosur">
         </div>
     </div>
 

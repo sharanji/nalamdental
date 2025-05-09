@@ -34,13 +34,13 @@
                                 </div>
                             </div>
                             <figure class="outside-box-right-2 position-relative">
-                                <img src="<?php echo base_url();?>assets/frontend/img/demo-medical-hero-banner-01.webp" alt="">
+                                <img src="<?php echo base_url();?>assets/frontend/img/demo-medical-hero-banner-01.webp" alt="best doctors in hosur">
                                 <figcaption class="blur-box bg-white-transparent position-absolute border-radius-6px top-50 right-minus-50px xl-right-minus-5px lg-right-minus-10px sm-right-5px w-250px p-25px text-center last-paragraph-no-margin animation-float">
                                     <!-- start features box item -->
                                     <div class="icon-with-text-style-08">
                                         <div class="feature-box feature-box-left-icon-middle overflow-hidden">
                                             <div class="feature-box-icon me-15px">
-                                                <img src="<?php echo base_url();?>assets/frontend/img/demo-medical-hero-banner-icon-01.png" class="h-50px" alt="">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/demo-medical-hero-banner-icon-01.png" class="h-50px" alt="dental doctor">
                                             </div>
                                             <div class="feature-box-content last-paragraph-no-margin">
                                                 <span class="d-inline-block fs-17 fw-700 text-dark-gray">Verified doctors</span>
@@ -93,8 +93,8 @@
                 <div class="w-75" data-animation-delay="200" data-shadow-animation="true" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
                     <img src="<?php echo base_url();?>assets/frontend/img/about.png" alt="Nalam Dental Care" class="border-radius-6px w-100">
                     <div class="position-absolute left-minus-70px lg-left-minus-15px md-left-minus-50px bottom-130px lg-bottom-90px md-mb-50px d-none d-md-flex flex-column align-items-center justify-content-center w-140px h-140px bg-white border-radius-100 p-10px box-shadow-quadruple-large" data-anime='{"translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 800, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <img src="images/dental-icon-01.png" class="position-absolute top-50 translate-middle-y" alt="">
-                        <img src="images/dental-icon-02.png" class="animation-rotation" alt="">
+                        <img src="images/dental-icon-01.png" class="position-absolute top-50 translate-middle-y" alt="dental care hosur">
+                        <img src="images/dental-icon-02.png" class="animation-rotation" alt="dental care hosur">
                     </div>
                 </div>
                 <div class="w-55 overflow-hidden position-absolute right-15px bottom-minus-50px" data-shadow-animation="true" data-animation-delay="100" data-bottom-top="transform: translateY(-20px)" data-top-bottom="transform: translateY(20px)">
@@ -290,10 +290,10 @@
                     </div>
                     <!-- <div class="col-lg-4 offset-xl-1 position-relative md-mb-50px">
                         <div class="w-80 lg-w-85 mt-minus-20px float-end">
-                            <img class="md-w-100" src="<?php echo base_url();?>assets/frontend/img/hospital.png" alt="" />
+                            <img class="md-w-100" src="<?php echo base_url();?>assets/frontend/img/hospital.png" alt="hospital" />
                         </div>
                         <div class="w-50 position-absolute left-15px bottom-20px lg-bottom-minus-50px">
-                            <img src="<?php echo base_url();?>assets/frontend/img/hospital2.png" alt="" class="box-shadow-quadruple-large" />
+                            <img src="<?php echo base_url();?>assets/frontend/img/hospital2.png" alt="best dental hospial hosur" class="box-shadow-quadruple-large" />
                         </div>
                     </div> -->
                 </div>
@@ -318,7 +318,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                                <img src="<?php echo base_url();?>assets/frontend/img/treatment/21.png" alt="">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/treatment/21.png" alt="facial trauma">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -335,7 +335,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/22.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/22.png" alt="oral cancer">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -351,7 +351,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/3.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/3.png" alt="missing tooth treatments">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -367,7 +367,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/14.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/14.png" alt="correct congenital conditions treatments">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -386,7 +386,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/13.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/13.png" alt="Extractions & Fillings">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -402,7 +402,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/17.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/17.png" alt="Crowns, Bridges">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -418,7 +418,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/19.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/19.png" alt="Root Canal Treatment">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -434,7 +434,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/9.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/9.png" alt="Orthodontic Treatments">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -450,7 +450,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/111.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/111.png" alt="Scaling & Flap Surgery">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -466,7 +466,7 @@
                                     <div class="swiper-slide"> 
                                         <div class="box-shadow-extra-large services-box-style-01 hover-box last-paragraph-no-margin border-radius-4px overflow-hidden">
                                             <div class="position-relative box-image">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/10.png" alt="">
+                                            <img src="<?php echo base_url();?>assets/frontend/img/treatment/10.png" alt="Teeth Whitening & Bleaching">
                                             </div>
                                             <div class="bg-white " style="height:190px;">
                                                 <div class="ps-50px pe-50px pt-35px sm-p-35px sm-pb-0">
@@ -500,7 +500,7 @@
 
                     </div>
                     <div class="col-md-3 text-center d-none d-md-inline-block">
-                        <img src="images/demo-beauty-salon-story-02.png" alt=""/>
+                        <img src="images/demo-beauty-salon-story-02.png" alt="beauty"/>
                     </div>
                 </div>
                 <div class="row align-items-center">
@@ -535,7 +535,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/1.png" data-group="lightbox-group-gallery-item-5" title="treatment">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/1.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/1.png" alt="nalam dental hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -547,7 +547,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/5.png" data-group="lightbox-group-gallery-item-5" title="treatment">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/5.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/5.png" alt="best dental hospital hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -561,7 +561,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/6.png" data-group="lightbox-group-gallery-item-5" title="treatment">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/6.png" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/6.png" alt="best dental hospital near me" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -573,7 +573,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/9.jpg" data-group="lightbox-group-gallery-item-5" title="treatment">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/9.jpg" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/9.jpg" alt="best dental hospital hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -586,7 +586,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/6.png" data-group="lightbox-group-gallery-item-5" title="treatment">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/10.jpg" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/10.jpg" alt="best dental hospital hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -598,7 +598,7 @@
                                         <div class="gallery-box">
                                             <a href="<?php echo base_url();?>assets/frontend/img/gallery/6.png" data-group="lightbox-group-gallery-item-5" title="treatment">
                                                 <div class="position-relative bg-dark-gray border-radius-6px overflow-hidden">
-                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/11.jpg" alt="" />
+                                                    <img src="<?php echo base_url();?>assets/frontend/img/gallery/11.jpg" alt="best dental hospital hosur" />
                                                     <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                         <i class="feather icon-feather-search icon-very-medium text-white"></i>
                                                     </div>
@@ -661,8 +661,8 @@
                 <div class="swiper-slide">
                     <div class="row align-items-center pt-25px pb-25px"> 
                         <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                            <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="">  
-                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="">The dental care I received was outstanding! The staff is so friendly, and the treatment was top-notch.</span>
+                            <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="best dental doctor">  
+                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="best dental hospial hosur">The dental care I received was outstanding! The staff is so friendly, and the treatment was top-notch.</span>
                         </div>
                         <div class="col-lg-1 d-none d-lg-inline-block">
                             <div class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto"></div>
@@ -678,8 +678,8 @@
                 <div class="swiper-slide">
                     <div class="row align-items-center pt-25px pb-25px"> 
                         <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start"> 
-                            <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="">  
-                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="">I had my root canal here and was so relieved. The procedure was painless, and the recovery was quick.</span>
+                            <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="best dental doctor">  
+                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="best dental hospial hosur">I had my root canal here and was so relieved. The procedure was painless, and the recovery was quick.</span>
                         </div>
                         <div class="col-lg-1 d-none d-lg-inline-block">
                             <div class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto"></div>
@@ -695,8 +695,8 @@
                 <div class="swiper-slide">
                     <div class="row align-items-center pt-25px pb-25px"> 
                         <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start"> 
-                            <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="">  
-                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="">My experience was great! The staff made me feel at ease, and the dental procedures were comfortable.</span>
+                            <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="best dental hospial hosur">  
+                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="best dental doctor">My experience was great! The staff made me feel at ease, and the dental procedures were comfortable.</span>
                         </div>
                         <div class="col-lg-1 d-none d-lg-inline-block">
                             <div class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto"></div>
@@ -804,7 +804,7 @@
         </div>
 
         <div class="position-absolute bottom-minus-15px right-100px lg-right-0px z-index-minus-1 opacity-1 w-300px lg-w-200px">
-            <img src="images/demo-medical-home-08.png" alt="">
+            <img src="images/demo-medical-home-08.png" alt="best dental doctor">
         </div>
     </div>
 

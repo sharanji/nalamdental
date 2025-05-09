@@ -126,7 +126,7 @@
 															if (file_exists('uploads/banner/'.$edit_data[0]['banner_id'].'.png'))
 															{
 																?><br>
-																<img src="<?php echo base_url()."uploads/banner/".$edit_data[0]['banner_id'].'.png';?>" width="100" height="60" alt=""> 
+																<img src="<?php echo base_url()."uploads/banner/".$edit_data[0]['banner_id'].'.png';?>" width="100" height="60" alt="best dental hospial hosur"> 
 																<?php
 															}
 														}
@@ -339,13 +339,13 @@
 																	if (file_exists('uploads/banner/'.$row['banner_id'].'.png'))
 																	{
 																		?>
-																		<img src="<?php echo base_url()."uploads/banner/".$row['banner_id'].'.png';?>" width="70" height="50" alt=""> 
+																		<img src="<?php echo base_url()."uploads/banner/".$row['banner_id'].'.png';?>" width="70" height="50" alt="best dental hospial hosur"> 
 																		<?php
 																	}
 																	else
 																	{
 																		?>
-																		<img src="<?php echo base_url()."uploads/no-image.png";?>" width="100" height="90" alt=""> 
+																		<img src="<?php echo base_url()."uploads/no-image.png";?>" width="100" height="90" alt="best dental hospial hosur"> 
 																		<?php 
 																	} 
 																?>

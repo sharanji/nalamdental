@@ -68,7 +68,7 @@ input.verify-btn-new:hover {
 		<aside>
 			<figure>
 				<a href="<?php echo base_url();?>">
-					<img src="<?php echo base_url();?>uploads/logo.png" width="200" height="80" alt="">
+					<img src="<?php echo base_url();?>uploads/logo.png" width="200" height="80" alt="best dental hospial hosur">
 				</a>
 			</figure>
 			

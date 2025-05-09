@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-xl-7 col-lg-9 margin_60 mt-5 pt-5">
-                    <figure class="error-figure mt-5"><img src="<?php echo base_url()?>uploads/404.png" alt="" class="img-fluid" width="550" height="234"></figure>
+                    <figure class="error-figure mt-5"><img src="<?php echo base_url()?>uploads/404.png" alt="best dental hospial hosur" class="img-fluid" width="550" height="234"></figure>
                     <p class="error-message-page pb-5">We're sorry, but the page you were looking for doesn't exist.</p>
                 </div>
             </div>

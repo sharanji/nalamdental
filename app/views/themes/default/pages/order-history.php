@@ -428,7 +428,7 @@
 								{
 									?>
 										<div class="col-md-12 text-center p-0 m-0">
-											<span class="noorers"><img src="<?php echo base_url();?>uploads/noorders.png" alt=""></span>
+											<span class="noorers"><img src="<?php echo base_url();?>uploads/noorders.png" alt="best dental hospial hosur"></span>
 										</div>
 										
 									<?php

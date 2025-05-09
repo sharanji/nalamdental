@@ -26,7 +26,7 @@
 					<div class="card-body"> 
 						<div class="row">
 							<div class="col-lg-3">  
-								<img class="card-img-top icons" src="<?php echo base_url();?>uploads/online_order_icon.png" alt=""> 
+								<img class="card-img-top icons" src="<?php echo base_url();?>uploads/online_order_icon.png" alt="best dental hospial hosur"> 
 							</div>
 
 							<div class="col-lg-9 mt-3">  
@@ -46,7 +46,7 @@
 					<div class="card-body"> 
 						<div class="row">
 							<div class="col-lg-6">  
-								<img class="card-img-top icons" src="<?php echo base_url();?>uploads/inventory_icon.png" alt=""> 
+								<img class="card-img-top icons" src="<?php echo base_url();?>uploads/inventory_icon.png" alt="best dental hospial hosur"> 
 							</div>
 
 							<div class="col-lg-6 mt-3">  
@@ -66,7 +66,7 @@
 					<div class="card-body"> 
 						<div class="row">
 							<div class="col-lg-3">  
-								<img class="card-img-top icons" src="<?php echo base_url();?>uploads/pos_icon.png" alt=""> 
+								<img class="card-img-top icons" src="<?php echo base_url();?>uploads/pos_icon.png" alt="best dental hospial hosur"> 
 							</div>
 							<div class="col-lg-9 mt-3">  
 								<h1 class="card-title">POS</h1> 
@@ -85,7 +85,7 @@
 					<div class="card-body"> 
 						<div class="row">
 							<div class="col-lg-3">  
-								<img class="card-img-top icons" src="<?php echo base_url();?>uploads/dining_icon.png" alt=""> 
+								<img class="card-img-top icons" src="<?php echo base_url();?>uploads/dining_icon.png" alt="best dental hospial hosur"> 
 							</div>
 							<div class="col-lg-9 mt-3">  
 								<h1 class="card-title">Dine In</h1> 

@@ -106,7 +106,7 @@
 														{
 															$photo_url = base_url().'uploads/payments/'.$id.'.png';
 															?>
-																<img src="<?php echo $photo_url;?>" style="height:100px; width:100px;margin-top:20px" alt="">
+																<img src="<?php echo $photo_url;?>" style="height:100px; width:100px;margin-top:20px" alt="best dental hospial hosur">
 															<?php 
 														}	
 													}
@@ -314,7 +314,7 @@
 																		$photo_url = base_url().'uploads/payments/'.$row['payment_type_id'].'.png';
 																		?>
 																		<a href="<?php echo $photo_url;?>" data-magnify="gallery" data-caption="<?php echo $row['payment_type'];?>">
-																			<img src="<?php echo $photo_url;?>" style="border:1px solid #ddd; border-radius:4px; padding:5px; height:60px; width:60px;" alt="">
+																			<img src="<?php echo $photo_url;?>" style="border:1px solid #ddd; border-radius:4px; padding:5px; height:60px; width:60px;" alt="best dental hospial hosur">
 																		</a>
 																		<?php 
 																	}
