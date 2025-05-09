@@ -167,119 +167,119 @@
             </section>
 
              <section class="bg-solitude-blue">
-            <div class="container">
-                <div class="row justify-content-center align-items-center mb-5 text-center text-lg-start">
-                    <div class="col-xxl-12 col-lg-12 md-mb-20px">
-                        <h2 class="text-dark-gray text-center fw-600 ls-minus-2px mb-0"><span class="w-20px h-4px d-inline-block bg-base-color me-10px"></span>Our Gallery</h2>
-                    </div>
-                 
-                </div> 
-                <div class="row">
-                    <div class="col">
-                        <ul class="image-gallery-style-03 gallery-wrapper grid grid-2col xxl-grid-2col xl-grid-2col lg-grid-2col md-grid-1col sm-grid-1col xs-grid-1col gutter-extra-large">
-                            <li class="grid-sizer"></li>
-                            <!-- start gallery item -->
-                            <li class="grid-item transition-inner-all">
-                                <div class="gallery-box overflow-hidden">
-                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-1.png" data-group="lightbox-group-gallery-item-3" title="our branches">
-                                        <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-1.png" alt="Project Sample 1" />
-                                            <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-                                                <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                <div class="container">
+                    <div class="row justify-content-center align-items-center mb-5 text-center text-lg-start">
+                        <div class="col-xxl-12 col-lg-12 md-mb-20px">
+                            <h2 class="text-dark-gray text-center fw-600 ls-minus-2px mb-0"><span class="w-20px h-4px d-inline-block bg-base-color me-10px"></span>Our Gallery</h2>
+                        </div>
+                    
+                    </div> 
+                    <div class="row">
+                        <div class="col">
+                            <ul class="image-gallery-style-03 gallery-wrapper grid grid-2col xxl-grid-2col xl-grid-2col lg-grid-2col md-grid-1col sm-grid-1col xs-grid-1col gutter-extra-large">
+                                <li class="grid-sizer"></li>
+                                <!-- start gallery item -->
+                                <li class="grid-item transition-inner-all">
+                                    <div class="gallery-box overflow-hidden">
+                                        <a href="<?php echo base_url();?>assets/frontend/img/pic-1.png" data-group="lightbox-group-gallery-item-3" title="our branches">
+                                            <div class="position-relative gallery-image bg-base-color">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-1.png" alt="Project Sample 1" />
+                                                <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                    <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <!-- end gallery item -->
-                            <!-- start gallery item -->
-                            <li class="grid-item transition-inner-all">
-                                <div class="gallery-box overflow-hidden">
-                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-3.png" data-group="lightbox-group-gallery-item-3" title="our branched">
-                                        <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-3.png" alt="" />
-                                            <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-                                                <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- end gallery item -->
+                                <!-- start gallery item -->
+                                <li class="grid-item transition-inner-all">
+                                    <div class="gallery-box overflow-hidden">
+                                        <a href="<?php echo base_url();?>assets/frontend/img/pic-3.png" data-group="lightbox-group-gallery-item-3" title="our branched">
+                                            <div class="position-relative gallery-image bg-base-color">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-3.png" alt="" />
+                                                <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                    <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <!-- end gallery item -->
-                            <!-- start gallery item -->
-                            <li class="grid-item transition-inner-all">
-                                <div class="gallery-box overflow-hidden">
-                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-4.png" data-group="lightbox-group-gallery-item-3" title="our branched">
-                                        <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-4.png" alt="" />
-                                            <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-                                                <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- end gallery item -->
+                                <!-- start gallery item -->
+                                <li class="grid-item transition-inner-all">
+                                    <div class="gallery-box overflow-hidden">
+                                        <a href="<?php echo base_url();?>assets/frontend/img/pic-4.png" data-group="lightbox-group-gallery-item-3" title="our branched">
+                                            <div class="position-relative gallery-image bg-base-color">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-4.png" alt="" />
+                                                <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                    <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <!-- end gallery item -->
-                            <li class="grid-sizer"></li>
-                            <!-- start gallery item -->
-                            <li class="grid-item transition-inner-all">
-                                <div class="gallery-box overflow-hidden">
-                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-2.png" data-group="lightbox-group-gallery-item-3" title="our branched">
-                                        <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-2.png" alt="Project Sample 1" />
-                                            <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-                                                <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- end gallery item -->
+                                <li class="grid-sizer"></li>
+                                <!-- start gallery item -->
+                                <li class="grid-item transition-inner-all">
+                                    <div class="gallery-box overflow-hidden">
+                                        <a href="<?php echo base_url();?>assets/frontend/img/pic-2.png" data-group="lightbox-group-gallery-item-3" title="our branched">
+                                            <div class="position-relative gallery-image bg-base-color">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-2.png" alt="Project Sample 1" />
+                                                <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                    <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <!-- end gallery item -->
-                            <!-- start gallery item -->
-                            <li class="grid-item transition-inner-all">
-                                <div class="gallery-box overflow-hidden">
-                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-72.png" data-group="lightbox-group-gallery-item-3" title="our branched">
-                                        <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-72.png" alt="" />
-                                            <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-                                                <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- end gallery item -->
+                                <!-- start gallery item -->
+                                <li class="grid-item transition-inner-all">
+                                    <div class="gallery-box overflow-hidden">
+                                        <a href="<?php echo base_url();?>assets/frontend/img/pic-72.png" data-group="lightbox-group-gallery-item-3" title="our branched">
+                                            <div class="position-relative gallery-image bg-base-color">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-72.png" alt="" />
+                                                <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                    <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <!-- end gallery item -->
-                            <!-- start gallery item -->
-                            <li class="grid-item transition-inner-all">
-                                <div class="gallery-box overflow-hidden">
-                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-71.png" data-group="lightbox-group-gallery-item-3" title="our branched">
-                                        <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-71.png" alt="" />
-                                            <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-                                                <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- end gallery item -->
+                                <!-- start gallery item -->
+                                <li class="grid-item transition-inner-all">
+                                    <div class="gallery-box overflow-hidden">
+                                        <a href="<?php echo base_url();?>assets/frontend/img/pic-71.png" data-group="lightbox-group-gallery-item-3" title="our branched">
+                                            <div class="position-relative gallery-image bg-base-color">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-71.png" alt="" />
+                                                <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                    <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="grid-item transition-inner-all">
-                                <div class="gallery-box overflow-hidden">
-                                    <a href="<?php echo base_url();?>assets/frontend/img/pic-73.png" data-group="lightbox-group-gallery-item-3" title="our branched">
-                                        <div class="position-relative gallery-image bg-base-color">
-                                            <img src="<?php echo base_url();?>assets/frontend/img/pic-73.png" alt="" />
-                                            <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-                                                <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="grid-item transition-inner-all">
+                                    <div class="gallery-box overflow-hidden">
+                                        <a href="<?php echo base_url();?>assets/frontend/img/pic-73.png" data-group="lightbox-group-gallery-item-3" title="our branched">
+                                            <div class="position-relative gallery-image bg-base-color">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/pic-73.png" alt="" />
+                                                <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                    <i class="feather icon-feather-search icon-very-medium text-white"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <!-- end gallery item -->
-                        </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- end gallery item -->
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
             <!-- start sticky column -->
             <div class="sticky-wrap d-none d-xl-inline-block" data-animation-delay="100" data-shadow-animation="true">
                 <span class="fs-15 fw-500 d-flex align-items-center"><i class="bi bi-envelope icon-small me-10px align-middle"></i>Arrange your appointment — <a href="contact-us.html" class="text-decoration-line-bottom fw-700 lh-22">Book appointment</a></span>
