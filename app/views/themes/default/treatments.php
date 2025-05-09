@@ -113,26 +113,32 @@
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orbital Floor Fracture Surgery</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Mandibular Condyle Fracture Surgery</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Zygomaticomaxillary Complex Surgery</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>NOE Complex Fracture Surgery</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Nasal Fracture Surgery</li>
             </ul>
         </div>
         <div class="col">
             <ul class="p-0 m-0 list-style-02">
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>NOE Complex Fracture Surgery</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Nasal Fracture Surgery</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Alloplastic TMJ Replacement</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>TMJ Ankylosis Surgery</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Maxillary & Mandibular Osteotomy</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Genioplasty & Arthroplasty</li>
-            </ul>
-        </div>
-        <div class="col">
-            <ul class="p-0 m-0 list-style-02">
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Distraction Osteogenesis</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Rhinoplasty</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cleft Lip & Palate Surgery</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Alveolar Bone Grafting</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="p-0 m-0 list-style-02">
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Chin Reduction & Augmentation</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cheek Fat Removal & Dimple Creation</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Smile Designing</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Full Mouth Rehabilitation</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Wisdom Tooth Removal</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Single Visit Root Canal Treatment</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthodontic Treatment</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
             </ul>
         </div>
     </div>
