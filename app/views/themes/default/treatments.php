@@ -422,7 +422,7 @@
                 <div class="container">
                     <div class="row justify-content-center align-items-center mb-5 text-center text-lg-start">
                         <div class="col-xxl-12 col-lg-12 md-mb-20px">
-                            <h2 class="text-dark-gray text-center fw-600 ls-minus-2px mb-0"><span class="w-20px h-4px d-inline-block bg-base-color me-10px"></span>Our Gallery</h2>
+                            <h2 class="text-dark-gray text-center fw-600 ls-minus-2px mb-0"><span class="w-20px h-4px d-inline-block bg-base-color me-10px"></span>Treatments</h2>
                         </div>
                     
                     </div> 
