@@ -24,7 +24,7 @@
 				<meta name="Title" content="<?php echo $SeoContent['meta_title']; ?>"/>
 				<meta name="description" content="<?php echo $SeoContent['meta_description']; ?>"/>
 				<meta name="keywords" content="<?php echo $SeoContent['meta_keywords']; ?>"/>
-				<meta name="author" content="Aideanex ">
+				<meta name="author" content="Nalam Dental Care ">
 				<meta name="robots" content="index, follow">
 				<meta name="revisit-after" content="2 days">
 				<link rel="canonical" href="<?php echo $SeoContent['page_url']; ?>" />
