@@ -107,51 +107,77 @@
     <div class="row row-cols-1 row-cols-sm-3">
         <div class="col">
             <ul class="p-0 m-0 list-style-02">
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral and Maxillofacial Cancer Surgery</li>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral and Maxillofacial Cancer</li>
+                <ul class="ps-4">
+                    <li>Oral and Maxillofacial Cancer Surgery</li>
+                    <li>Oral Cancer Examination</li>
+                    <li>Oral Cancer Surgical Treatment</li>
+                </ul>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Trauma Surgery</li>
+                <ul class="ps-4">
+                    <li>Orbital Floor Fracture</li>
+                    <li>Mandibular Condyle Fracture</li>
+                    <li>Zygomaticomaxillary Complex Fracture</li>
+                    <li>NOE Complex Fracture</li>
+                    <li>Nasal Fracture Surgery</li>
+                </ul>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Salivary Gland Tumor Surgery</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>OSMF (Oral Submucous Fibrosis)</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orbital Floor Fracture Surgery</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Mandibular Condyle Fracture Surgery</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Zygomaticomaxillary Complex Surgery</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>NOE Complex Fracture Surgery</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Nasal Fracture Surgery</li>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Zygomatic Implants</li>
             </ul>
         </div>
         <div class="col">
             <ul class="p-0 m-0 list-style-02">
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Alloplastic TMJ Replacement</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>TMJ Ankylosis Surgery</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Maxillary & Mandibular Osteotomy</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Genioplasty & Arthroplasty</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Distraction Osteogenesis</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Rhinoplasty</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cleft Lip & Palate Surgery</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Alveolar Bone Grafting</li>
-            </ul>
-        </div>
-        <div class="col">
-            <ul class="p-0 m-0 list-style-02">
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Chin Reduction & Augmentation</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cheek Fat Removal & Dimple Creation</li>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>TMJ Treatments</li>
+                <ul class="ps-4">
+                    <li>Alloplastic TMJ Replacement</li>
+                    <li>TMJ Ankylosis Surgery</li>
+                    <li>Genioplasty & Arthroplasty</li>
+                </ul>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Jaw Surgery</li>
+                <ul class="ps-4">
+                    <li>Maxillary & Mandibular Osteotomy</li>
+                    <li>Distraction Osteogenesis</li>
+                </ul>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cleft Conditions</li>
+                <ul class="ps-4">
+                    <li>Cleft Lip & Palate Surgery</li>
+                    <li>Alveolar Bone Grafting</li>
+                </ul>
+                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Rhinoplasty Surgery</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Smile Designing</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="p-0 m-0 list-style-02">
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cosmetic Facial Procedures</li>
+                <ul class="ps-4">
+                    <li>Chin Reduction & Augmentation</li>
+                    <li>Cheek Fat Removal & Dimple Creation</li>
+                </ul>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>General Dentistry</li>
+                <ul class="ps-4">
+                    <li>Wisdom Tooth Removal</li>
+                    <li>Single Visit Root Canal Treatment</li>
+                    <li>Orthodontic Treatment</li>
+                    <li>Fillings</li>
+                    <li>Extractions</li>
+                    <li>Scaling and Flap Surgery</li>
+                    <li>Veneers & Bleaching</li>
+                </ul>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
+                <ul class="ps-4">
+                    <li>Ball and Socket Implants</li>
+                    <li>All on 4 Implants</li>
+                    <li>All on 6 Implants</li>
+                    <li>Teeth Replacement - Crowns, Bridges & Implants, Partial & Complete Denture</li>
+                </ul>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Full Mouth Rehabilitation</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Wisdom Tooth Removal</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Single Visit Root Canal Treatment</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthodontic Treatment</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
             </ul>
         </div>
     </div>
 </div>
 
-                    <!-- <div class="col-lg-4 offset-xl-1 position-relative md-mb-50px">
-                        <div class="w-80 lg-w-85 mt-minus-20px float-end">
-                            <img class="md-w-100" src="<?php echo base_url();?>assets/frontend/img/hospital.png" alt="" />
-                        </div>
-                        <div class="w-50 position-absolute left-15px bottom-20px lg-bottom-minus-50px">
-                            <img src="<?php echo base_url();?>assets/frontend/img/hospital2.png" alt="" class="box-shadow-quadruple-large" />
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
