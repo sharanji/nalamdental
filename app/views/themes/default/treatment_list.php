@@ -10,10 +10,10 @@
                     <li>Root Canal Treatment & Re-Root Canal</li>
                     <li>Fixed Orthodontic Treatment</li>
                     <ul class="ps-4">
-                        <li>Metal Braces</li>
-                        <li>Creamic Braces</li>
-                        <li>Self Ligating Braces</li>
-                        <li>Invisalign</li>
+                        <li><i class="fa-solid fa-plus fs-12 me-10px"></i>Metal Braces</li>
+                        <li><i class="fa-solid fa-plus fs-12 me-10px"></i>Creamic Braces</li>
+                        <li><i class="fa-solid fa-plus fs-12 me-10px"></i>Self Ligating Braces</li>
+                        <li><i class="fa-solid fa-plus fs-12 me-10px"></i>Invisalign</li>
                     </ul>
                     <li>Fillings</li>
                     <li>Extractions</li>
