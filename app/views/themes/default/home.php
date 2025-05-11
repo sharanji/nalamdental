@@ -213,7 +213,7 @@
 <section class="--bg-extra-very-slate-blue background-position-center-top position-relative overflow-hidden pt-0" style="background-image: url('images/demo-architecture-dotted-pattern.svg')">
             <div class="container">
                 <div class="row mb-6 align-items-center">
-                    <?php require_once('/treatment_list.php');?>
+                    <?php require_once('app/views/themes/default/treatment_list.php');?>
                 </div>
             </div>
         </section>
