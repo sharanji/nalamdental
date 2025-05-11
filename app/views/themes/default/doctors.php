@@ -63,54 +63,19 @@
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-sm-2 justify-content-center" data-anime='{"el": "childs", "translateY": [15, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'> 
-                        <!-- start team member item -->
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
                                 <div class="position-relative">
                                 <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
                                 </div>
-                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. Kiruthikaa. M  </a>
-                                <p class="w-90 mx-auto lh-28"> BDS  <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
-                                <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
-                                <span class="text-dark-gray fw-700 me-2"><i class="fas fa-phone-alt"></i></span>
-                                    <a href="tel:+91 74189148484">+91 8925825228</a><br>
-
-                                    <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Meera multi speciality hospital </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col team-style-06 mb-30px">
-                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
-                                <div class="position-relative">
-                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
-                                </div>
-                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. P.K.Hari haran   </a>
-                                <p class="w-90 mx-auto lh-28"> BDS<span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
-                                <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
-                                <span class="text-dark-gray fw-700 me-2"><i class="fas fa-phone-alt"></i></span>
-                                    <a href="tel:+91 74189148484">+91 7418914848</a><br>
-
-                                    <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Santhur Branch</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end team member item --> 
-                            <!-- start team member item -->
-                            <div class="col team-style-06 mb-30px">
-                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
-                                <div class="position-relative">
-                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
-                                </div>
-                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.B. Chandra udhayan   </a>
+                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.U. Tharani </a>
                                 <p class="w-90 mx-auto lh-28"> BDS <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
                                 <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
                                 <span class="text-dark-gray fw-700 me-2"><i class="fas fa-phone-alt"></i></span>
-                                    <a href="tel:+91 9952614240">+91 9952614240</a><br>
+                                    <a href="tel:+91 8807601839">+91 8807601839</a><br>
 
                                     <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Shoolagiri Branch</a>
+                                    <a href="javascript:void(0)">Hosur Branch</a>
                                 </div>
                             </div>
                         </div>
@@ -131,24 +96,58 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end team member item --> 
-                            <!-- start team member item -->
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
                                 <div class="position-relative">
                                 <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
                                 </div>
-                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.U. Tharani </a>
+                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.B. Chandra udhayan   </a>
                                 <p class="w-90 mx-auto lh-28"> BDS <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
                                 <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
                                 <span class="text-dark-gray fw-700 me-2"><i class="fas fa-phone-alt"></i></span>
-                                    <a href="tel:+91 8807601839">+91 8807601839</a><br>
+                                    <a href="tel:+91 9952614240">+91 9952614240</a><br>
 
                                     <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
-                                    <a href="javascript:void(0)">Hosur Branch</a>
+                                    <a href="javascript:void(0)">Shoolagiri Branch</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="col team-style-06 mb-30px">
+                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
+                                <div class="position-relative">
+                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
+                                </div>
+                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. P.K.Hari haran   </a>
+                                <p class="w-90 mx-auto lh-28"> BDS<span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
+                                <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
+                                <span class="text-dark-gray fw-700 me-2"><i class="fas fa-phone-alt"></i></span>
+                                    <a href="tel:+91 74189148484">+91 7418914848</a><br>
+
+                                    <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
+                                    <a href="javascript:void(0)">Santhur Branch</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end team member item --> 
+                         <!-- start team member item -->
+                        <div class="col team-style-06 mb-30px">
+                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
+                                <div class="position-relative">
+                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
+                                </div>
+                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. Kiruthikaa. M  </a>
+                                <p class="w-90 mx-auto lh-28"> BDS  <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
+                                <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
+                                <span class="text-dark-gray fw-700 me-2"><i class="fas fa-phone-alt"></i></span>
+                                    <a href="tel:+91 74189148484">+91 8925825228</a><br>
+
+                                    <span class="text-dark-gray fw-700 ms-4 me-2"><i class="fas fa-map-marker-alt"></i></span>
+                                    <a href="javascript:void(0)">Meera multi speciality hospital </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end team member item --> 
+                            <!-- start team member item -->
                           <!-- start team member item -->
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">

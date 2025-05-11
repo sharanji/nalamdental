@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Astrology Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js"></script>
+</head>
+
+<body>
+    <div id="drawing" style="width: 100%; height: 100vh;"></div>
+
+    <script>
+        const draw = SVG().addTo('#drawing').size('100%', '100%').viewbox(0, 0, 800, 600);
+
+        const gradient = draw.gradient('linear', function(add) {
+            add.stop(0, 'white');
+            add.stop(1, '#f0f3bf');
+        }).from(0, 0).to(0, 1);
+
+        const house_no = [7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
+
+        const houses = [
+            [
+                [100, 225],
+                [200, 300],
+                [300, 225],
+                [200, 150]
+            ],
+            [
+                [100, 225],
+                [0, 300],
+                [200, 300]
+            ],
+            [
+                [0, 150],
+                [0, 300],
+                [100, 225]
+            ],
+            [
+                [0, 150],
+                [100, 225],
+                [200, 150],
+                [100, 75]
+            ],
+            [
+                [0, 0],
+                [0, 150],
+                [100, 75]
+            ],
+            [
+                [0, 0],
+                [100, 75],
+                [200, 0]
+            ],
+            [
+                [100, 75],
+                [200, 150],
+                [300, 75],
+                [200, 0]
+            ],
+            [
+                [200, 0],
+                [300, 75],
+                [400, 0]
+            ],
+            [
+                [300, 75],
+                [400, 150],
+                [400, 0]
+            ],
+            [
+                [300, 75],
+                [200, 150],
+                [300, 225],
+                [400, 150]
+            ],
+            [
+                [300, 225],
+                [400, 300],
+                [400, 150]
+            ],
+            [
+                [300, 225],
+                [200, 300],
+                [400, 300]
+            ],
+        ];
+
+        houses.forEach(points => {
+            draw.polygon(points.map(p => p.join(',')).join(' '))
+                .fill(gradient)
+                .stroke({
+                    width: 1,
+                    color: 'black'
+                });
+        });
+
+        const house_coords = [
+            [195, 130],
+            [97, 60],
+            [75, 78],
+            [170, 152],
+            [75, 227],
+            [95, 245],
+            [195, 170],
+            [295, 245],
+            [320, 227],
+            [220, 152],
+            [320, 77],
+            [295, 60]
+        ];
+
+        house_coords.forEach((pos, i) => {
+            draw.text(String(house_no[i]))
+                .font({
+                    size: 12,
+                    family: 'sans-serif'
+                })
+                .fill('teal')
+                .move(pos[0], pos[1]);
+        });
+
+        const planets = ['Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Venus', 'Saturn', 'Rahu', 'Ketu'];
+        const colors = ['#FFD700', '#C0C0C0', '#FF0000', '#008000', '#0000FF', '#FFFFFF', '#000000', '#708090', '#A52A2A'];
+
+        const centers = [
+            [190, 75],
+            [100, 30],
+            [30, 75],
+            [90, 150],
+            [30, 225],
+            [90, 278],
+            [190, 225],
+            [290, 278],
+            [360, 225],
+            [290, 150],
+            [360, 75],
+            [290, 30]
+        ];
+
+        const housePlanets = Array.from({
+            length: 12
+        }, () => []);
+
+        planets.forEach(planet => {
+            const index = Math.floor(Math.random() * 12);
+            housePlanets[index].push(planet);
+        });
+
+        const radius = 20;
+        centers.forEach((center, i) => {
+            housePlanets[i].forEach((planet, j, arr) => {
+                const angle = 2 * Math.PI * j / arr.length;
+                const x = center[0] + radius * Math.cos(angle);
+                const y = center[1] + radius * Math.sin(angle);
+                const color = colors[planets.indexOf(planet)];
+                draw.text(planet.slice(0, 2))
+                    .font({
+                        size: 11
+                    })
+                    .fill(color)
+                    .move(x, y);
+            });
+        });
+    </script>
+</body>
+
+</html>

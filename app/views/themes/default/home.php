@@ -111,7 +111,7 @@
                 <p class="mb-30px w-95 lg-w-100 xs-mb-25px">At Nalam Dental Care, we provide expert dental treatments with the latest technology to ensure pain-free and effective solutions. From routine checkups to complex surgeries, we offer personalized care for a healthier and brighter smile.</p> 
                 <div class="row align-items-center text-right text-sm-start">
                     <div class="col-sm-auto xs-mb-10px">
-                        <h2 class="alt-font text-dark-gray mb-0 d-inline-block align-middle me-10px fw-800">900+</h2>
+                        <h2 class="alt-font text-dark-gray mb-0 d-inline-block align-middle me-10px fw-800">5000+</h2>
                         <div class="text-center bg-golden-yellow text-white fs-14 ls-1px border-radius-4px d-inline-block ps-15px pe-15px lh-34 align-middle me-5px">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
@@ -218,19 +218,28 @@
                         <div class="row row-cols-1 row-cols-sm-3">
                             <div class="col">
                                 <ul class="p-0 m-0 list-style-02">
+                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>General Dentistry</li>
+                                    <ul class="ps-4">
+                                        <li>Wisdom Tooth Removal</li>
+                                        <li>Single Visit Root Canal Treatment</li>
+                                        <li>Orthodontic Treatment</li>
+                                        <li>Fillings</li>
+                                        <li>Extractions</li>
+                                        <li>Scaling and Flap Surgery</li>
+                                        <li>Veneers & Bleaching</li>
+                                    </ul>
+                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
+                                    <ul class="ps-4">
+                                        <li>Ball and Socket Implants</li>
+                                        <li>All on 4 Implants</li>
+                                        <li>All on 6 Implants</li>
+                                        <li>Teeth Replacement - Crowns, Bridges & Implants, Partial & Complete Denture</li>
+                                    </ul>
                                     <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral and Maxillofacial Cancer</li>
                                     <ul class="ps-4">
                                         <li>Oral and Maxillofacial Cancer Surgery</li>
                                         <li>Oral Cancer Examination</li>
                                         <li>Oral Cancer Surgical Treatment</li>
-                                    </ul>
-                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Trauma Surgery</li>
-                                    <ul class="ps-4">
-                                        <li>Orbital Floor Fracture</li>
-                                        <li>Mandibular Condyle Fracture</li>
-                                        <li>Zygomaticomaxillary Complex Fracture</li>
-                                        <li>NOE Complex Fracture</li>
-                                        <li>Nasal Fracture Surgery</li>
                                     </ul>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Salivary Gland Tumor Surgery</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>OSMF (Oral Submucous Fibrosis)</li>
@@ -266,24 +275,15 @@
                                         <li>Chin Reduction & Augmentation</li>
                                         <li>Cheek Fat Removal & Dimple Creation</li>
                                     </ul>
-                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>General Dentistry</li>
-                                    <ul class="ps-4">
-                                        <li>Wisdom Tooth Removal</li>
-                                        <li>Single Visit Root Canal Treatment</li>
-                                        <li>Orthodontic Treatment</li>
-                                        <li>Fillings</li>
-                                        <li>Extractions</li>
-                                        <li>Scaling and Flap Surgery</li>
-                                        <li>Veneers & Bleaching</li>
-                                    </ul>
-                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
-                                    <ul class="ps-4">
-                                        <li>Ball and Socket Implants</li>
-                                        <li>All on 4 Implants</li>
-                                        <li>All on 6 Implants</li>
-                                        <li>Teeth Replacement - Crowns, Bridges & Implants, Partial & Complete Denture</li>
-                                    </ul>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Full Mouth Rehabilitation</li>
+                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Trauma Surgery</li>
+                                    <ul class="ps-4">
+                                        <li>Orbital Floor Fracture</li>
+                                        <li>Mandibular Condyle Fracture</li>
+                                        <li>Zygomaticomaxillary Complex Fracture</li>
+                                        <li>NOE Complex Fracture</li>
+                                        <li>Nasal Fracture Surgery</li>
+                                    </ul>
                                 </ul>
                             </div>
                         </div>
@@ -613,11 +613,11 @@
                         <!--<div class="swiper-pagination slider-three-slide-pagination swiper-pagination-style-2 swiper-pagination-clickable swiper-pagination-bullets"></div>-->
                         <!-- end slider pagination -->
                         <div class="custom-swiper-button-prev">
-    <i class="feather icon-feather-arrow-left"></i>
-</div>
-<div class="custom-swiper-button-next">
-    <i class="feather icon-feather-arrow-right"></i>
-</div>
+                            <i class="feather icon-feather-arrow-left"></i>
+                        </div>
+                        <div class="custom-swiper-button-next">
+                            <i class="feather icon-feather-arrow-right"></i>
+                        </div>
 
                     </div>
                 </div>
@@ -633,21 +633,21 @@
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                     <!-- start counter item -->
                     <div class="col-sm-6 last-paragraph-no-margin counter-style-04 md-mb-35px">
-    <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mb-10px" data-text="%" data-to="98"><sup class="text-jade top-minus-5px"><i class="bi bi-arrow-up icon-medium"></i></sup></h2>
-    <span class="fs-19 fw-600 ls-minus-05px text-dark-gray d-block" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>Satisfied patients</span>
-    <p class="w-85 sm-w-100 md-mx-auto" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>
-        98% of patients are highly satisfied with treatments.
-    </p>
-</div>
-<!-- end counter item -->
-<!-- start counter item -->
-<div class="col-sm-6 last-paragraph-no-margin counter-style-04 md-mb-35px">
-    <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mb-10px" data-text="%" data-to="100"><sup class="text-jade top-minus-5px"><i class="bi bi-arrow-up icon-medium"></i></sup></h2>
-    <span class="fs-19 fw-600 ls-minus-05px text-dark-gray d-block" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>Successful treatments</span>
-    <p class="w-85 sm-w-100 md-mx-auto" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>
-        100% success rate in various dental treatments.
-    </p>
-</div>
+                        <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mb-10px" data-text="%" data-to="98"><sup class="text-jade top-minus-5px"><i class="bi bi-arrow-up icon-medium"></i></sup></h2>
+                        <span class="fs-19 fw-600 ls-minus-05px text-dark-gray d-block" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>Satisfied patients</span>
+                        <p class="w-85 sm-w-100 md-mx-auto" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>
+                            98% of patients are highly satisfied with treatments.
+                        </p>
+                    </div>
+                    <!-- end counter item -->
+                    <!-- start counter item -->
+                    <div class="col-sm-6 last-paragraph-no-margin counter-style-04 md-mb-35px">
+                        <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mb-10px" data-text="%" data-to="100"><sup class="text-jade top-minus-5px"><i class="bi bi-arrow-up icon-medium"></i></sup></h2>
+                        <span class="fs-19 fw-600 ls-minus-05px text-dark-gray d-block" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>Successful treatments</span>
+                        <p class="w-85 sm-w-100 md-mx-auto" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>
+                            100% success rate in various dental treatments.
+                        </p>
+                    </div>
 
                     <!-- end counter item -->
                 </div>
@@ -744,15 +744,16 @@
                                 <div class="select">
                                     <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="select" id="doctor" onchange="updateDoctorDetails()" required>
                                         <option value="">Select doctor</option>
-                                        <option value="Dr.N.Nisanth">Dr.N.Nisanth</option>
+                                        <option value="G. Anbuselvan">G. Anbuselvan BDS, MDS, Dip. OO & RS</option>
+                                        <option value="U. Tharani">U. Tharani BDS</option>
+                                        <option value="Dr.N.Nisanth">Dr.N.Nisanth BDS , DHM</option>
                                         <option value="P.K.Hari haran">P.K.Hari haran</option>
-                                        <option value="B. Chandra udhayan">B. Chandra udhayan</option>
-                                        <option value="G. Anbuselvan">G. Anbuselvan</option>
-                                        <option value="U. Tharani">U. Tharani</option>
-                                        <option value="Dr.J.Jayaindhraeswaran">Dr.J.Jayaindhraeswaran</option>
+                                        <option value="B. Chandra udhayan">B. Chandra udhayan BDS</option>
+                                        <option value="B. Chandra udhayan">Dr. Kiruthikaa BDS</option>
+                                        <!-- <option value="Dr.J.Jayaindhraeswaran">Dr.J.Jayaindhraeswaran</option>
                                         <option value="Dr.Pavithra">Dr.Pavithra</option>
                                         <option value="Dr.Shivangi">Dr.Shivangi</option>
-                                        <option value="Dr. Deepak ravindran">Dr. Deepak ravindran</option>
+                                        <option value="Dr. Deepak ravindran">Dr. Deepak ravindran</option> -->
                                     </select>
                                 </div>
                             </div>
