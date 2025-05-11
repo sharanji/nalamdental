@@ -31,8 +31,6 @@
                     <li>Bridges</li>
                     <li>Partial & Complete Denture</li>
                 </ul>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Salivary Gland Tumor Surgery</li>
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>OSMF (Oral Submucous Fibrosis)</li>
                 <!-- <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>s</li> -->
             </ul>
         </div>
@@ -67,6 +65,8 @@
                     <li>Oral Cancer Examination</li>
                     <li>Oral Cancer Surgical Treatment</li>
                 </ul>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Salivary Gland Tumor Surgery</li>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>OSMF (Oral Submucous Fibrosis)</li>
             </ul>
         </div>
         <div class="col">
