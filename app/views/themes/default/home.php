@@ -221,19 +221,37 @@
                                     <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>General Dentistry</li>
                                     <ul class="ps-4">
                                         <li>Wisdom Tooth Removal</li>
-                                        <li>Single Visit Root Canal Treatment</li>
-                                        <li>Orthodontic Treatment</li>
+                                        <li>Surgical Tooth Removal</li>
+                                        <li>Root Canal Treatment & Re-Root Canal</li>
+                                        <li>Fixed Orthodontic Treatment</li>
+                                        <ul class="ps-4">
+                                            <li>Metal Braces</li>
+                                            <li>Creamic Braces</li>
+                                            <li>Self Ligating Braces</li>
+                                            <li>Invisalign</li>
+                                        </ul>
                                         <li>Fillings</li>
                                         <li>Extractions</li>
                                         <li>Scaling and Flap Surgery</li>
                                         <li>Veneers & Bleaching</li>
+                                        <li>Laser Dentistry</li>
+                                        <li>Pedodontic Dentistry</li>
+                                        <li>Inlay & Onlay Crowns</li>
+                                        <li>Smile Designing</li>
+                                        <li>Full Mouth Rehabilitation</li>
                                     </ul>
                                     <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
                                     <ul class="ps-4">
+                                        <li>Zygomatic Implant</li>
                                         <li>Ball and Socket Implants</li>
                                         <li>All on 4 Implants</li>
                                         <li>All on 6 Implants</li>
-                                        <li>Teeth Replacement - Crowns, Bridges & Implants, Partial & Complete Denture</li>
+                                    </ul>
+                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Teeth Replacement</li>
+                                    <ul class="ps-4">
+                                        <li>Crowns</li>
+                                        <li>Bridges</li>
+                                        <li>Partial & Complete Denture</li>
                                     </ul>
                                     <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral and Maxillofacial Cancer</li>
                                     <ul class="ps-4">
@@ -243,7 +261,7 @@
                                     </ul>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Salivary Gland Tumor Surgery</li>
                                     <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>OSMF (Oral Submucous Fibrosis)</li>
-                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Zygomatic Implants</li>
+                                    <!-- <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>s</li> -->
                                 </ul>
                             </div>
                             <div class="col">
@@ -252,38 +270,49 @@
                                     <ul class="ps-4">
                                         <li>Alloplastic TMJ Replacement</li>
                                         <li>TMJ Ankylosis Surgery</li>
-                                        <li>Genioplasty & Arthroplasty</li>
                                     </ul>
                                     <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Jaw Surgery</li>
                                     <ul class="ps-4">
                                         <li>Maxillary & Mandibular Osteotomy</li>
                                         <li>Distraction Osteogenesis</li>
                                     </ul>
-                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cleft Conditions</li>
+                                    <!-- <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cleft Conditions</li>
                                     <ul class="ps-4">
-                                        <li>Cleft Lip & Palate Surgery</li>
+                                        <li></li>
                                         <li>Alveolar Bone Grafting</li>
+                                    </ul> -->
+                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthognathic Surgery</li>
+                                    <ul class="ps-4">
+                                        <li>Maxillary osteotomy</li>
+                                        <li>Mandibular osteotomy</li>
+                                        <li>Genioplasty</li>
+                                        <li>Arthroplasty</li>
+                                        <li>Distractive osteogenesis</li>
                                     </ul>
-                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Rhinoplasty Surgery</li>
-                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Smile Designing</li>
                                 </ul>
                             </div>
                             <div class="col">
                                 <ul class="p-0 m-0 list-style-02">
-                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cosmetic Facial Procedures</li>
+                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Plastic Surgery</li>
                                     <ul class="ps-4">
                                         <li>Chin Reduction & Augmentation</li>
                                         <li>Cheek Fat Removal & Dimple Creation</li>
+                                        <li>Speech surgery</li>
+                                        <li>Rhinoplasty Surgery</li>
+                                        <li>Cleft Lip & Palate Surgery</li>
+                                        <li>Alveolar Bone Grafting</li>
+                                        <li>Ear Lobule Repair</li>
+                                        <li>Tounge Tie Release</li>
                                     </ul>
-                                    <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Full Mouth Rehabilitation</li>
                                     <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Trauma Surgery</li>
                                     <ul class="ps-4">
                                         <li>Orbital Floor Fracture</li>
                                         <li>Mandibular Condyle Fracture</li>
                                         <li>Zygomaticomaxillary Complex Fracture</li>
                                         <li>NOE Complex Fracture</li>
-                                        <li>Nasal Fracture Surgery</li>
+                                        <li>Nasal Bone Fracture Surgery</li>
                                     </ul>
+                                    <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Reconstruction Surgery</li>
                                 </ul>
                             </div>
                         </div>
