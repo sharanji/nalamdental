@@ -51,7 +51,7 @@
                     <li></li>
                     <li>Alveolar Bone Grafting</li>
                 </ul> -->
-                <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthognathic Surgery</li>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthognathic Surgery</li>
                 <ul class="ps-4">
                     <li>Maxillary osteotomy</li>
                     <li>Mandibular osteotomy</li>
