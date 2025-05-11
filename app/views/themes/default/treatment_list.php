@@ -31,12 +31,6 @@
                     <li>Bridges</li>
                     <li>Partial & Complete Denture</li>
                 </ul>
-                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral and Maxillofacial Cancer</li>
-                <ul class="ps-4">
-                    <li>Oral and Maxillofacial Cancer Surgery</li>
-                    <li>Oral Cancer Examination</li>
-                    <li>Oral Cancer Surgical Treatment</li>
-                </ul>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>Salivary Gland Tumor Surgery</li>
                 <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>OSMF (Oral Submucous Fibrosis)</li>
                 <!-- <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>s</li> -->
@@ -67,12 +61,11 @@
                     <li>Arthroplasty</li>
                     <li>Distractive osteogenesis</li>
                 </ul>
-                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral and Maxillofacial Cancer</li>
                 <ul class="ps-4">
-                    <li>Zygomatic Implant</li>
-                    <li>Ball and Socket Implants</li>
-                    <li>All on 4 Implants</li>
-                    <li>All on 6 Implants</li>
+                    <li>Oral and Maxillofacial Cancer Surgery</li>
+                    <li>Oral Cancer Examination</li>
+                    <li>Oral Cancer Surgical Treatment</li>
                 </ul>
             </ul>
         </div>
@@ -96,6 +89,13 @@
                     <li>Zygomaticomaxillary Complex Fracture</li>
                     <li>NOE Complex Fracture</li>
                     <li>Nasal Bone Fracture Surgery</li>
+                </ul>
+                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
+                <ul class="ps-4">
+                    <li>Zygomatic Implant</li>
+                    <li>Ball and Socket Implants</li>
+                    <li>All on 4 Implants</li>
+                    <li>All on 6 Implants</li>
                 </ul>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Reconstruction Surgery</li>
             </ul>
