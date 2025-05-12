@@ -40,7 +40,7 @@
                                     <div class="icon-with-text-style-08">
                                         <div class="feature-box feature-box-left-icon-middle overflow-hidden">
                                             <div class="feature-box-icon me-15px">
-                                                <img src="<?php echo base_url();?>assets/frontend/img/demo-medical-hero-banner-icon-01.png" class="h-50px" alt="dental doctor">
+                                                <img src="<?php echo base_url();?>assets/frontend/img/demo-medical-hero-banner-01.png" class="h-50px" alt="dental doctor">
                                             </div>
                                             <div class="feature-box-content last-paragraph-no-margin">
                                                 <span class="d-inline-block fs-17 fw-700 text-dark-gray">Verified doctors</span>
