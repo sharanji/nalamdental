@@ -93,8 +93,8 @@
                 <div class="w-75" data-animation-delay="200" data-shadow-animation="true" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
                     <img src="<?php echo base_url();?>assets/frontend/img/about.png" alt="Nalam Dental Care" class="border-radius-6px w-100">
                     <div class="position-absolute left-minus-70px lg-left-minus-15px md-left-minus-50px bottom-130px lg-bottom-90px md-mb-50px d-none d-md-flex flex-column align-items-center justify-content-center w-140px h-140px bg-white border-radius-100 p-10px box-shadow-quadruple-large" data-anime='{"translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 800, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <img src="images/dental-icon-01.png" class="position-absolute top-50 translate-middle-y" alt="dental care hosur">
-                        <img src="images/dental-icon-02.png" class="animation-rotation" alt="dental care hosur">
+                        <img src="<?php echo base_url();?>assets/frontend/img/demo-medical-home-06_1.png" class="position-absolute top-50 translate-middle-y" alt="">
+                        <img src="<?php echo base_url();?>assets/frontend/img/demo-medical-home-07.png" class="animation-rotation" alt="">
                     </div>
                 </div>
                 <div class="w-55 overflow-hidden position-absolute right-15px bottom-minus-50px" data-shadow-animation="true" data-animation-delay="100" data-bottom-top="transform: translateY(-20px)" data-top-bottom="transform: translateY(20px)">
