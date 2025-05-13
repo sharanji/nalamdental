@@ -76,7 +76,7 @@
 			
 			<?php echo ANALYTICS_CODE ; */ ?>
 		<!-- SEO -->
-		<link rel="icon" type="image/png" href="<?php echo base_url();?>uploads/favicon.png" type="image/x-icon">
+		<link rel="icon" type="image/png" href="<?php echo base_url();?>uploads/favicon.png">
 	
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/frontend/css/all.min.css">
 		<link href="<?php echo base_url();?>assets/frontend/css/bootstrap.min.css" rel="stylesheet" />	
