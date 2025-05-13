@@ -30,11 +30,11 @@
 				<link rel="canonical" href="<?php echo $SeoContent['page_url']; ?>" />
 				<meta property="og:locale" content="en_US" />
 				<meta property="og:type" content="website" />
-				<meta name="og_title" content="<?php echo $SeoContent['og_title']; ?>"/>
-				<meta name="og_description" content="<?php echo $SeoContent['og_description']; ?>"/>
-				<meta name="og_url" content="<?php echo $SeoContent['og_url']; ?>"/>
-				<meta name="og_sitename" content="<?php echo $SeoContent['og_sitename']; ?>"/>
-				<meta property="og:image" content=" " />
+				<meta property="og:title" content="Nalam Dental Care | Best Dental Clinic in Hosur">
+				<meta property="og:description" content="Top-quality dental care including root canal, implants, braces, and teeth whitening at Nalam Dental Care in Hosur.">
+				<meta property="og:url" content="https://nalamdentalcare.in">
+				<meta property="og:type" content="website">
+				<meta property="og:image" content="https://nalamdentalcare.in/assets/frontend/img/pic-4.png"> 
 				<?php /*
 					<meta name="subject" content="<?php echo $SeoContent['meta_subject']; ?>"/>
 				*/ ?>
@@ -50,7 +50,7 @@
 		<meta name="Title" content="<?php echo META_TITLE; ?>"/>
 		<meta name="description" content="<?php echo META_DESCRIPTION; ?>"/>
 		<meta name="keywords" content="<?php echo META_KEYWORDS; ?>"/>
-		<meta name="author" content="Aideanex ">
+		<meta name="author" content="Nalam Dental Care ">
 		<meta name="robots" content="index, follow">
 		<meta name="revisit-after" content="2 days">
 		<link rel="canonical" href="<?php echo PAGE_URL; ?>" />
@@ -63,7 +63,7 @@
 		<?php /*
 			<meta name="subject" content="<?php echo META_SUBJECT; ?>"/> 
 		*/ ?>
-		<meta property="og:image" content=" " />
+		<meta property="og:image" content="https://nalamdentalcare.in/assets/frontend/img/pic-4.png" />
 		<?php 
 	} 
 ?>
