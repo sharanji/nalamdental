@@ -130,6 +130,24 @@
 
 		
 		</style>
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Dentist",
+			"name": "Nalam Dental Care",
+			"address": {
+			"@type": "No, 80/3-A1,First Floor, Denkanikotta Rd, opposite to Government Hospital, Hosur, Tamil Nadu 635109",
+			"streetAddress": "No, 80/3-A1,First Floor, Denkanikotta Rd, opposite to Government Hospital, Hosur, Tamil Nadu 635109",
+			"addressLocality": "Hosur",
+			"addressRegion": "Tamil Nadu",
+			"postalCode": "635109",
+			"addressCountry": "IN"
+			},
+			"telephone": "+91-9159671189",
+			"url": "https://nalamdentalcare.in"
+		}
+  		</script>
 	</head>
 	<?php 
 			$segment = $this->uri->segment(1);
