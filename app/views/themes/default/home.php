@@ -580,7 +580,7 @@
                     <div class="row align-items-center pt-25px pb-25px"> 
                         <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
                             <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="best dental doctor">  
-                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="best dental hospial hosur">The dental care I received was outstanding! The staff is so friendly, and the treatment was top-notch.</span>
+                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative">The dental care I received was outstanding! The staff is so friendly, and the treatment was top-notch.</span>
                         </div>
                         <div class="col-lg-1 d-none d-lg-inline-block">
                             <div class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto"></div>
@@ -597,7 +597,7 @@
                     <div class="row align-items-center pt-25px pb-25px"> 
                         <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start"> 
                             <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="best dental doctor">  
-                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="best dental hospial hosur">I had my root canal here and was so relieved. The procedure was painless, and the recovery was quick.</span>
+                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative">I had my root canal here and was so relieved. The procedure was painless, and the recovery was quick.</span>
                         </div>
                         <div class="col-lg-1 d-none d-lg-inline-block">
                             <div class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto"></div>
@@ -614,7 +614,7 @@
                     <div class="row align-items-center pt-25px pb-25px"> 
                         <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start"> 
                             <img src="<?php echo base_url();?>assets/frontend/img/user.png" class="rounded-circle w-100px h-100px md-mb-35px" alt="best dental hospial hosur">  
-                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img src="images/demo-accounting-home-quote-img.png" class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto" alt="best dental doctor">My experience was great! The staff made me feel at ease, and the dental procedures were comfortable.</span>
+                            <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative">My experience was great! The staff made me feel at ease, and the dental procedures were comfortable.</span>
                         </div>
                         <div class="col-lg-1 d-none d-lg-inline-block">
                             <div class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto"></div>
