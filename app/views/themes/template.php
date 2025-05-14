@@ -134,21 +134,75 @@
 
 		<script type="application/ld+json">
 		{
-			"@context": "https://schema.org",
-			"@type": "Dentist",
-			"name": "Nalam Dental Care",
-			"address": {
-			"@type": "No, 80/3-A1,First Floor, Denkanikotta Rd, opposite to Government Hospital, Hosur, Tamil Nadu 635109",
-			"streetAddress": "No, 80/3-A1,First Floor, Denkanikotta Rd, opposite to Government Hospital, Hosur, Tamil Nadu 635109",
-			"addressLocality": "Hosur",
-			"addressRegion": "Tamil Nadu",
-			"postalCode": "635109",
-			"addressCountry": "IN"
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "Dentist",
+				"@id": "https://nalamdentalcare.in#hosur",
+				"name": "Nalam Dental Care - Hosur",
+				"image": "https://nalamdentalcare.in/assets/frontend/img/logo.png",
+				"url": "https://nalamdentalcare.in",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "No, 80/3-A1,First Floor, Denkanikotta Rd, opposite to Government Hospital, Hosur, Tamil Nadu 635109",
+					"addressLocality": "Hosur",
+					"addressRegion": "Tamil Nadu",
+					"postalCode": "635109",
+					"addressCountry": "IN"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 12.72897630396007,
+					"longitude": 77.82449534856539
+				},
+				"telephone": "+91-9159671189"
 			},
-			"telephone": "+91-9159671189",
-			"url": "https://nalamdentalcare.in"
+			{
+			"@type": "Dentist",
+			"@id": "https://nalamdentalcare.in#shoolagiri",
+			"name": "Nalam Dental Care - Shoolagiri",
+			"image": "https://nalamdentalcare.in/assets/frontend/img/logo.png",
+			"url": "https://nalamdentalcare.in/shoolagiri",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Your Shoolagiri Clinic Address Here",
+				"addressLocality": "Shoolagiri",
+				"addressRegion": "Tamil Nadu",
+				"postalCode": "635117",
+				"addressCountry": "IN"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 12.7034,
+				"longitude": 77.8413
+			},
+			"telephone": "+91-XXXXXXXXXX"
+			},
+			{
+			"@type": "Dentist",
+			"@id": "https://nalamdentalcare.in#kaveripatinam",
+			"name": "Nalam Dental Care - Kaveripatinam",
+			"image": "https://nalamdentalcare.in/logo.png",
+			"url": "https://nalamdentalcare.in/kaveripatinam",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Your Kaveripatinam Clinic Address Here",
+				"addressLocality": "Kaveripatinam",
+				"addressRegion": "Tamil Nadu",
+				"postalCode": "635112",
+				"addressCountry": "IN"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 12.5293,
+				"longitude": 78.1452
+			},
+			"telephone": "+91-XXXXXXXXXX"
+			}
+		]
 		}
-  		</script>
+		</script>
+
 	</head>
 	<?php 
 			$segment = $this->uri->segment(1);
