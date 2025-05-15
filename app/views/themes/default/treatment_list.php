@@ -6,8 +6,7 @@
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>General Dentistry</li>
                 <ul class="ps-4">
                     <li>Wisdom Tooth Removal</li>
-                    <li>Surgical Tooth Removal</li>
-                    <li>Root Canal Treatment & Re-Root Canal</li>
+                    <li>Root Canal & Re-Root Canal Treatment</li>
                     <li>Fixed Orthodontic Treatment</li>
                     <ul class="ps-4">
                         <li><i class="fa-solid fa-plus fs-12 me-10px"></i>Metal Braces</li>
@@ -30,6 +29,7 @@
                     <li>Crowns</li>
                     <li>Bridges</li>
                     <li>Partial & Complete Denture</li>
+                    <li>cast partial denture</li>
                 </ul>
                 <!-- <li class="pb-5px"><i class="fa-solid fa-plus fs-12 me-10px"></i>s</li> -->
             </ul>
@@ -38,19 +38,9 @@
             <ul class="p-0 m-0 list-style-02">
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>TMJ Treatments</li>
                 <ul class="ps-4">
-                    <li>Alloplastic TMJ Replacement</li>
+                    <li>Alloplastic TMJ Replacement Surgery</li>
                     <li>TMJ Ankylosis Surgery</li>
                 </ul>
-                <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Jaw Surgery</li>
-                <ul class="ps-4">
-                    <li>Maxillary & Mandibular Osteotomy</li>
-                    <li>Distraction Osteogenesis</li>
-                </ul>
-                <!-- <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Cleft Conditions</li>
-                <ul class="ps-4">
-                    <li></li>
-                    <li>Alveolar Bone Grafting</li>
-                </ul> -->
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Orthognathic Surgery</li>
                 <ul class="ps-4">
                     <li>Maxillary osteotomy</li>
@@ -58,6 +48,8 @@
                     <li>Genioplasty</li>
                     <li>Arthroplasty</li>
                     <li>Distractive osteogenesis</li>
+                    <li>Maxillary & Mandibular Osteotomy</li>
+                    <li>Distraction Osteogenesis</li>
                 </ul>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Oral and Maxillofacial Cancer</li>
                 <ul class="ps-4">
@@ -84,9 +76,8 @@
                 </ul>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Trauma Surgery</li>
                 <ul class="ps-4">
-                    <li>Orbital Floor Fracture</li>
-                    <li>Mandibular Condyle Fracture</li>
-                    <li>Zygomaticomaxillary Complex Fracture</li>
+                    <li>Orbital Floor Fracture Reconstruction Surgery</li>
+                    <li>Mandibular Condyle Fracture Surgery</li>
                     <li>NOE Complex Fracture</li>
                     <li>Nasal Bone Fracture Surgery</li>
                 </ul>
@@ -98,6 +89,10 @@
                     <li>All on 6 Implants</li>
                 </ul>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Reconstruction Surgery</li>
+                <ul class="ps-4">
+                    <li>Fibula Flap surgery</li>
+                    <li>Radial Foream Flap surgery</li>
+                    <li>Anterolateral Thigh Flap</li>
             </ul>
         </div>
     </div>
