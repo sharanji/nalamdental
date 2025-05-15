@@ -5,14 +5,9 @@
                     <div class="container-fluid">
                         <div class="col-auto col-lg-2 me-lg-0 me-auto">
                             <a class="navbar-brand" href="home.html">
-                                <div class="row default-logo">
-                                    <img src="<?php echo base_url();?>assets/frontend/img/logo.png" data-at2x="<?php echo base_url();?>assets/frontend/img/logo.png" alt="nalam dental care">
-                                    <img src="<?php echo base_url();?>uploads/favicon.png" data-at2x="<?php echo base_url();?>uploads/favicon.png" alt="nalam dental care" > 
-                                </div>
-                                <img src="<?php echo base_url();?>assets/frontend/img/logo.png" data-at2x="<?php echo base_url();?>assets/frontend/img/logo.png" alt="nalam dental care" class="alt-logo">
-                                <div class="mobile-logo">
-                                    <img src="<?php echo base_url();?>assets/frontend/img/logo.png" data-at2x="<?php echo base_url();?>assets/frontend/img/logo.png" alt="nalam dental care"> 
-                                </div>
+                                <img src="<?php echo base_url();?>assets/frontend/logo.jpeg" data-at2x="<?php echo base_url();?>assets/frontend/logo.jpeg" alt="nalam dental care" class="default-logo">
+                                <img src="<?php echo base_url();?>assets/frontend/logo.jpeg" data-at2x="<?php echo base_url();?>assets/frontend/logo.jpeg" alt="nalam dental care" class="alt-logo">
+                                <img src="<?php echo base_url();?>assets/frontend/logo.jpeg" data-at2x="<?php echo base_url();?>assets/frontend/logo.jpeg" alt="nalam dental care" class="mobile-logo"> 
                             </a>
                         </div>
                         <div class="col-auto col-lg-8 menu-order position-static">
