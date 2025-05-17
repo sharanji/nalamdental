@@ -55,7 +55,6 @@
                 <ul class="ps-4">
                     <li>Oral and Maxillofacial Cancer Surgery</li>
                     <li>Oral Cancer Examination</li>
-                    <li>Oral Cancer Surgical Treatment</li>
                 </ul>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Salivary Gland Tumor Surgery</li>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>OSMF (Oral Submucous Fibrosis)</li>
@@ -72,7 +71,7 @@
                     <li>Cleft Lip & Palate Surgery</li>
                     <li>Alveolar Bone Grafting</li>
                     <li>Ear Lobule Repair</li>
-                    <li>Tounge Tie Release</li>
+                    <li>Tongue Tie Release</li>
                 </ul>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Trauma Surgery</li>
                 <ul class="ps-4">
@@ -83,10 +82,10 @@
                 </ul>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Dental Implants</li>
                 <ul class="ps-4">
-                    <li>Zygomatic Implant</li>
-                    <li>Ball and Socket Implants</li>
-                    <li>All on 4 Implants</li>
-                    <li>All on 6 Implants</li>
+                    <li>Zygomatic Implant Surgery</li>
+                    <li>Ball and Socket Implant Surgery</li>
+                    <li>All on 4 Implant Surgery</li>
+                    <li>All on 6 Implant Surgery</li>
                 </ul>
                 <li class="pb-5px fw-600"><i class="fa-solid fa-plus fs-12 me-10px"></i>Facial Reconstruction Surgery</li>
                 <ul class="ps-4">

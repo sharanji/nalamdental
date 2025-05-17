@@ -115,7 +115,7 @@
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
                                 <div class="position-relative">
-                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
+                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/dr_hari.jpg" alt="best dental hospial hosur">   
                                 </div>
                                 <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. P.K.Hari haran   </a>
                                 <p class="w-90 mx-auto lh-28"> BDS<span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
@@ -133,7 +133,7 @@
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
                                 <div class="position-relative">
-                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
+                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/dr_krithika.jpg" alt="best dental hospial hosur">   
                                 </div>
                                 <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr. Kiruthikaa. M  </a>
                                 <p class="w-90 mx-auto lh-28"> BDS  <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
@@ -172,6 +172,18 @@
                             </div>
                         </div>
                         <!-- end team member item --> 
+                         <!-- end team member item --> 
+                        <div class="col team-style-06 mb-30px">
+                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
+                                <div class="position-relative">
+                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
+                                </div>
+                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.Pavithra <br> (consultant)</a>
+                                <p class="w-90 mx-auto lh-28">MDS Endodontics <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
+                               
+                            </div>
+                        </div>
+                      
                            <!-- start team member item -->
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
@@ -185,18 +197,6 @@
                             </div>
                         </div>
                         <!-- end team member item --> 
-                         <!-- end team member item --> 
-                        <div class="col team-style-06 mb-30px">
-                            <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
-                                <div class="position-relative">
-                                <a href="javascript:void(0)" class="d-inline-block position-relative"><img class="rounded-circle w-150px h-150px mb-20px" src="<?php echo base_url();?>assets/frontend/img/doc-pic.png" alt="best dental hospial hosur">   
-                                </div>
-                                <a href="javascript:void(0)" class="text-dark-gray fs-18 fw-700 mb-5px">Dr.Pavithra <br> (consultant)</a>
-                                <p class="w-90 mx-auto lh-28">MDS Endodontics <span class="text-dark-gray --text-decoration-line-bottom fw-500"></span> </p>
-                               
-                            </div>
-                        </div>
-                      
                            <!-- start team member item -->
                         <div class="col team-style-06 mb-30px">
                             <div class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative">
